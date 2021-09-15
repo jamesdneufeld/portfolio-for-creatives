@@ -1,0 +1,182 @@
+/* Typography imported from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;  
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --accent-color: #555;
+  --body-typeface: "Rubik", sans-serif;
+}
+
+body {
+  font-family: var(--body-typeface);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Making all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Typography */
+
+h1 {
+  font-size: 3em;
+  font-family: "Staatliches", cursive;
+  margin-bottom: .2em;
+}
+
+/* Hyperlink Styles */
+a {
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  color: #111;
+}
+
+p {margin-bottom: 1em;}
+
+
+
+/* Work Page Layout */
+
+.work-wrapper {
+  flex: 1;
+}
+
+.portfolio {
+  padding: 1rem;
+}
+
+/* Defining the work page grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+}
+
+/* Sizing the work page images */
+figure {
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.hero-footer {  color: white;}
+.main-footer {min-height: 100vh; background: #f5f5f5;}
+
+.hero-footer, .main-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.branding-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+}
+.logo {
+  width: 3em;
+}
+.hero-headline-wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 8em;
+  text-align: center;
+}
+.hero-headline {
+  font-size: 3em;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+/* This part isn't required */
+
+.projects {
+  background: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Project Page */
+
+.project-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 1em;
+}
+
+.project-aside {
+  width: 35vw;
+  height: 40vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5vh;
+  color: white;
+  background: orangered;
+  padding: 1em;
+}
+.project-navigation {
+  display: flex;
+  flex-direction: row; 
+  }
+
+.arrow {padding-right: 1em;}
+
+.project-details {
+  width: 60vw;
+  min-height: 800vh;
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  padding: 1em;
+}
