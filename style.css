@@ -135,7 +135,7 @@ a:active {
   color: var(--hover-color);
   /* Tap on mobile */
 }
-
+.navigation-arrow {color: var(--alt-background-color);}
 
 .custom-navigation:hover {
   background: url(heading-background.svg);
@@ -327,11 +327,15 @@ p {
   color: white;
   background: orangered;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-navigation {
   display: flex;
   flex-direction: row;
+  flex: 1;
+  align-items: flex-end;
 }
 
 .arrow {
@@ -450,7 +454,7 @@ p {
   /* Sidebar on Large Devices */
   .project-aside {
     width: 35vw;
-    height: 40vh;
+    height: 50vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
