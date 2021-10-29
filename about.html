@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Creative Portfolio 2022 | Work Page</title>
+  <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <header class="hero-header">
+      <ul class="branding-navigation">
+        <li><a href="index.html" class="custom-navigation">Work</a></li>
+        <li class="logo"><a href="index.html"><img src="https://assets.codepen.io/316293/tools.svg" /></a></li>
+        <li><a href="about.html" class="custom-navigation">About</a></li>
+      </ul>
+    </header>
+
+  <ul class="about">
+    <li class="about-item-1">
+    <h1>Make it yours + host it for free!</h1>
+    <h2>A simple but highly customizable responsive template. It's got a big hero area for your branding and intro. The work page is based on CSS Grid. The project page has a sticky sidebar. Can you find the easter eggs 🥚🥚🥚? Feel free to make this your own by adding your own cusom cursors, <a href="javascript:void(0)" class="toggleGhost" id="btnGhost value="Hide Ghost" onclick="ShowHideDiv(this)">making something randomly fly across the screen</a>, playing with animated gradients, animated GIFs, or even super crisp animated SVGs.</h2></li>
+    <li class="about-item-2">    <p><a href="#top">Smooth scroll to the top</a></p>
+      <p>&copy; 2021. Made with ❤ and CSS Grid.</p>
+  </li>
+    </ul>
+  </ul>
+
+  <footer class="hero-footer">
+    <ul class="hero-footer-navigation">
+      <li><a href="#" class="custom-navigation">Instagram</a></li>
+      <li><a href="mailto:james@magnetude.com" class="custom-navigation">Email</a></li>
+    </ul>
+  </footer>
+
+    <div id="ghostanimation" class="ghost"><img src="cactus.svg" /></div>
+    <script type="text/javascript">function ShowHideDiv(btnGhost) {
+      var GhostStyle = document.getElementById("ghostanimation");
+if (btnGhost.value == "Hide Ghost") {
+          GhostStyle.style.display = "none";
+          btnGhost.value = "Play Ghost";
+      } else {
+          GhostStyle.style.display = "block";
+          btnGhost.value = "Hide Ghost";
+      }
+  }</script>    
+</body>
+
+</html>
