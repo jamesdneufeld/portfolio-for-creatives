@@ -1,11 +1,39 @@
-/* Typography imported from Google Fonts */
+/* Add the Google Fonts you want, remove the ones you don't. 
+
+███████  ██████  ███    ██ ████████ ███████ 
+██      ██    ██ ████   ██    ██    ██      
+█████   ██    ██ ██ ██  ██    ██    ███████ 
+██      ██    ██ ██  ██ ██    ██         ██ 
+██       ██████  ██   ████    ██    ███████ 
+
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('make-something-fly.css');
+@import url('animated-gradient.css');
+
+/*
+
+X-Small devices (portrait phones, less than 576px) 
+No media query for `xs` since this is the default in Bootstrap 
+
+███    ███  ██████  ██████  ██ ██      ███████     ███████ ██ ██████  ███████ ████████ 
+████  ████ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██ ██         ██    
+██ ████ ██ ██    ██ ██████  ██ ██      █████       █████   ██ ██████  ███████    ██    
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██      ██    ██    
+██      ██  ██████  ██████  ██ ███████ ███████     ██      ██ ██   ██ ███████    ██    
+                                                                                       
+*/
+
+/* Add Border Box and Smooth Scroll */
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: url("up.png"), auto !important;
 }
 
 *,
@@ -14,14 +42,42 @@ html {
   box-sizing: inherit;
 }
 
+/* Use variable for to easily change your theme's colour scheme and typography.
+
+██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
+██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
+██    ██ ███████ ██████  ██ ███████ ██████  ██      █████   ███████ 
+ ██  ██  ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██           ██ 
+  ████   ██   ██ ██   ██ ██ ██   ██ ██████  ███████ ███████ ███████ 
+                                                                    
+*/
+
 :root {
+  --primary-text-color: black;
   --accent-color: #555;
-  --body-typeface: "Rubik", sans-serif;
+  --hover-color: #444;
+  --body-typeface: "Inter", sans-serif;
+  --off-white: #f8f8ff;
+  --isabelline: #f4f0ec;
+  --baby-powder: #fefefa;
+  --alice-blue: #f0f8ff;
+  --alabaster: #f2f0e6;
+  --background-color: #f5f5f5;
+  --alt-background-color: black;
+  --text-selection-background-color: #555;
+  --base-color: 334;
+  --color-lightest: hsla(var(--base-color), 50%, 85%, 100%);
+  --color-light: hsla(var(--base-color), 50%, 75%, 100%);
+  --color-normal: hsla(var(--base-color), 50%, 50%, 100%);
+  --color-dark: hsla(var(--base-color), 50%, 35%, 100%);
+  --color-darkest: hsla(var(--base-color), 50%, 15%, 100%);
 }
+
 
 body {
   font-family: var(--body-typeface);
-  color: black;
+  color: var(--primary-text-color);
+  background: var(--background-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -32,15 +88,28 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: top;
+  /* Removes the gap/space in inline elements for text descenders. */
+  object-fit: contain;
+  /* This is optional. Also try cover or leave out entirely. */
+
 }
 
 
-/* Typography */
+/* Global & Mobile Typography 
+
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██  
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████   
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██    
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██    
+                                                                                     
+*/
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-family: "Staatliches", cursive;
-  margin-bottom: .2em;
+  margin-bottom: .2rem;
 }
 
 /* Hyperlink Styles */
@@ -50,16 +119,29 @@ a {
 }
 
 a:hover {
-  color: #111;
+  color: var(--hover-color);
+}
+
+a:active {
+  color: var(--hover-color);
+  /* Tap on mobile */
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 
 
-/* Work Page Layout */
+/* Work Page Layout
+
+██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
+██     ██ ██    ██ ██   ██ ██  ██      ██   ██ ██   ██ ██       ██      
+██  █  ██ ██    ██ ██████  █████       ██████  ███████ ██   ███ █████   
+██ ███ ██ ██    ██ ██   ██ ██  ██      ██      ██   ██ ██    ██ ██      
+ ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
+
+*/
 
 .work-wrapper {
   flex: 1;
@@ -72,10 +154,20 @@ p {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
+
+.work-page-grid-item a img {
+  filter: grayscale(100);
+}
+
+.work-page-grid-item > a:hover img {
+  filter: grayscale(0);
+}
+
+
 
 /* Optional – Sizing the work page images */
 /* figure {
@@ -85,25 +177,15 @@ p {
 } */
 
 
-.hero-footer {
-  color: white;
-}
+/* Hero 
 
-.main-footer {
-  min-height: 100vh;
-  background: #f5f5f5;
-}
-
-.hero-footer,
-.main-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Hero */
+██   ██ ███████ ██████   ██████  
+██   ██ ██      ██   ██ ██    ██ 
+███████ █████   ██████  ██    ██ 
+██   ██ ██      ██   ██ ██    ██ 
+██   ██ ███████ ██   ██  ██████  
+                                 
+*/
 
 .hero {
   min-height: 100vh;
@@ -119,32 +201,44 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1rem;
   align-items: center;
 }
 
 .logo {
-  width: 3em;
+  width: 5rem;
 }
 
 .hero-headline-wrapper {
   display: flex;
+  flex-direction: column;  
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 4em 8em;
+  padding: 2rem 4rem;
   text-align: center;
 }
 
 .hero-headline {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
-.footer-navigation {
+
+
+.hero-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-footer-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1rem;
 }
 
 /* This part isn't required */
@@ -157,24 +251,51 @@ p {
 }
 
 
-/* Project Page */
+/* Global Footer
+
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
+                                                   
+*/
+
+.global-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+
+}
+
+/* Project Page 
+
+██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
+██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██   ██ ██   ██ ██       ██      
+██████  ██████  ██    ██      ██ █████   ██         ██        ██████  ███████ ██   ███ █████   
+██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██   ██ ██    ██ ██      
+██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
+                                                                                               
+*/
 
 .project-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  background: black;
-  padding: 1em;
+  background: var(--alt-background-color);
+  padding: 1rem;
 }
 
+/* Sidebar */
 .project-aside {
-  width: 35vw;
-  height: 40vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
+  width: 100%;
   color: white;
   background: orangered;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .project-navigation {
@@ -183,15 +304,133 @@ p {
 }
 
 .arrow {
-  padding-right: 1em;
+  padding-right: 1rem;
 }
 
+.project-image {
+  font-size: 12rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Main Project Image Area */
 .project-details {
-  width: 60vw;
-  min-height: 800vh;
+  width: 100%;
+  min-height: 600vh;
   background-image: linear-gradient(-225deg,
       #ff057c 0%,
       #8d0b93 50%,
       #321575 100%);
-  padding: 1em;
+  padding: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ ██████  ███    ███ ███████ ██████   █████  
+██    ██ ████  ████ ██      ██   ██ ██   ██ 
+██ ██ ██ ██ ████ ██ █████   ██   ██ ███████ 
+██ ██ ██ ██  ██  ██ ██      ██   ██ ██   ██ 
+ █ ████  ██      ██ ███████ ██████  ██   ██ 
+                                            
+                                           
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  body {
+    background: var(--color-darkest);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background: var(--color-dark);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background: var(--color-normal);
+  }
+
+  .hero-headline {
+    font-size: 4.275rem;
+  }
+
+  .hero-headline-wrapper {
+    padding: 4rem 8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  /* Project Page Flex Direction on Large Devices */
+  .project-wrapper {
+    flex-direction: row;
+
+  }
+
+
+  /* Sidebar on Large Devices */
+  .project-aside {
+    width: 35vw;
+    height: 40vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+  }
+
+
+  /* Main Project Image Area on Large Devices */
+  .project-details {
+    width: 60vw;
+  }
+
+
+
+
+
+
+  /* X-Large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+    body {
+      background: var(--color-light);
+    }
+  }
+
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    body {
+      background: var(--color-lightest);
+    }
+  }
