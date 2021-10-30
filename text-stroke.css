@@ -1,0 +1,25 @@
+:root {
+    --stroke-width: calc(1em / 16);
+    --font-size: 30vmin;
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+  }
+  
+  h1 {
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-image: -webkit-gradient(linear, left top, right top, from(#09f1b8), color-stop(#00a2ff), color-stop(#ff00d2), to(#fed90f));
+    background-image: -o-linear-gradient(left, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: whitesmoke;
+    font-size: 30vmin;
+    font-size: var(--font-size);
+    font-weight: 700;
+    font-weight: var(--font-weight);
+    letter-spacing: calc(1em / 8);
+    letter-spacing: var(--letter-spacing);
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+    -webkit-text-stroke-width: var(--stroke-width);
+  }
