@@ -102,6 +102,7 @@ img {
 }
 
 
+
 /* Global & Mobile Typography 
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -160,6 +161,7 @@ a:active {
 
 
 p {
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
@@ -179,8 +181,9 @@ p {
   flex: 1;
 }
 
-.portfolio {
-  padding: 1rem;
+/* Padding around work grid and project page */
+.portfolio, .project-wrapper {
+  padding: .25rem
 }
 
 /* Defining the work page grid */
@@ -321,7 +324,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   background: var(--alt-background-color);
-  padding: 1rem;
 }
 
 /* Sidebar */
@@ -471,7 +473,10 @@ h3 {
   grid-column: 1 / 3;
 }
 
-
+/* Padding around work grid and project page */
+.portfolio, .project-wrapper {
+  padding: .5rem
+}
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
@@ -492,7 +497,7 @@ h3 {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 60vw;
+    width: 65vw;
   }
 
 
