@@ -213,7 +213,7 @@ p {
 */
 
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   /* background: rgb(238, 174, 202);
@@ -435,7 +435,8 @@ h3 {
   .logo {
     width: 5rem;
   }
-  
+  .hero {
+    min-height: 100vh;}
 
   .hero-headline-wrapper {
     padding: 4rem 8rem;
