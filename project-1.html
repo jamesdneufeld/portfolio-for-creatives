@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Simple Creative Portfolio 2022 | Project Page</title>
+  <title>Simple Creative Portfolio 2023 | Project Page</title>
   <meta name="description"
     content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -23,20 +23,23 @@
   <div class="project-wrapper">
     <aside class="project-aside">
       <div class="project-info">
-        <h1>Project One</h1>
-        <p>This sidebar is sticky using
-          <pre>position: sticky; top: 0;</pre>
-        </p>
+        <h1 class="project-title">Your Project Title</h1>
+        <p class="project-description">A brief description of your project goes here. This is a sticky sidebar so that your project title and description remain visible as you scroll down the page.</p>
 
       </div>
       <ul class="project-navigation">
         <li class="arrow"><a href="#" class="navigation-arrow"><i class="fas fa-arrow-left fa-2x"></i></a></li>
-        <li class="arrow"><a href="#" class="navigation-arrow"><i class="fas fa-arrow-right fa-2x"></i></a></li>
+        <li class="arrow"><a href="project-2.html" class="navigation-arrow"><i class="fas fa-arrow-right fa-2x"></i></a></li>
       </ul>
     </aside>
     <main class="project-details">
-      <div class="project-image">⭐️</div>
-      <div class="project-image">🌸</div>
+      <div class="project-image"><img src="assets/birthday-1.png" width="800" height="800" alt="A description of the image"></div>      
+      <div class="project-image"><img src="assets/birthday-2.png" width="800" height="800" alt="A description of the image"></div>      
+      <div class="project-image"><img src="assets/birthday-3.png" width="800" height="800" alt="A description of the image"></div>   
+      <div class="project-image-container">
+        <div class="project-image">⭐️</div>
+        <div class="project-image">🌸</div>
+      </div>  
       <div class="project-image">🐙</div>
       <div class="project-image">🔥</div>
       <div class="project-image">🥑</div>
@@ -71,11 +74,11 @@
     </li>    
     <li class="footer-item-4">
       <p><a href="#top">Smooth scroll to the top</a></p>
-      <p>&copy; 2022. Made with ❤ and CSS Grid by James Neufeld.</p>
+      <p>&copy; 2023. Made with ❤ and CSS Grid by James Neufeld.</p>
     </li>
   </ul>
   <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
-  <div id="ghostanimation" class="ghost"><img src="cactus.svg" /></div>
+  <div id="ghostanimation" class="ghost"><img src="assets/cactus.svg" /></div>
   <script type="text/javascript">
     function ShowHideDiv(btnGhost) {
       var GhostStyle = document.getElementById("ghostanimation");

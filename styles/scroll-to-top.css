@@ -13,10 +13,10 @@
     margin: 1rem;
 }
 .hide {
-    opacity:0;
-    right:-100%;
+    opacity: 0;
+    right: -100%;
 }
 .show {
-    opacity:1;
-    right:0;
+    opacity: 1;
+    right: 0;
 }
