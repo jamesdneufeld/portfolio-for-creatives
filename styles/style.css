@@ -11,6 +11,7 @@ Add the Google Fonts you want, remove the ones you don't.
 */
 
 @import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -78,6 +79,7 @@ html {
   --hover-color: #111;
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: "Staatliches", cursive;
+  --project-title-typeface: 'Eczar', serif;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
   --baby-powder: #fefefa;
@@ -134,8 +136,8 @@ h1 {
 }
 
 .project-title {
-    font-size: 2rem;
-    font-family: var(--heading-typeface);
+    font-size: 3rem;
+    font-family: var(--project-title-typeface);
     margin-bottom: 1rem;
     color: var(--baby-powder);
 }
@@ -414,6 +416,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.project-text {
+  width: 100%;
+  font-size: 3.25rem;
+  padding: 3rem;
 }
 
 .about-image {
