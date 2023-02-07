@@ -5,7 +5,7 @@
 .hero {
     background-size: 600%;
     background-image: var(--gradient);
-    animation: bg-animation 120s infinite alternate;
+    animation: bg-animation 90s infinite alternate;
 }
 
 @keyframes bg-animation {
