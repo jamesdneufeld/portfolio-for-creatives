@@ -550,7 +550,7 @@ p {
     /* Sidebar on Large Devices */
     .project-aside {
         width: 35%;
-        height: 60vh;
+        height: 65vh;
         position: -webkit-sticky;
         position: sticky;
         top: 5vh;
