@@ -74,7 +74,7 @@ html {
   --primary-text-color: #222;
   --accent-color: #5200FF;
   --overlay-color: #5200FF;
-  --hyperlink-color: #333;
+  --hyperlink-color: rgb(255, 69, 0);
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --body-typeface: "Inter", sans-serif;
@@ -107,7 +107,7 @@ body {
 }
 
 /* Making all images responsive */
-img {
+img, svg {
   max-width: 100%;
   height: auto;
   vertical-align: top;
@@ -165,20 +165,12 @@ h4 {
 }
 
 /* Hyperlink Styles */
-a {
-  text-decoration: none;
-  color: var(--hyperlink-color);
-}
 
-a:hover {
-  color: var(--hover-color);
-
-}
-
-a:active {
-  color: var(--hover-color);
-  /* Tap on mobile */
-}
+a:link    { color: var(--hyperlink-color); text-decoration: none;}
+a:visited { color: var(--hyperlink-color); }
+a:hover   { color: var(--hover-color); }
+a:focus   { outline: 1px solid var(--accent-color); }
+a:active  { color: var(--hover-color); /* Tap on mobile */ }
 
 .navigation-arrow {
   color: var(--alt-background-color);
@@ -611,18 +603,76 @@ p {
 .experiments-page {
   display: grid;
   place-items: center;
+  background: black;
 }
 
-.experiments-page-wrapper {}
+.experiments-page-wrapper { }
 
 .experiments-page-inner-container {
   text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .experiments-page-title {
   color: var(--accent-color);
+  font-size: 2rem;
 }
 
+.experiments-text {color: var(--alice-blue);}
+
+.experiment-1-wrapper {
+  display: flex;
+  flex-direction: row; 
+  margin-bottom: 1rem;  
+  flex: 1;
+}
+
+.experiment-2-wrapper {  display: flex;
+  flex-direction: row; 
+  margin-bottom: 1rem;  
+  flex: 1;
+  align-items: center;
+  justify-content: center;}
+
+.sub-navigation {display: flex; flex-direction: row; justify-content: space-evenly; padding: 1rem;  text-align: center;}
+.sub-navigation-item {}
+a.sub-navigation-link {border: 1px solid var(--accent-color); color: var(--accent-color); padding: 1rem;}
+a.sub-navigation-link:hover {background: var(--accent-color); color: var(--floral-white); padding: 1rem;}
+
+/* Let's size the boxes */
+
+.experiment-box {
+  width: 50%;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.image {width: 40%;}
+
+/* Let's hide box 2 */
+
+.experiment-image-2 {
+  display: none;
+}
+.experiment-image-single { 
+  width: 20rem;
+  padding: 2rem;
+  display: grid;
+  place-items: center; }
+
+#heyday-logo-blue {
+  animation: rotation 9s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {transform: rotate(0deg);}
+  to { transform: rotate(359deg); }
+}
 
 
 /*
