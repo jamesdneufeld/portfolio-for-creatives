@@ -33,6 +33,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 @import url('text-stroke.css');
 @import url('stroke-shadow.css');
 @import url('scroll-to-top.css');
+@import url('project-page-colors.css');
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -72,14 +73,16 @@ html {
 
 :root {
   --primary-text-color: #222;
+  --holding-page-title-color: #ebedf0;
   --accent-color: #5200FF;
   --overlay-color: #5200FF;
-  --hyperlink-color: rgb(255, 69, 0);
+  --hyperlink-color: #444;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: 'Eczar', serif;
   --project-title-typeface: 'Eczar', serif;
+  --project-title-color: #723850;
   --heart-color: darkred;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
@@ -136,11 +139,13 @@ h1 {
   color: var(--baby-powder);
 }
 
+.hero-headline {color: var(--overlay-color);}
+
 .project-title {
   font-size: 3rem;
   font-family: var(--project-title-typeface);
+  color: var(--project-title-color);  
   margin-bottom: 1rem;
-  color: var(--baby-powder);
 }
 
 .overlay-title {
@@ -214,12 +219,22 @@ p {
   color: var(--heart-color);
 }
 
+.footer-nav-item {
+  line-height: 1.3;
+}
+
 .award-item {
   line-height: 1.3;
 }
 
 .social-item {
   line-height: 1.3;
+}
+
+.list-item {
+    line-height: 1.3;
+    list-style-type: disc;
+    margin-left: 1.2rem;
 }
 
 .project-description {
@@ -443,6 +458,9 @@ p {
   grid-row: 4 / 5;
 }
 
+.awards-list {margin-bottom: 2rem;}
+
+
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -457,14 +475,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--alt-background-color);
 }
 
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: white;
-  background: orangered;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -497,6 +512,9 @@ p {
   align-items: center;
   justify-content: center;
 }
+.text-section {
+  width: 100%;
+}
 
 .project-text {
   width: 100%;
@@ -510,10 +528,6 @@ p {
 
 .project-details {
   width: 100%;
-  background-image: linear-gradient(-225deg,
-      #ff057c 0%,
-      #8d0b93 50%,
-      #321575 100%);
   padding: 1rem;
 }
 
@@ -533,7 +547,10 @@ p {
 
 .holding-page-wrapper {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;  
   place-items: center;
+  text-align: center;
   width: 100%;
   min-height: 100vh;
   background:
@@ -543,24 +560,26 @@ p {
 }
 
 
-.holding-page-inner-container {
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
 .holding-page-animation {
   margin-bottom: 1rem;
 }
 
 .holding-page-title {
-  font-size: 2rem;
-  color: var(--accent-color);
+  font-size: 1.5rem;
+  color: var(--holding-page-title-color);
 }
+
+.holding-page-footer {
+  display: grid;
+  place-items: center;
+  min-height: 10vh;
+  width: 100%;
+} 
 
 .holding-page-copyright {
   font-size: .8rem;
   color: var(--off-white);
+  margin-bottom: 0;
 }
 
 
@@ -693,6 +712,12 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
+
+  .holding-page-title {
+    font-size: 2rem;
+  }
+
   h1 {
     font-size: 4.275rem;
   }

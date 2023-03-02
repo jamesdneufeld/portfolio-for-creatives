@@ -1,0 +1,19 @@
+.project-aside-colors {
+    color: white;
+    background: orangered;
+  }
+
+  .project-details-colors {
+    background-image: linear-gradient(-225deg,
+        #ff057c 0%,
+        #8d0b93 50%,
+        #321575 100%);
+  }
+  
+  .project-wrapper-colors {
+    background: var(--alt-background-color);
+  }  
+
+  .project-title-colors {
+    color: var(--baby-powder);
+  }  

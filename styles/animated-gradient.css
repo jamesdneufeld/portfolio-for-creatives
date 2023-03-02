@@ -2,7 +2,7 @@
     --gradient: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
 }
 
-.hero {
+.gradient-animation {
     background-size: 600%;
     background-image: var(--gradient);
     animation: bg-animation 90s infinite alternate;
