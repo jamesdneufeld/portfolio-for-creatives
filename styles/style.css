@@ -105,11 +105,13 @@ body {
   min-height: 100vh;
 }
 
+/* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
+
 ::selection {
   background: var(--accent-color);
 }
 
-/* Making all images responsive */
+/* Make all images responsive */
 img, svg {
   max-width: 100%;
   height: auto;
@@ -117,7 +119,6 @@ img, svg {
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
-
 }
 
 
@@ -259,10 +260,6 @@ p {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%); */
 }
 
 .branding-navigation {
@@ -333,7 +330,7 @@ p {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem
+  padding: .25rem;
 }
 
 /* Defining the work page grid */
@@ -592,8 +589,6 @@ p {
 ███████ ██   ██ ██   ██  ██████  ██   ██ 
 */
 
-
-
 .error-page {
   display: grid;
   place-items: center;
@@ -624,8 +619,6 @@ p {
   place-items: center;
   background: black;
 }
-
-.experiments-page-wrapper { }
 
 .experiments-page-inner-container {
   text-align: center;
