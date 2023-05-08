@@ -503,12 +503,16 @@ p {
 
 .project-image {
   width: 100%;
-  font-size: 12rem;
   min-height: 50vh;
+  /* This should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.large-emoji-placeholder {  font-size: 12rem;} /* This is for making the placeholder emojis large and should be deleted */
+
+
 .text-section {
   width: 100%;
 }
@@ -835,8 +839,11 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   }
 
   .project-image {
-    min-height: 100vh;
+    min-height: 100vh; 
+    /* This should be deleted if you want to remove space between project images on project pages */
   }
+
+  
 
   .project-image-container {
     flex-direction: row;
