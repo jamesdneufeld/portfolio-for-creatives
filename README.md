@@ -8,7 +8,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 **Features & Options:**
 
 - Big hero area for your branding and intro
-- Work page is based on CSS Grid and project preview images size is easily adjustable
+- Work page is based on <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grid</a> and project preview images size is easily adjustable
 - Grayscale filter on project images / full color on hover
 - Project page has a sticky sidebar
 - Custom cursor

@@ -657,6 +657,30 @@ a:active  { color: var(--hover-color); /* Tap on mobile */ }
   color: var(--accent-color);
 }
 
+/*
+
+██████  ██       █████  ██    ██ 
+██   ██ ██      ██   ██  ██  ██  
+██████  ██      ███████   ████   
+██      ██      ██   ██    ██    
+██      ███████ ██   ██    ██    
+*/
+
+.play-page {
+  display: grid;
+  place-items: center;
+}
+
+.play-page-wrapper {}
+
+.play-page-inner-container {
+  text-align: center;
+}
+
+.play-page-title {
+  color: var(--accent-color);
+}
+
 
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
