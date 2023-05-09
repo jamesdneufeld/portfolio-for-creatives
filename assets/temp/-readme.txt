@@ -2,5 +2,5 @@
 - Please do not place your images into this folder.
 - Create your own folders in the assets folder for each of your projects.
 - Delete this folder and any other demo/temp images when you are ready to go live.
-- Please remember to resize and optimize your images for the web so that they download quickly. You may not achieve good Google search ranking if your images are too large.
+- Please remember to resize and optimize your images for the web so that they download quickly. You may not achieve good Google search ranking if your images are too large. Loading speed should be a top priority. Pages that take 5 seconds to load lead to a 38% bounce rate.
 - Please also remember to rename your images with your name and important keywords to improve your Google search ranking (SEO).
