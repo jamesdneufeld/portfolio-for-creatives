@@ -10,19 +10,16 @@
     <meta property="og:image" content="screenshot.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css">   
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body class="experiments-page">
     <div class="experiments-page-wrapper">
         <div class="experiments-page-inner-container">
-            <h1 class="experiments-page-title">Experiment 1: Show/Hide</h1>
-            <div class="experiment-1-wrapper">
-                <div class="experiment-box experiment-image-1">
-                    <img src="assets/temp/lightbulb1.jpg" alt="Lightbulb" class="image" />
-                </div>
-                <div class="experiment-box experiment-image-2">
-                    <img src="assets/temp/lightbulb2.jpg" alt="Lightbulb" class="image" />
+            <h1 class="experiments-page-title">Experiment 3: onmouseenter/onmouseleave Event</h1>
+            <div class="experiment-2-wrapper">
+                <div class="experiment-image-single">
+                    <img src="assets/temp/mkb-logo-animation-web-appear.gif" class="logo-static">
                 </div>
             </div>
             <ul class="sub-navigation">
@@ -33,8 +30,25 @@
               </ul>
         </div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script  src="./js/javascript.js"></script>
+    <script>
+        var logoElem = document.getElementsByClassName("logo-static").item(0);
+
+        // Documentation: https://stackoverflow.com/questions/3191922/restart-an-animated-gif-from-javascript-without-reloading-the-image
+
+        var imgDissolve = new Image();
+        imgDissolve.src = "assets/temp/mkb-logo-animation-web-dissolve.gif";
+
+        var imgAppear = new Image();
+        imgAppear.src = "assets/temp/mkb-logo-animation-web-appear.gif";
+
+        logoElem.onmouseenter = function () {
+            logoElem.src = imgDissolve.src;
+        }
+
+        logoElem.onmouseleave = function () {
+            logoElem.src = imgAppear.src;
+        }
+    </script>
 </body>
 
 </html>
