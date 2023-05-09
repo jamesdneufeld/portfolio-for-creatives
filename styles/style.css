@@ -104,6 +104,7 @@ html {
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
+  --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -190,6 +191,8 @@ p {
   margin-bottom: 1rem;
 }
 
+em {font-style: italic;}
+
 .fineprint {
   font-size: .875rem;
 }
@@ -199,7 +202,7 @@ p {
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -292,8 +295,8 @@ a:active {
 }
 
 .project-description {
-  font-size: 1.25rem;
-  line-height: 1.3;
+  font-size: 1.225rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
@@ -851,7 +854,7 @@ a.sub-navigation-link:hover {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   h3 {
@@ -894,7 +897,7 @@ a.sub-navigation-link:hover {
   }
 
   .global-footer {
-    padding: 4rem;
+    padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 

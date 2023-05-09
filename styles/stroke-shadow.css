@@ -7,12 +7,12 @@
 }
 
 .shadow {
-    text-shadow: 6px 6px #db2777;
+    text-shadow: 6px 6px var(--accent-color);
 }
 
 .stroke-shadow {
     color: #ffffff;
-    text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827, 2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827, 6px 6px #db2777;
+    text-shadow: -2px 0 var(--accent-color), 0 -2px var(--accent-color), 2px 0 var(--accent-color), 0 2px var(--accent-color), 2px 2px var(--accent-color), -2px -2px var(--accent-color), -2px 2px var(--accent-color), 2px -2px var(--accent-color), 6px 6px var(--stroke-shadow-color);
 }
 
 .halftone {
