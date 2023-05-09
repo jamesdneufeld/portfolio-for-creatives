@@ -19,7 +19,7 @@
             <h1 class="experiments-page-title">Experiment 4: onmouseover/onmouseout Event</h1>
             <div class="experiment-2-wrapper">
                 <div class="experiment-image-single">
-                    <img onmouseover="animationIn()" onmouseout="animationOut()" src="assets/temp/mkb-logo-static.jpg" alt="logo" width="200" height="200" id="logo">
+                    <img onmouseover="animationIn()" onmouseout="animationOut()" src="../assets/temp/mkb-logo-static.jpg" alt="logo" width="200" height="200" id="logo">
                 </div>
             </div>
             <ul class="sub-navigation">
@@ -33,13 +33,13 @@
     <script>
   function animationIn() {
     document.getElementById("logo").src =
-      "assets/temp/mkb-logo-animation-web-dissolve.gif";
+      "../assets/temp/mkb-logo-animation-web-dissolve.gif";
     document.getElementById("logo").alt = "animationIn";
   }
 
   function animationOut() {
     document.getElementById("logo").src =
-      "assets/temp/mkb-logo-animation-web-appear.gif";
+      "../assets/temp/mkb-logo-animation-web-appear.gif";
     document.getElementById("logo").alt = "animationOut";
   }
     </script>

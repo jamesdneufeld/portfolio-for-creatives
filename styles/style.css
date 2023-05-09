@@ -76,7 +76,9 @@ html {
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: 'Eczar', serif;
   --project-title-typeface: 'Eczar', serif;
-  --background-color: #ffffff;
+  --background-color: #fdfdfd;
+  --background-color-about: #fdfdfd;
+  --background-color-footer: #fdfdfd;    
   --alt-background-color: #000000;
   --h1-color: #5200ff;
   --h2-color: #5200ff;
@@ -99,7 +101,6 @@ html {
   --project-sidebar-text-color: white;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --experiments-text-color: #f0f8ff;
   --text-selection-background-color: #5200ff;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
@@ -351,7 +352,6 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: white;
 }
 
 .hero-footer-navigation {
@@ -361,14 +361,7 @@ a:active {
   padding: 1rem;
 }
 
-/* This part isn't required */
 
-.projects {
-  background: #111;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 
 /* Work Page Layout
@@ -448,7 +441,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  background: #f5f5f5;
+  background: var(--background-color-about);
   padding: 1rem;
   flex: 1;
 }
@@ -489,7 +482,7 @@ a:active {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: #f5f5f5;
+  background: var(--background-color-footer);
   padding: 1rem;
 }
 
@@ -512,8 +505,6 @@ a:active {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
-
-
 
 .awards-list {
   margin-bottom: 2rem;
@@ -568,18 +559,15 @@ a:active {
 .project-image {
   width: 100%;
   min-height: 50vh;
-  /* This should be deleted if you want to remove space between project images on project pages */
+  /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .large-emoji-placeholder {
-  font-size: 12rem;
+  font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
 }
-
-/* This is for making the placeholder emojis large and should be deleted */
-
 
 .text-section {
   width: 100%;
@@ -625,12 +613,12 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
+  /* Delete the following if you do not want a grainy gradient background on the holding page */
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(18, 8, 80, 0.62)),
     url(/assets/temp/noise.svg);
-  /* https://grainy-gradients.vercel.app/ */
+  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
-
 
 .holding-page-animation {
   margin-bottom: 1rem;
@@ -728,7 +716,6 @@ a:active {
 .experiments-page {
   display: grid;
   place-items: center;
-  background: black;
 }
 
 .experiments-page-inner-container {
@@ -743,10 +730,6 @@ a:active {
 .experiments-page-title {
   color: var(--accent-color);
   font-size: 2rem;
-}
-
-.experiments-text {
-  color: var(--experiments-text-color);
 }
 
 .experiment-1-wrapper {

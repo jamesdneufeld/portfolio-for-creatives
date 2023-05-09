@@ -19,7 +19,7 @@
             <h1 class="experiments-page-title">Experiment 3: onmouseenter/onmouseleave Event</h1>
             <div class="experiment-2-wrapper">
                 <div class="experiment-image-single">
-                    <img src="assets/temp/mkb-logo-animation-web-appear.gif" class="logo-static">
+                    <img src="../assets/temp/mkb-logo-animation-web-appear.gif" class="logo-static">
                 </div>
             </div>
             <ul class="sub-navigation">
@@ -36,10 +36,10 @@
         // Documentation: https://stackoverflow.com/questions/3191922/restart-an-animated-gif-from-javascript-without-reloading-the-image
 
         var imgDissolve = new Image();
-        imgDissolve.src = "assets/temp/mkb-logo-animation-web-dissolve.gif";
+        imgDissolve.src = "../assets/temp/mkb-logo-animation-web-dissolve.gif";
 
         var imgAppear = new Image();
-        imgAppear.src = "assets/temp/mkb-logo-animation-web-appear.gif";
+        imgAppear.src = "../assets/temp/mkb-logo-animation-web-appear.gif";
 
         logoElem.onmouseenter = function () {
             logoElem.src = imgDissolve.src;
