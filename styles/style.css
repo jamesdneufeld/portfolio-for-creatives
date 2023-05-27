@@ -327,7 +327,7 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
