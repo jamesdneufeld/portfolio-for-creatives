@@ -3,7 +3,17 @@
  
 A simple but highly customizable responsive template for graphic designers, illustrators, interactive designers, photographers, art directors, and more!
 
-🥚🥚🥚
+**Set Up Instructions:**
+
+1. Sign up for a free account at [github.com](https://github.com/)
+2. Download and install https://desktop.github.com/
+3. Download and install https://code.visualstudio.com/
+4. Clone this repository using GitHub Desktop.
+5. Edit the code using Visual Studio Code.
+6. Push your edited code using GitHub Desktop and create a fork for personal use when prompted.
+7. Sign up to [netlify.com](https://www.netlify.com/) using your GitHub credentials.
+8. Add/import your GitHub repository to Netlify.
+9. Continue customizing the code in Visual Studio Code and push using GitHub Desktop to update your Netlify site.
  
 **Features & Options:**
 
