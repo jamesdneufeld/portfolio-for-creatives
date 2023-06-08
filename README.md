@@ -5,8 +5,6 @@ A simple but highly customizable responsive template for graphic designers, illu
 
 **Set Up Instructions:**
 
-Try to complete the following before the first session.
-
 1. Sign up for a free account at [github.com](https://github.com/)
 2. Download and install [desktop.github.com](https://desktop.github.com/)
 3. Download and install [code.visualstudio.com](https://code.visualstudio.com/)
