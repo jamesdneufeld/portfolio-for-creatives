@@ -61,6 +61,10 @@ A folder called assets contains demo images and graphics. Create additional fold
 
 ![Preview](https://portfolio-for-creatives.netlify.app/screenshot.png)
 
+## Watch a tutorial:
+
+Unlisted YouTube video tutorials are available for registered students. Please ask James for links.
+
 ## For one-on-one support contact James for a Zoom session:
 
 Support for this template is available for registered students only.
