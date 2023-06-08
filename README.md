@@ -1,4 +1,4 @@
-# portfolio-2022
+# portfolio-for-creatives
 ## A simple and modern portfolio template for creatives
  
 A simple but highly customizable responsive template for graphic designers, illustrators, interactive designers, photographers, art directors, and more!
