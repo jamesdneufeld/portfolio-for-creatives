@@ -33,6 +33,10 @@ A simple but highly customizable responsive template for graphic designers, illu
 2. The main stylesheet uses CSS variables for colours and fonts. This is a good place to start for beginners.
 3. The main stylesheet is mobile first. Minor adjustments for large devices can be made at the bottom of the stylesheet.
 
+**Assets Structure and Image Optimization:**
+
+A folder called assets contains demo images and graphics. Create additional folders for each project to keep things organized. Project images should be JPG format and ideally 1500 pixels wide for portrait, 1900 pixels wide for landscape, and under 750 KB. Optimizing images for quick downloading is very important. Do not add huge images or media files as this will slow your site down and could cause technical problems with GitHub.
+
 **Features & Options:**
 
 - Big hero area for your branding and intro
