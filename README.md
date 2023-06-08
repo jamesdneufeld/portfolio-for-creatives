@@ -15,6 +15,15 @@ A simple but highly customizable responsive template for graphic designers, illu
 8. Add/import your GitHub repository to Netlify.
 9. Continue customizing the code in Visual Studio Code and push using GitHub Desktop to update your Netlify site.
  
+**Easy things to change for beginners:**
+
+1. Change the wording in the hero section of the work page.
+2. Change the colours in style.css using variables.
+3. Change the fonts to your preferred Google Fonts in style.css.
+4. Change the social media link addresses.
+5. Replace the demo words in the footer with your own bio.
+6. Replace the demo words on a project page with your own project title and project description.
+
 **Features & Options:**
 
 - Big hero area for your branding and intro
