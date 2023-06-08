@@ -23,7 +23,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 
 
 
-[View The Demo](https://portfolio-2022.netlify.app).
+[View The Demo](https://portfolio-for-creatives.netlify.app/).
 
-![Preview](https://portfolio-2022.netlify.app/screenshot.png)
+![Preview](https://portfolio-for-creatives.netlify.app/screenshot.png)
  
