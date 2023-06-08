@@ -5,15 +5,20 @@ A simple but highly customizable responsive template for graphic designers, illu
 
 **Set Up Instructions:**
 
+Try to complete the following before the first session.
+
 1. Sign up for a free account at [github.com](https://github.com/)
 2. Download and install [desktop.github.com](https://desktop.github.com/)
 3. Download and install [code.visualstudio.com](https://code.visualstudio.com/)
-4. Clone this repository using GitHub Desktop. The URL is https://github.com/jamesdneufeld/portfolio-for-creatives.
-5. Edit the code using Visual Studio Code.
-6. Push your edited code using GitHub Desktop and create a fork for personal use when prompted.
-7. Sign up to [netlify.com](https://www.netlify.com/) using your GitHub credentials.
-8. Add/import your GitHub repository to Netlify.
-9. Continue customizing the code in Visual Studio Code and push using GitHub Desktop to update your Netlify site.
+
+**Cloning a repository, editing code, pushing and creating a fork, connecting to Netlify:**
+
+1. Clone this repository using GitHub Desktop. The URL is https://github.com/jamesdneufeld/portfolio-for-creatives.
+2. Edit the code using Visual Studio Code.
+3. Push your edited code using GitHub Desktop and create a fork for personal use when prompted.
+4. Sign up to [netlify.com](https://www.netlify.com/) using your GitHub credentials.
+5. Add/import your GitHub repository to Netlify.
+6. Continue customizing the code in Visual Studio Code and push using GitHub Desktop to update your Netlify site.
  
 **Easy things to change for beginners:**
 
@@ -23,6 +28,12 @@ A simple but highly customizable responsive template for graphic designers, illu
 4. Change the social media link addresses.
 5. Replace the demo words in the footer with your own bio.
 6. Replace the demo words on a project page with your own project title and project description.
+
+**CSS Structure:**
+
+1. The main stylesheet is style.css. There are additional stylesheets for various features that you may want to use.
+2. The main stylesheet uses CSS variables for colours and fonts. This is a good place to start for beginners.
+3. The main stylesheet is mobile first. Minor adjustments for large devices can be made at the bottom of the stylesheet.
 
 **Features & Options:**
 
@@ -39,8 +50,6 @@ A simple but highly customizable responsive template for graphic designers, illu
 - Font Awesome icons included
 - CSS custom properties (variables) for easy color scheming
 - Instructions in the CSS comments to find things easier
-
-
 
 [View The Demo](https://portfolio-for-creatives.netlify.app/).
 
