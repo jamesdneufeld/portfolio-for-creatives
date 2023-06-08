@@ -37,7 +37,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 
 A folder called assets contains demo images and graphics. Create additional folders for each project to keep things organized. Project images should be JPG format and ideally 1500 pixels wide for portrait, 1900 pixels wide for landscape, and under 750 KB. Optimizing images for quick downloading is very important. Do not add huge images or media files as this will slow your site down and could cause technical problems with GitHub. Videos should be uploaded to a third-party like Vimeo or YouTube and then embedded into the HTML code. Animated GIFs should be under 20 frames. Anymore more and it is basically a movie.
 
-**Features & Options:**
+*Template Features & Options:*
 
 - Big hero area for your branding and intro
 - Work page is based on <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grid</a> and project preview images size is easily adjustable
