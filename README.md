@@ -20,18 +20,22 @@ A simple but highly customizable responsive template for graphic designers, illu
  
 **Easy things to change for beginners:**
 
-1. Change the wording in the hero section of the work page.
-2. Change the colours in style.css using variables.
-3. Change the fonts to your preferred Google Fonts in style.css.
-4. Change the social media link addresses.
-5. Replace the demo words in the footer with your own bio.
-6. Replace the demo words on a project page with your own project title and project description.
+- Change the wording in the hero section of the work page.
+- Change the colours in style.css using variables.
+- Change the fonts to your preferred Google Fonts in style.css.
+- Change the social media link addresses.
+- Replace the demo words in the footer with your own bio.
+- Replace the demo words on a project page with your own project title and project description.
+
+**More advanced changes:**
+
+- A solid working knowledge of HTML and CSS is required for more advanced changes. JavaScript knowledge is also helpful for custom effects. A great place to start is https://www.codecademy.com/catalog/language/html-css.
 
 **CSS Structure:**
 
-1. The main stylesheet is style.css. There are additional stylesheets for various features that you may want to use.
-2. The main stylesheet uses CSS variables for colours and fonts. This is a good place to start for beginners.
-3. The main stylesheet is mobile first. Minor adjustments for large devices can be made at the bottom of the stylesheet.
+- The main stylesheet is style.css. There are additional stylesheets for various features that you may want to use.
+- The main stylesheet uses CSS variables for colours and fonts. This is a good place to start for beginners.
+- The main stylesheet is mobile first. Minor adjustments for large devices can be made at the bottom of the stylesheet.
 
 **Assets Structure and Image Optimization:**
 
