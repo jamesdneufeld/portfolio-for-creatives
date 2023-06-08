@@ -8,7 +8,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 1. Sign up for a free account at [github.com](https://github.com/)
 2. Download and install [desktop.github.com](https://desktop.github.com/)
 3. Download and install [code.visualstudio.com](https://code.visualstudio.com/)
-4. Clone this repository using GitHub Desktop.
+4. Clone this repository using GitHub Desktop. The URL is https://github.com/jamesdneufeld/portfolio-for-creatives.
 5. Edit the code using Visual Studio Code.
 6. Push your edited code using GitHub Desktop and create a fork for personal use when prompted.
 7. Sign up to [netlify.com](https://www.netlify.com/) using your GitHub credentials.
