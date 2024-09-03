@@ -1,7 +1,5 @@
 /* 
 
-Add the Google Fonts you want, remove the ones you don't. 
-
 ███████  ██████  ███    ██ ████████ ███████ 
 ██      ██    ██ ████   ██    ██    ██      
 █████   ██    ██ ██ ██  ██    ██    ███████ 
@@ -10,11 +8,12 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
+/* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
+
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 
 /*
 
@@ -28,11 +27,16 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 */
 
-@import url('make-something-fly.css');
-@import url('animated-gradient.css');
-@import url('text-stroke.css');
-@import url('stroke-shadow.css');
-@import url('scroll-to-top.css');
+/* TODO: Delete any stylesheets that you do not want to use. */
+
+@import url("make-something-fly.css");
+@import url("animated-gradient.css");
+@import url("text-stroke.css");
+@import url("stroke-shadow.css");
+@import url("experiments.css");
+@import url("style-guide.css");
+@import url("scroll-to-top.css");
+
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -52,6 +56,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
 *,
@@ -70,17 +75,19 @@ html {
                                                                     
 */
 
-/* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
+/* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables.
+
+/* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
   --body-typeface: "Inter", sans-serif;
-  --heading-typeface: 'Eczar', serif;
-  --project-title-typeface: 'Eczar', serif;
+  --heading-typeface: "Eczar", serif;
+  --project-title-typeface: "Eczar", serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;    
+  --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255,0.6);
+  --background-color-holding-page: rgba(82, 0, 255, 0.6);
   --h1-color: #5200ff;
   --h2-color: #5200ff;
   --h3-color: #5200ff;
@@ -109,7 +116,6 @@ html {
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
-
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
@@ -135,8 +141,6 @@ svg {
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
 }
-
-
 
 /* Global & Mobile Typography 
 
@@ -198,7 +202,7 @@ em {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .hero-headline {
@@ -220,7 +224,6 @@ em {
 .overlay-description {
   color: var(--overlay-description-color);
 }
-
 
 /* Hyperlink Styles */
 
@@ -274,8 +277,6 @@ a:active {
   background-position: center center;
 }
 
-
-
 .heart {
   color: var(--heart-color);
 }
@@ -304,8 +305,6 @@ a:active {
   margin-bottom: 1rem;
 }
 
-
-
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -332,6 +331,7 @@ a:active {
 
 .logo {
   width: 3rem;
+  /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
 .hero-headline-wrapper {
@@ -362,9 +362,6 @@ a:active {
   padding: 1rem;
 }
 
-
-
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -382,7 +379,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -417,16 +414,13 @@ a:active {
   flex-direction: column;
   padding: 1em;
   background-color: var(--overlay-color);
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .work-page-grid-item:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.8;
 }
-
-
-
 
 /* 
 
@@ -477,7 +471,6 @@ a:active {
                                                    
 */
 
-
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -510,7 +503,6 @@ a:active {
 .awards-list {
   margin-bottom: 2rem;
 }
-
 
 /* Project Page 
 
@@ -560,14 +552,15 @@ a:active {
 .project-image {
   width: 100%;
   min-height: 50vh;
-  /* min-height should be deleted if you want to remove space between project images on project pages */
+  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .large-emoji-placeholder {
-  font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
+  font-size: 12rem;
+  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
 }
 
 .text-section {
@@ -585,16 +578,14 @@ a:active {
 .project-details {
   width: 100%;
   padding: 1rem;
-  /* Delete the following if you do not want a gradient background on the project page */
-  background-image: linear-gradient(-225deg,
-      var(--linear-gradient-color-1) 0%,
-      var(--linear-gradient-color-2) 50%,
-      var(--linear-gradient-color-3) 100%);
+  /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
+  background-image: linear-gradient(
+    -225deg,
+    var(--linear-gradient-color-1) 0%,
+    var(--linear-gradient-color-2) 50%,
+    var(--linear-gradient-color-3) 100%
+  );
 }
-
-
-
-
 
 /* 
 
@@ -614,10 +605,8 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)),
-    url(/assets/temp/noise.svg);
+  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -638,24 +627,10 @@ a:active {
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
 }
-
-/*
-███████╗████████╗██╗   ██╗██╗     ███████╗     ██████╗ ██╗   ██╗██╗██████╗ ███████╗
-██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝    ██╔════╝ ██║   ██║██║██╔══██╗██╔════╝
-███████╗   ██║    ╚████╔╝ ██║     █████╗      ██║  ███╗██║   ██║██║██║  ██║█████╗  
-╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝      ██║   ██║██║   ██║██║██║  ██║██╔══╝  
-███████║   ██║      ██║   ███████╗███████╗    ╚██████╔╝╚██████╔╝██║██████╔╝███████╗
-╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝     ╚═════╝  ╚═════╝ ╚═╝╚═════╝ ╚══════╝
- */
-
-.style-guide-page-wrapper {
-  padding: 3rem;
-}
-
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -665,20 +640,9 @@ a:active {
 ███████ ██   ██ ██   ██  ██████  ██   ██ 
 */
 
-.error-page {
-  display: grid;
-  place-items: center;
-}
+/* TODO: Customize your 404 Error Page */
 
-.error-page-wrapper {}
-
-.error-page-inner-container {
-  text-align: center;
-}
-
-.error-page-title {
-  color: var(--accent-color);
-}
+/* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 /*
 
@@ -694,8 +658,6 @@ a:active {
   place-items: center;
 }
 
-.play-page-wrapper {}
-
 .play-page-inner-container {
   text-align: center;
 }
@@ -703,113 +665,6 @@ a:active {
 .play-page-title {
   color: var(--accent-color);
 }
-
-
-/*
-███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
-██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
-█████     ███   ██████  █████   ██████  ██ ██ ████ ██ █████   ██ ██  ██    ██    ███████ 
-██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
-███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
-*/
-
-
-.experiments-page {
-  display: grid;
-  place-items: center;
-}
-
-.experiments-page-inner-container {
-  text-align: center;
-  min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.experiments-page-title {
-  color: var(--accent-color);
-  font-size: 2rem;
-}
-
-.experiment-1-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  flex: 1;
-}
-
-.experiment-2-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.sub-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 1rem;
-  text-align: center;
-}
-
-.sub-navigation-item {}
-
-a.sub-navigation-link {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-  padding: 1rem;
-}
-
-a.sub-navigation-link:hover {
-  color: var(--accent-color);
-  padding: 1rem;
-}
-
-/* Let's size the boxes */
-
-.experiment-box {
-  width: 50%;
-  padding: 2rem;
-  display: grid;
-  place-items: center;
-}
-
-.image {
-  width: 40%;
-}
-
-/* Let's hide box 2 */
-
-.experiment-image-2 {
-  display: none;
-}
-
-.experiment-image-single {
-  width: 20rem;
-  padding: 2rem;
-  display: grid;
-  place-items: center;
-}
-
-#heyday-logo-blue {
-  animation: rotation 9s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 
 /*
 
@@ -821,14 +676,16 @@ a.sub-navigation-link:hover {
 
 */
 
-
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  /* TODO: Add styles here for medium devices. */
+}
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
     font-size: 2rem;
@@ -848,6 +705,7 @@ a.sub-navigation-link:hover {
 
   .logo {
     width: 5rem;
+    /* TODO: Adjust the width of the logo on large devices here. */
   }
 
   .hero {
@@ -868,8 +726,8 @@ a.sub-navigation-link:hover {
     filter: grayscale(100);
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
+  .work-page-grid-item > a.grayscale:active img,
+  .work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -936,7 +794,6 @@ a.sub-navigation-link:hover {
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -956,7 +813,7 @@ a.sub-navigation-link:hover {
 
   .project-image {
     min-height: 70vh;
-    /* This should be deleted if you want to remove space between project images on project pages */
+    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
   }
 
   .project-image-container {
@@ -970,18 +827,24 @@ a.sub-navigation-link:hover {
   .arrow {
     padding-right: 1rem;
   }
-
-
 }
-
-
-/* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
-
 
 /* X-Large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  /* TODO: Add styles here for X-large devices. */
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+  /* TODO: Add styles here for XX-large devices. */
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
