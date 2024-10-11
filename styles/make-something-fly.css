@@ -8,9 +8,9 @@
   pointer-events: none !important;
   top: 0;
   left: 0;
-  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  transform: translateX(-320%) translateY(-320%) rotateZ(0);
   position: fixed;
-  animation-delay: 1s;
+  animation-delay: 10s;
   z-index: 999999;
   width: 5rem;
 }
