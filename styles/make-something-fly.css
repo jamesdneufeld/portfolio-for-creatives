@@ -33,7 +33,7 @@
 
 @keyframes fly {
   0% {
-    transform: translate(-300%, 110vh) rotateZ(0deg);
+    transform: translate(-500%, 110vh) rotateZ(0deg);
     opacity: 1;
   }
 
