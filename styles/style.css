@@ -30,6 +30,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 /* TODO: Delete any stylesheets that you do not want to use. */
 
 @import url("make-something-fly.css");
+@import url("make-something-blink.css");
 @import url("animated-gradient.css");
 @import url("text-stroke.css");
 @import url("stroke-shadow.css");
@@ -97,22 +98,26 @@ html {
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
   --accent-color: #5200ff;
+  --highlight-color: #ff057c;
   --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
+  --work-grid-project-title-color: #ffffff;
+  --work-grid-project-category-color: #ffffff;
+  --work-grid-project-title-color-2: #000;
+  --work-grid-project-category-color-2: #000;
   --hyperlink-color: #5200ff;
-  --hyperlink-alternate-color: orangered;
+  --nav-link-main-color: #5200ff;
+  --nav-link-main-color-hover: #321575;
   --hover-color: #111;
   --visited-color: #5200ff;
   --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
+  --project-sidebar-background-color: #ff4500;
+  --project-description-background-color: #f5f5f5;
+  --project-details-background-color: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --work-sidebar-background-color: #ff4500;
+  --project-sidebar-text-color: #222;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -128,8 +133,10 @@ body {
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
 ::selection {
-  background: var(--accent-color);
+  background: var(--text-selection-background-color);
 }
+
+/* Image Styles */
 
 /* Make all images responsive */
 img,
@@ -140,6 +147,39 @@ svg {
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
+}
+
+.rounded-corners {
+  border-radius: 2rem;
+}
+.centered-text {
+  text-align: center;
+}
+.margin-bottom {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Embedded Video Styles */
+
+.project-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin-bottom: 1rem;
+  border: 1px dashed var(--accent-color);
+}
+
+/* iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Global & Mobile Typography 
@@ -155,6 +195,7 @@ svg {
 h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
@@ -162,6 +203,7 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
@@ -169,24 +211,27 @@ h2 {
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
-  line-height: 1.3;
+  line-height: 1.2;
   color: var(--h3-color);
 }
 
 h4 {
   font-size: 1.2rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
 
 h5 {
   font-size: 1.1rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
 
 h6 {
   font-size: 1rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h6-color);
 }
@@ -216,13 +261,26 @@ em {
   margin-bottom: 1rem;
 }
 
-.overlay-title {
-  font-size: 2.875rem;
-  color: var(--overlay-title-color);
+.highlight {
+  color: var(--highlight-color);
 }
 
-.overlay-description {
-  color: var(--overlay-description-color);
+.work-grid-project-title {
+  font-size: 2.875rem;
+  color: var(--work-grid-project-title-color);
+}
+
+.work-grid-project-category {
+  color: var(--work-grid-project-category-color);
+}
+
+.work-grid-project-title-2 {
+  font-size: 2.875rem;
+  color: var(--work-grid-project-title-color-2);
+}
+
+.work-grid-project-category-2 {
+  color: var(--work-grid-project-category-color-2);
 }
 
 /* Hyperlink Styles */
@@ -249,6 +307,15 @@ a:active {
   /* Tap on mobile */
 }
 
+a.nav-link-main {
+  color: var(--nav-link-main-color);
+}
+a.nav-link-main:hover {
+  color: var(--nav-link-main-color-hover);
+}
+
+/* Next Project and Previous Project Arrow Styles */
+
 .navigation-arrow {
   color: var(--alt-background-color);
 }
@@ -266,19 +333,20 @@ a:active {
   -webkit-text-stroke-color: var(--accent-color);
 }
 
-.colored-link {
-  color: var(--hyperlink-alternate-color);
-}
-
-.custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .heart {
   color: var(--heart-color);
+}
+.button-new {
+  background: lemonchiffon;
+  padding: 0.1rem;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.bullet-list {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 0.5rem;
 }
 
 .footer-nav-item {
@@ -378,8 +446,20 @@ a:active {
 
 /* Padding around work grid and project page */
 .portfolio,
-.project-wrapper {
-  padding: 0.25rem;
+.project-wrapper,
+.work-sidebar-wrapper {
+  padding: 0.5rem;
+}
+
+/* Work Sidebar on Mobile */
+.work-aside {
+  width: 100%;
+  background: var(--work-sidebar-background-color);
+}
+
+/* Main Work Area with Sidebar on Mobile */
+.work-details {
+  width: 100%;
 }
 
 /* Defining the work page grid */
@@ -395,6 +475,11 @@ a:active {
   height: auto;
   position: relative;
   /* Required to contain overlay size */
+}
+
+.project-container {
+  background: var(--accent-color);
+  padding: 2rem;
 }
 
 /* Overlay */
@@ -422,6 +507,25 @@ a:active {
   opacity: 0.8;
 }
 
+/*
+
+
+███████ ██ ██████  ███████ ██████   █████  ██████  
+██      ██ ██   ██ ██      ██   ██ ██   ██ ██   ██ 
+███████ ██ ██   ██ █████   ██████  ███████ ██████  
+     ██ ██ ██   ██ ██      ██   ██ ██   ██ ██   ██ 
+███████ ██ ██████  ███████ ██████  ██   ██ ██   ██ 
+                                                   
+                                                   
+*/
+
+.sidebar-nav-list {
+  padding: 1rem;
+}
+.sidebar-nav-item {
+  margin-bottom: 1rem;
+}
+
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
@@ -432,7 +536,7 @@ a:active {
                                            
 */
 
-.about {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
@@ -441,24 +545,19 @@ a:active {
   flex: 1;
 }
 
-.about-item-1 {
+.about-grid-image {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-.about-item-2 {
+.about-grid-text {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 
-.about-item-3 {
+.about-grid-footer {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
 }
 
 /* Global Footer
@@ -504,6 +603,14 @@ a:active {
   margin-bottom: 2rem;
 }
 
+.socials-list {
+  margin-bottom: 2rem;
+}
+
+.global-footer-wrapper {
+  padding: 0.5rem;
+}
+
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -514,7 +621,8 @@ a:active {
                                                                                                
 */
 
-.project-wrapper {
+.project-wrapper,
+.work-sidebar-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -547,6 +655,21 @@ a:active {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+.project-description-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: var(--project-description-background-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.col-2 {
+  width: 100%;
+  padding: 1rem;
 }
 
 .project-image {
@@ -556,6 +679,8 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px dashed var(--accent-color);
 }
 
 .large-emoji-placeholder {
@@ -567,24 +692,13 @@ a:active {
   width: 100%;
 }
 
-.project-text {
-  width: 100%;
-  font-size: 3.25rem;
-  padding: 3rem;
-}
-
 /* Main Project Image Area */
 
 .project-details {
   width: 100%;
   padding: 1rem;
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
-  background-image: linear-gradient(
-    -225deg,
-    var(--linear-gradient-color-1) 0%,
-    var(--linear-gradient-color-2) 50%,
-    var(--linear-gradient-color-3) 100%
-  );
+  background: var(--project-details-background-color);
 }
 
 /* 
@@ -739,6 +853,8 @@ a:active {
     padding: 4rem 8rem;
   }
 
+  /* Work Page Grid for Large Devices */
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
@@ -754,75 +870,23 @@ a:active {
     filter: grayscale(0);
   }
 
-  .about {
-    padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .global-footer {
-    padding: 4rem 4rem 0 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .footer-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .footer-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
-  .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
   /* Padding around work grid and project page */
   .portfolio,
-  .project-wrapper {
-    padding: 0.5rem;
+  .project-wrapper,
+  .work-sidebar-wrapper {
+    padding: 1rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
+  .project-wrapper,
+  .work-sidebar-wrapper {
     flex-direction: row;
   }
 
   /* Sidebar on Large Devices */
   .project-aside {
     width: 35%;
-    height: 65vh;
+    height: 75vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
@@ -834,13 +898,13 @@ a:active {
     width: 65%;
   }
 
-  .project-image {
-    min-height: 70vh;
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
+  .project-image-container,
+  .project-description-container {
+    flex-direction: row;
   }
 
-  .project-image-container {
-    flex-direction: row;
+  .col-2 {
+    width: 50%;
   }
 
   .project-navigation {
@@ -849,6 +913,70 @@ a:active {
 
   .arrow {
     padding-right: 1rem;
+  }
+
+  /* About Page Grid for Large Devices */
+
+  .about-grid {
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-grid-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .about-grid-text {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .about-grid-footer {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    text-align: center;
+    align-self: end;
+  }
+
+  /* Footer Grid for Large Devices */
+
+  .global-footer {
+    padding: 4rem 4rem 0 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .footer-item-2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .footer-item-3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
+
+  .footer-item-4 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    align-self: end;
+  }
+
+  /* Work Sidebar on Large Devices */
+  .work-aside {
+    width: 25%;
+    height: 80vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+  }
+
+  /* Main Work Area on Large Devices */
+  .work-details {
+    width: 75%;
   }
 }
 
