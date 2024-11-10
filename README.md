@@ -30,7 +30,7 @@ A simple but highly customizable responsive template for graphic designers, illu
 
 **More advanced changes:**
 
-- A solid working knowledge of HTML and CSS is required for more advanced changes. JavaScript knowledge is also helpful for custom effects. A great place to start is https://www.codecademy.com/catalog/language/html-css.
+- A solid working knowledge of HTML and CSS is required for more advanced changes. JavaScript knowledge is also helpful for custom JS effects. A great place to start is https://www.codecademy.com/catalog/language/html-css.
 
 **CSS Structure:**
 
