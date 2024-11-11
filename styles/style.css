@@ -10,7 +10,6 @@
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -81,13 +80,13 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
+  --body-text-color: #222;
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: "Eczar", serif;
   --project-title-typeface: "Eczar", serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
   --background-color-footer: #f5f5f5;
-  --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
   --h1-color: #5200ff;
   --h2-color: #5200ff;
@@ -95,26 +94,29 @@ html {
   --h4-color: #5200ff;
   --h5-color: #5200ff;
   --h6-color: #5200ff;
-  --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
   --accent-color: #5200ff;
   --highlight-color: #ff057c;
   --overlay-color: #5200ff;
   --work-grid-project-title-color: #ffffff;
   --work-grid-project-category-color: #ffffff;
-  --work-grid-project-title-color-2: #000;
-  --work-grid-project-category-color-2: #000;
   --hyperlink-color: #5200ff;
-  --nav-link-main-color: #5200ff;
-  --nav-link-main-color-hover: #321575;
   --hover-color: #111;
   --visited-color: #5200ff;
+  --nav-link-main-color: #5200ff;
+  --nav-link-main-color-hover: #321575;
+  --nav-arrow-color: #5200ff;
+  --nav-arrow-color-hover: #000;
+  --nav-arrow-stroke-color: #5200ff;
+  --nav-arrow-stroke-color-hover: #000;
   --project-title-color: #5200ff;
+  --project-description-color: #222;
   --project-sidebar-text-color: #222;
-  --project-sidebar-background-color: #ff4500;
+  --project-sidebar-background-color: lemonchiffon;
   --project-description-background-color: #f5f5f5;
+  --full-width-section-background-color: #f5f5f5;
   --project-details-background-color: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
-  --work-sidebar-background-color: #ff4500;
+  --work-sidebar-background-color: lemonchiffon;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5200ff;
@@ -123,7 +125,7 @@ html {
 
 body {
   font-family: var(--body-typeface);
-  color: var(--primary-text-color);
+  color: var(--body-text-color);
   background: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -172,7 +174,6 @@ svg {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   margin-bottom: 1rem;
-  border: 1px dashed var(--accent-color);
 }
 
 /* iframe to fit in the container div with full height and width */
@@ -195,6 +196,8 @@ svg {
    ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██    
                                                                                      
 */
+
+/* HTML Heading Styles */
 
 h1 {
   font-size: 2.2rem;
@@ -240,6 +243,8 @@ h6 {
   color: var(--h6-color);
 }
 
+/* Paragaph and text styles */
+
 p {
   font-size: 1rem;
   line-height: 1.3;
@@ -257,6 +262,8 @@ em {
   font-size: 0.875rem;
 }
 
+/* Class Styles */
+
 .hero-headline {
   color: var(--overlay-color);
 }
@@ -266,6 +273,22 @@ em {
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.225rem;
+  line-height: 1.2;
+  color: var(--project-description-color);
+  margin-bottom: 1rem;
+}
+
+.h1-full-width {
+  width: 100%;
+  padding: 1rem;
+}
+.h2-full-width {
+  width: 100%;
+  padding: 1rem;
 }
 
 .highlight {
@@ -281,16 +304,17 @@ em {
   color: var(--work-grid-project-category-color);
 }
 
-.work-grid-project-title-2 {
-  font-size: 2.875rem;
-  color: var(--work-grid-project-title-color-2);
-}
+/*
 
-.work-grid-project-category-2 {
-  color: var(--work-grid-project-category-color-2);
-}
+██   ██ ██    ██ ██████  ███████ ██████  ██      ██ ███    ██ ██   ██ ███████ 
+██   ██  ██  ██  ██   ██ ██      ██   ██ ██      ██ ████   ██ ██  ██  ██      
+███████   ████   ██████  █████   ██████  ██      ██ ██ ██  ██ █████   ███████ 
+██   ██    ██    ██      ██      ██   ██ ██      ██ ██  ██ ██ ██  ██       ██ 
+██   ██    ██    ██      ███████ ██   ██ ███████ ██ ██   ████ ██   ██ ███████ 
 
-/* Hyperlink Styles */
+*/
+
+/* Hyperlink Styles — LVHFA */
 
 a:link {
   color: var(--hyperlink-color);
@@ -314,6 +338,8 @@ a:active {
   /* Tap on mobile */
 }
 
+/* Hyperlink Class Styles */
+
 a.nav-link-main {
   color: var(--nav-link-main-color);
 }
@@ -321,63 +347,26 @@ a.nav-link-main:hover {
   color: var(--nav-link-main-color-hover);
 }
 
-/* Next Project and Previous Project Arrow Styles */
-
-.navigation-arrow {
-  color: var(--alt-background-color);
-}
-
-.navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+.navigation-arrow:link,
+.navigation-arrow:visited {
+  color: var(--nav-arrow-color);
 }
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--accent-color);
+  color: var(--nav-arrow-color-hover);
+}
+
+.stroke:link,
+.stroke:visited {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
+  -webkit-text-stroke-color: var(--nav-arrow-stroke-color);
 }
 
-.heart {
-  color: var(--heart-color);
-}
-.button-new {
-  background: lemonchiffon;
-  padding: 0.1rem;
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-}
-
-.bullet-list {
-  list-style-type: square;
-  list-style-position: inside;
-  margin-left: 0.5rem;
-}
-
-.footer-nav-item {
-  line-height: 1.3;
-}
-
-.award-item {
-  line-height: 1.3;
-}
-
-.social-item {
-  line-height: 1.3;
-}
-
-.list-item {
-  line-height: 1.3;
-  list-style-type: disc;
-  margin-left: 1.2rem;
-}
-
-.project-description {
-  font-size: 1.225rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+.stroke:active,
+.stroke:hover {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--nav-arrow-stroke-color-hover);
 }
 
 /* Hero 
@@ -391,6 +380,7 @@ a.nav-link-main:hover {
 */
 
 .hero {
+  width: 100%;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -413,6 +403,7 @@ a.nav-link-main:hover {
 }
 
 .hero-headline-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -438,6 +429,56 @@ a.nav-link-main:hover {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+}
+
+/*
+
+ ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████ 
+██      ██    ██ ████  ████ ██   ██ ██    ██ ████   ██ ██      ████   ██    ██    ██      
+██      ██    ██ ██ ████ ██ ██████  ██    ██ ██ ██  ██ █████   ██ ██  ██    ██    ███████ 
+██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██ 
+ ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████ 
+                                                                                          
+*/
+
+/* Components */
+
+.full-width-section {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--full-width-section-background-color);
+  margin-bottom: 1rem;
+}
+
+.full-width-headline-wrapper {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-container {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.section-item {
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 60vh;
 }
 
 /* Work Page Layout
@@ -621,6 +662,34 @@ a.nav-link-main:hover {
   padding: 1rem;
 }
 
+.heart {
+  color: var(--heart-color);
+}
+.button-new {
+  background: lemonchiffon;
+  padding: 0.1rem;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.bullet-list {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+
+.footer-nav-item {
+  line-height: 1.3;
+}
+
+.award-item {
+  line-height: 1.3;
+}
+
+.social-item {
+  line-height: 1.3;
+}
+
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -638,6 +707,15 @@ a.nav-link-main:hover {
   justify-content: space-between;
 }
 
+.project-wrapper-full-width {
+  width: 100%;
+  padding: 1rem;
+}
+.project-full-width {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 /* Sidebar */
 .project-aside {
   width: 100%;
@@ -647,6 +725,7 @@ a.nav-link-main:hover {
   color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
 }
+/* Previous/Next Arrow Styles */
 
 .project-navigation {
   display: flex;
@@ -654,6 +733,17 @@ a.nav-link-main:hover {
   flex: 1;
   align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
+}
+
+/* Next Project and Previous Project Arrow Styles */
+
+.arrow-left,
+.arrow-right {
+  width: 50%;
+}
+.arrow-right {
+  text-align: right;
 }
 
 .arrow {
@@ -684,7 +774,7 @@ a.nav-link-main:hover {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
+  min-height: 40vh;
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
@@ -692,22 +782,37 @@ a.nav-link-main:hover {
   margin-bottom: 1rem;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
-}
-
-.text-section {
-  width: 100%;
-}
-
-/* Main Project Image Area */
-
 .project-details {
   width: 100%;
   padding: 1rem;
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
   background: var(--project-details-background-color);
+}
+
+.large-emoji-placeholder {
+  font-size: 12rem;
+  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
+}
+
+/*
+
+██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
+██   ██ ██      ██    ██ ██          ██  ██   ██ ██      ██      ██    ██ ████  ████ ██      
+██████  ██      ██    ██ ██   ███   ██   ██████  █████   ███████ ██    ██ ██ ████ ██ █████   
+██   ██ ██      ██    ██ ██    ██  ██    ██   ██ ██           ██ ██    ██ ██  ██  ██ ██      
+██████  ███████  ██████   ██████  ██     ██   ██ ███████ ███████  ██████  ██      ██ ███████ 
+                                                                                             
+*/
+
+/* Blog and Resume page */
+
+.text-section {
+  width: 100%;
+}
+.list-item {
+  line-height: 1.3;
+  list-style-type: disc;
+  margin-left: 1.2rem;
 }
 
 /* 
@@ -849,6 +954,14 @@ a.nav-link-main:hover {
     font-size: 1.625rem;
   }
 
+  .h1-full-width {
+    width: 70%;
+    padding: 1rem;
+  }
+  .h2-full-width {
+    width: 70%;
+    padding: 1rem;
+  }
   .logo {
     width: 5rem;
     /* TODO: Adjust the width of the logo on large devices here. */
@@ -870,6 +983,7 @@ a.nav-link-main:hover {
   }
 
   /* Grayscale filter with full-colour on hover and tap */
+
   .work-page-grid-item a.grayscale img {
     filter: grayscale(100);
   }
@@ -880,6 +994,7 @@ a.nav-link-main:hover {
   }
 
   /* Padding around work grid and project page */
+
   .portfolio,
   .project-wrapper,
   .work-sidebar-wrapper {
@@ -887,12 +1002,20 @@ a.nav-link-main:hover {
   }
 
   /* Project Page Flex Direction on Large Devices */
+
   .project-wrapper,
   .work-sidebar-wrapper {
     flex-direction: row;
   }
 
+  /* Project Full Width Styles */
+
+  .project-wrapper-full-width {
+    padding: 1rem 4rem;
+  }
+
   /* Sidebar on Large Devices */
+
   .project-aside {
     width: 35%;
     height: 75vh;
@@ -903,6 +1026,7 @@ a.nav-link-main:hover {
   }
 
   /* Main Project Image Area on Large Devices */
+
   .project-details {
     width: 65%;
   }
@@ -912,6 +1036,10 @@ a.nav-link-main:hover {
     flex-direction: row;
   }
 
+  .section-container {
+    width: 80%;
+    flex-direction: row;
+  }
   .col-2 {
     width: 50%;
   }
@@ -975,6 +1103,7 @@ a.nav-link-main:hover {
   }
 
   /* Work Sidebar on Large Devices */
+
   .work-aside {
     width: 25%;
     height: 80vh;
@@ -984,6 +1113,7 @@ a.nav-link-main:hover {
   }
 
   /* Main Work Area on Large Devices */
+
   .work-details {
     width: 75%;
   }
