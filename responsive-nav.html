@@ -9,19 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./responsive-nav/responsive-nav.min.js"></script>
+    <link rel="stylesheet" href="styles/responsive-nav.css" />
   </head>
 
   <body class="work-page">
+    <ul class="responsive-nav">
+      <li class="logo">
+        <a href="index.html">
+          <img src="assets/branding-images/logo.svg" alt="Describe your image" />
+        </a>
+      </li>
+      <li>
+        <nav class="nav-collapse">
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="work.html">Play</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </li>
+    </ul>
     <section class="hero gradient-animation">
       <header class="hero-header">
-        <ul class="branding-navigation">
+        <ul class="nav-collapse">
           <li>
             <a href="work.html" class="nav-link-main">Work</a>
-          </li>
-          <li class="logo">
-            <a href="index.html">
-              <img src="assets/branding-images/logo.svg" alt="Describe your image" />
-            </a>
           </li>
           <li>
             <a href="about.html" class="nav-link-main">About</a>
@@ -103,7 +116,7 @@
           </li>
           <li class="work-page-grid-item">
             <figure>
-              <object type="image/svg+xml" data="assets/temp/mixed-media-animation-example.svg" class="rounded-corners"></object>
+              <img src="assets/temp/first-name-last-name--project-title--category--placeholder-telephone.jpg" alt="Describe your project" width="1920" height="1080" class="rounded-corners" />
             </figure>
             <a href="project-1.html">
               <div class="work-grid-project-details overlay rounded-corners centered-text">
@@ -191,6 +204,23 @@
       };
 
       window.addEventListener("scroll", myScrollFunc);
+    </script>
+    <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+        label: "Menu", // String: Label for the navigation toggle
+        insert: "after", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+        init: function () {}, // Function: Init callback
+        open: function () {}, // Function: Open callback
+        close: function () {}, // Function: Close callback
+      });
     </script>
   </body>
 </html>
