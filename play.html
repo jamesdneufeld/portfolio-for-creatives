@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Free Creative Portfolio Template: Mar 2025 Version | Play Page</title>
+    <title>Free Creative Portfolio Template: April 2025 Version | Play Page</title>
     <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,16 @@
     <div class="play-page-wrapper">
       <div class="play-page-inner-container">
         <h1 class="play-page-title">Play</h1>
+        <h2 id="current-date"></h2>
         <p>Consider adding a play page. Replace this with your own.</p>
+        <script>
+          const today = new Date();
+          document.getElementById("current-date").textContent = today.toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          });
+        </script>
       </div>
     </div>
   </body>

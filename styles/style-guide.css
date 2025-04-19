@@ -8,5 +8,5 @@
  */
 
 .style-guide-page-wrapper {
-    padding: 3rem;
+  padding: var(--padding-extra-large);
 }
