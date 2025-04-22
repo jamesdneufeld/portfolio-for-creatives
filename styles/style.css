@@ -251,6 +251,11 @@ svg {
    common styles across your portfolio site */
 /* ---------------------------------------- */
 
+/* Optimal line length for readability (~60 characters) */
+.max-text-width {
+  max-width: 60ch;
+}
+
 /* Small interactive elements (buttons, inputs) */
 .rounded-small {
   border-radius: var(--radius-sm);
@@ -271,9 +276,28 @@ svg {
   border-radius: var(--radius-full);
 }
 
+/* Horizontally centers a block element (must have a defined width) */
+.centered-block {
+  margin: 0 auto;
+}
+
 /* Centers your text (great for headings or buttons) */
 .centered-text {
   text-align: center;
+}
+
+/* Smooth transition when applying transformations – improves hover experience */
+.rotate {
+  transition: transform 0.3s ease;
+}
+
+/* Rotates the element slightly on hover – adds a playful effect */
+.rotate:hover {
+  transform: rotate(4deg);
+}
+
+.padding-jumbo {
+  padding: var(--padding-tiny);
 }
 
 /* Puts the box on its own line and adds space underneath */
@@ -415,7 +439,10 @@ em {
 
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
-  color: var(--color-overlay-primary);
+  color: var(--color-overlay-primary); /* Uses your brand's dominant color */
+  max-width: 40ch; /* Optimal line length for readability (~40 characters) */
+  text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
+  margin-inline: auto; /* Horizontally centers the text in its container */
 }
 
 /* Large project title — appears on individual project pages */
@@ -669,7 +696,6 @@ a.nav-link-primary:hover {
 
 .section-container {
   width: 100%;
-  min-height: 60vh; /* Container size */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -680,7 +706,6 @@ a.nav-link-primary:hover {
 .section-item {
   padding: var(--padding-small);
   margin: 1rem;
-  min-height: 60vh; /* Minimum height for items within sections */
 }
 
 /* 
@@ -1029,6 +1054,7 @@ a.nav-link-primary:hover {
   flex-direction: column;
   background: var(--color-bg-project-description);
   padding: var(--padding-small);
+  width: 100%;
   margin-bottom: 1rem; /* Space below the description */
 }
 
@@ -1077,11 +1103,6 @@ a.nav-link-primary:hover {
   padding: 0;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* ⚠️ Temporary: Delete this rule. It's only for making placeholder emojis large in the demo. */
-}
-
 /*
 
 ██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
@@ -1096,6 +1117,8 @@ a.nav-link-primary:hover {
 
 .text-section {
   width: 100%;
+  background: var(--color-bg);
+  padding: var(--padding-small);
 }
 .list-item {
   line-height: 1.3;
@@ -1187,19 +1210,21 @@ a.nav-link-primary:hover {
 ██      ███████ ██   ██    ██    
 */
 
-/* Play Page Styles */
+/* Play Page Styles
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Custom styles specific to the "Play" page layout and content.
+
+✅ Masonry layout is defined separately in masonry.css  
+✅ Lightbox functionality is handled via Lightbox2 (in /lightbox2 folder)  
+✅ Rotate and other utility classes are already included in the base styles (this file)
+
+Use this section to style elements that are *unique to the Play page*.
+For common layout or effects, continue using the base utility classes
+to keep your styles reusable and consistent.
+*/
 
 .play-page {
-  display: grid;
-  place-items: center;
-}
-
-.play-page-inner-container {
-  text-align: center;
-}
-
-.play-page-title {
-  color: var(--color-accent-primary);
+  /* Add page-specific layout or container styles here */
 }
 
 /*
@@ -1217,14 +1242,6 @@ a.nav-link-primary:hover {
 .sketchbook-page {
   display: grid;
   place-items: center;
-}
-
-.sketchbook-page-inner-container {
-  text-align: center;
-}
-
-.sketchbook-page-title {
-  color: var(--color-accent-primary);
 }
 
 /*
@@ -1278,6 +1295,9 @@ a.nav-link-primary:hover {
   .h2-full-width {
     width: 70%;
     padding: var(--padding-small);
+  }
+  .padding-jumbo {
+    padding: var(--padding-jumbo);
   }
   .nav-branding-logo {
     width: 5rem;
@@ -1349,7 +1369,7 @@ a.nav-link-primary:hover {
 
   .project-aside {
     width: 35%;
-    height: 75vh;
+    height: 80vh;
     position: -webkit-sticky;
     position: sticky;
     top: 8rem;
@@ -1368,7 +1388,7 @@ a.nav-link-primary:hover {
   }
 
   .section-container {
-    width: 80%;
+    width: 80%; /* Adjust this width for larger screens if needed */
     flex-direction: row;
   }
   .col-2 {

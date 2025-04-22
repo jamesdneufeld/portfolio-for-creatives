@@ -1,0 +1,57 @@
+/*!
+ * Adapted from the masonry layout technique by W3Bits
+ * Copyright (2012 onwards) W3Bits.com
+ * Licensed under the MIT License
+ * Source: https://w3bits.com/labs/css-masonry/
+ */
+
+/* 🔲 Masonry grid container
+   - Uses CSS columns to simulate a Pinterest-style layout
+   - `column-gap` controls space between columns
+*/
+.masonry-grid {
+  transition: all 0.5s ease-in-out;
+  column-gap: 2rem;
+  column-fill: initial;
+}
+
+/* 📦 Masonry items
+     - Must be `inline-block` to participate in column flow
+     - `vertical-align: top` ensures items align at the top of the column
+  */
+.masonry-item {
+  margin-bottom: 2rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* 🖼️ Image hover effects
+     - Smooth transition and slight fade on hover
+     - `backface-visibility` fixes flickering on some browsers
+  */
+.masonry-item img {
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.masonry-item:hover img {
+  opacity: 0.75;
+}
+
+/* 📱 Masonry layout for tablets
+     - 2 columns between 768px and 1023px
+  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+/* 🖥️ Masonry layout for larger screens
+     - 3 columns at 1024px and above
+  */
+@media only screen and (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}

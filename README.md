@@ -196,6 +196,12 @@ For videos, it's best to host them on third-party services like Vimeo or YouTube
 
 This template began in **2019** as a free student alternative to expensive portfolio builders. By 2021, it had been widely adopted by my design students and was published on GitHub.
 
+## Credits
+
+- **Masonry layout**: Adapted from [W3Bits](https://w3bits.com/labs/css-masonry/)
+- **Lightbox functionality**: Powered by [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/) by Lokesh Dhakar
+- Both are licensed under the [MIT License](https://opensource.org/license/mit/)
+
 ## 🌐 Live Demo
 
 [🔗 View Demo](https://portfolio-for-creatives.netlify.app/)
