@@ -79,9 +79,6 @@
 /* File with extra experimental styles (e.g., fun animations or effects) */
 @import url("experiments.css");
 
-/* File for setting up a style guide (fonts, colors, etc.) */
-@import url("style-guide.css");
-
 /* File for adding a scroll-to-top button or effect */
 @import url("scroll-to-top.css");
 
