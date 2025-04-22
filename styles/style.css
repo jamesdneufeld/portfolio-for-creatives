@@ -95,7 +95,7 @@
 /* Use CSS variables to quickly change your site's color scheme and typography */
 /* ------------------------------- */
 
-/* These design variables store important elements like colors and fonts.
+/* These design variables store important elements like colours and fonts.
    You can easily change the look and feel of your site by adjusting these values. */
 
 /* TODO: Customize these variables to fit your design. You can add new ones or delete ones you don’t need. */
@@ -105,7 +105,7 @@
   --font-family-body: "Inter", sans-serif;
   --font-family-heading: "Eczar", serif;
   --font-family-project-title: "Eczar", serif;
-  /* Core Colors */
+  /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
   --color-accent-primary: #5200ff;
@@ -125,7 +125,7 @@
   --h4-color: #5200ff;
   --h5-color: #5200ff;
   --h6-color: #5200ff;
-  /* Special Text Colors */
+  /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;

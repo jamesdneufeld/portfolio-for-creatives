@@ -66,7 +66,7 @@ These are great first steps to customize your portfolio visually without writing
    Open `work.html` and look near the top. Replace the big heading with your own intro.  
    _Example: “Welcome to My Portfolio” or “Hi, I’m [Your Name], a Graphic Designer!”_
 
-2. **Edit the colors in `style.css`**  
+2. **Edit the colours in `style.css`**  
    Scroll through `style.css` and look for these lines:  
    `--color-text-primary: #222;`  
    `--color-accent-primary: #5200ff;`  
@@ -122,7 +122,7 @@ After making these changes, visit your live site to see the changes in action!
 - 🧱 Work Pages – Multiple layout options with responsive CSS Grid
 - 📦 Lightbox-Ready Galleries – Showcase your work interactively
 - 🛠️ Customizable Project Pages – Tailor each page to your creative process
-- 🎨 Easy Theming with CSS Variables – Change colors, fonts & more
+- 🎨 Easy Theming with CSS Variables – Change colours, fonts & more
 - 🖱️ Custom Cursor – Make the interaction even more fun
 - 💫 Animated Gradient Effects – Smooth transitions for extra polish
 - 🌈 Grayscale on Hover – Black-and-white thumbnails that turn full color
