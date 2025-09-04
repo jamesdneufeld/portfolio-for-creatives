@@ -248,10 +248,77 @@ svg {
    common styles across your portfolio site */
 /* ---------------------------------------- */
 
+/* ------------------------ */
+/* 📐 Layout & Spacing Tools */
+/* ------------------------ */
+
+/* Horizontally centers a block element (must have a defined width) */
+.centered-block {
+  margin: 0 auto;
+}
+
+/* Vertical layout – stacks items in a column (mobile-first) */
+.flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Puts the box on its own line and adds space underneath */
+.margin-bottom {
+  display: block; /* Makes it a block so it stacks nicely */
+  margin-bottom: 1rem; /* Adds space below – helps with layout breathing room */
+}
+
+.width-third,
+.width-two-thirds {
+  width: 100%;
+}
+
+/* Adds a dashed border to help you see the box while you're designing */
+.border {
+  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
+  /* TODO: Delete this later – it’s just here to help you see the box while you work */
+}
+
+/* ---------------------- */
+/* ✍️  Typography Helpers */
+/* ---------------------- */
+
 /* Optimal line length for readability (~60 characters) */
 .max-text-width {
   max-width: 60ch;
 }
+
+/* Centers your text (great for headings or buttons) */
+.centered-text {
+  text-align: center;
+}
+
+/* ------------------------------ */
+/* 🌀 Animation & Interaction Tools */
+/* ------------------------------ */
+
+/* Smooth transition when applying transformations – improves hover experience */
+.rotate {
+  transition: transform 0.3s ease;
+}
+
+/* Rotates the element slightly on hover – adds a playful effect */
+.rotate:hover {
+  transform: rotate(4deg);
+}
+
+/* ----------------------------- */
+/* 📦 Padding Utilities */
+/* ----------------------------- */
+
+.padding-jumbo {
+  padding: var(--padding-small); /* Adjusted for mobile use */
+}
+
+/* ------------------------------ */
+/* 🧱 Border Radius Shortcuts */
+/* ------------------------------ */
 
 /* Small interactive elements (buttons, inputs) */
 .rounded-small {
@@ -271,47 +338,6 @@ svg {
 /* Perfect circles (avatars, icons) */
 .rounded-full {
   border-radius: var(--radius-full);
-}
-
-/* Horizontally centers a block element (must have a defined width) */
-.centered-block {
-  margin: 0 auto;
-}
-
-/* Centers your text (great for headings or buttons) */
-.centered-text {
-  text-align: center;
-}
-
-/* Smooth transition when applying transformations – improves hover experience */
-.rotate {
-  transition: transform 0.3s ease;
-}
-
-/* Rotates the element slightly on hover – adds a playful effect */
-.rotate:hover {
-  transform: rotate(4deg);
-}
-
-.padding-jumbo {
-  padding: var(--padding-tiny);
-}
-
-/* Puts the box on its own line and adds space underneath */
-.margin-bottom {
-  display: block; /* Makes it a block so it stacks nicely */
-  margin-bottom: 1rem; /* Adds space below – helps with layout breathing room */
-}
-
-.width-third,
-.width-two-thirds {
-  width: 100%;
-}
-
-/* Adds a dashed border to help you see the box while you're designing */
-.border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
 /* ---------------------------------------- */
@@ -1266,6 +1292,10 @@ to keep your styles reusable and consistent.
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
+  .flex-row {
+    flex-direction: row; /* Changes to row layout on larger screens */
+  }
+
   .width-third {
     width: 33.333%;
   }
@@ -1306,7 +1336,6 @@ to keep your styles reusable and consistent.
   }
 
   .hero-headline-wrapper {
-    flex-direction: row;
     padding-top: var(--padding-jumbo);
     padding-bottom: var(--padding-jumbo);
     padding-left: var(--padding-ultra);
