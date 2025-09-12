@@ -110,7 +110,7 @@
   --color-text-secondary: #333;
   --color-accent-primary: #5200ff;
   --color-accent-secondary: #ff057c;
-  --color-overlay-primary: #5200ff;
+  --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -455,6 +455,12 @@ em {
   font-style: italic; /* Adds emphasis with italic style */
 }
 
+sup {
+  font-size: 0.6em; /* smaller than the surrounding text */
+  vertical-align: super; /* ensures it sits above the baseline */
+  font-weight: normal; /* optional: adjust weight */
+}
+
 /* ------------------------------------------------------------------ */
 /* 🎨 Custom Class Styles for Headlines, Projects, and Highlights     */
 /* Use these utility classes to style key text elements across pages  */
@@ -779,10 +785,15 @@ a.nav-link-primary:hover {
 }
 
 /* Individual Work Grid Item */
-.work-page-grid-item {
+.work-page-grid-item,
+.overlay-container {
   width: 100%;
   height: auto;
   position: relative; /* Needed to position the overlay */
+}
+/* Masonry Overlay Text */
+.overlay-container:hover .overlay {
+  opacity: 1;
 }
 
 /* Project container for background and padding */
