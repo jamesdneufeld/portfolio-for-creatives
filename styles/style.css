@@ -636,7 +636,7 @@ a.nav-link-primary:hover {
 
 .nav-branding {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: var(--padding-small);
   align-items: center;
@@ -1337,6 +1337,11 @@ to keep your styles reusable and consistent.
   .padding-jumbo {
     padding: var(--padding-jumbo);
   }
+
+  .nav-branding {
+    flex-direction: row;
+  }
+
   .nav-branding-logo {
     width: 5rem;
     /* TODO: Adjust the width of the logo on large devices here. */
