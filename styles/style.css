@@ -825,7 +825,7 @@ a.nav-link-primary:hover {
 /* Hover effect on work page grid items */
 .work-page-grid-item:hover .overlay {
   visibility: visible; /* Make overlay visible on hover */
-  opacity: 0.8; /* Set opacity on hover */
+  opacity: 1; /* Set opacity on hover */
 }
 
 /* Optional container for future overlay customization */
