@@ -173,6 +173,13 @@
   --padding-large: 3rem; /* Section spacing: content blocks, banner padding */
   --padding-jumbo: 4rem; /* Hero elements: full-width containers, page headers */
   --padding-ultra: 8rem; /* Full-bleed spacing: edge-to-edge layouts, super-sized headers */
+  /* Flex Gap Scale */
+  --gap-tiny: 0.5rem; /* Micro-gap: icon spacing, small button groups */
+  --gap-small: 1rem; /* Compact gap: card elements, form fields */
+  --gap-medium: 2rem; /* Standard gap: desktop card grids, section items */
+  --gap-large: 3rem; /* Section gap: major content blocks, banner spacing */
+  --gap-jumbo: 4rem; /* Hero gap: full-width containers, large card spacing */
+  --gap-ultra: 8rem; /* Edge-to-edge spacing: mega sections, spacious layouts */
 }
 
 /* ======================
@@ -309,11 +316,53 @@ svg {
 }
 
 /* ----------------------------- */
-/* 📦 Padding Utilities */
+/* 📦 Padding Utilities (Mobile First) */
 /* ----------------------------- */
 
+.padding-tiny {
+  padding: var(--padding-tiny);
+}
+
+.padding-small {
+  padding: var(--padding-small);
+}
+
+.padding-medium {
+  padding: var(--padding-small); /* smaller, mobile-safe default */
+}
+
+.padding-large {
+  padding: var(--padding-small); /* smaller, mobile-safe default */
+}
+
 .padding-jumbo {
-  padding: var(--padding-small); /* Adjusted for mobile use */
+  padding: var(--padding-small); /* smaller, mobile-safe default */
+}
+
+.padding-ultra {
+  padding: var(--padding-small); /* smaller, mobile-safe default */
+}
+
+/* ----------------------------- */
+/* 🧩 Flex Gap Utilities (Mobile First) */
+/* ----------------------------- */
+.gap-tiny {
+  gap: var(--gap-tiny);
+}
+.gap-small {
+  gap: var(--gap-small);
+}
+.gap-medium {
+  gap: var(--gap-small); /* smaller, mobile-safe default */
+}
+.gap-large {
+  gap: var(--gap-small); /* smaller, mobile-safe default */
+}
+.gap-jumbo {
+  gap: var(--gap-small); /* smaller, mobile-safe default */
+}
+.gap-ultra {
+  gap: var(--gap-small); /* smaller, mobile-safe default */
 }
 
 /* ------------------------------ */
@@ -1092,8 +1141,9 @@ a.nav-link-primary:hover {
   margin-bottom: 1rem; /* Space below the description */
 }
 
-/* Column styles for two-column layouts */
-.col-2 {
+/* Column styles for two-column and four-column layouts (mobile-first) */
+.col-2,
+.col-4 {
   width: 100%;
   padding: var(--padding-small);
 }
@@ -1137,6 +1187,19 @@ a.nav-link-primary:hover {
   padding: 0;
 }
 
+/* ------------------------------- */
+/* 📜 Project info list styles */
+/* ------------------------------- */
+
+.project-info-list {
+  margin-bottom: 1rem;
+}
+.project-item {
+  font-size: 1rem;
+  line-height: 1.2; /* Consistent line height for project items to improve spacing */
+  margin-bottom: 0.25rem;
+}
+
 /*
 
 ██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
@@ -1173,20 +1236,22 @@ a.nav-link-primary:hover {
 /* Holding page styles */
 
 .holding-page-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   place-items: center;
   text-align: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; */
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)), var(--image-noise-texture);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)), var(--image-noise-texture); */
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
 .holding-page-animation {
-  margin-bottom: 1rem;
+  width: 10rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .holding-page-title {
@@ -1199,6 +1264,7 @@ a.nav-link-primary:hover {
   place-items: center;
   min-height: 10vh;
   width: 100%;
+  padding: var(--padding-small);
 }
 
 .holding-page-copyright {
@@ -1334,8 +1400,35 @@ to keep your styles reusable and consistent.
     width: 70%;
     padding: var(--padding-small);
   }
+
+  /* ----------------------------- */
+  /* 📦 Padding Utilities (Desktop) */
+  /* ----------------------------- */
+  .padding-large {
+    padding: var(--padding-large);
+  }
   .padding-jumbo {
     padding: var(--padding-jumbo);
+  }
+  .padding-ultra {
+    padding: var(--padding-ultra);
+  }
+
+  /* ----------------------------- */
+  /* 🧩 Flex Gap Utilities (Desktop) */
+  /* ----------------------------- */
+
+  .gap-medium {
+    gap: var(--gap-medium);
+  }
+  .gap-large {
+    gap: var(--gap-large);
+  }
+  .gap-jumbo {
+    gap: var(--gap-jumbo);
+  }
+  .gap-ultra {
+    gap: var(--gap-ultra);
   }
 
   .nav-branding {
@@ -1433,8 +1526,13 @@ to keep your styles reusable and consistent.
     width: 80%; /* Adjust this width for larger screens if needed */
     flex-direction: row;
   }
+
+  /* Column styles for two-column and four-column layouts (desktop) */
   .col-2 {
     width: 50%;
+  }
+  .col-4 {
+    width: 25%;
   }
 
   .project-navigation {

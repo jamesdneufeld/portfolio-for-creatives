@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Free Creative Portfolio Template: September 2025 Version | Holding Page</title>
+    <title>Free Creative Portfolio Template: October 2025 Version | Holding Page</title>
     <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="5; url=work.html" />
+    <!-- <meta http-equiv="refresh" content="5; url=work.html" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="images/svg+xml" href="assets/branding-images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
@@ -12,24 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/interactive-blobs.css" />
   </head>
   <body class="holding-page">
+    <div class="blob-container">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="noise-overlay"></div>
     <div class="holding-page-wrapper">
       <div class="holding-page-inner-container">
         <a href="work.html">
           <figure class="holding-page-animation">
-            <img src="assets/temp/holding-page-animation.gif" alt="Portfolio Website Launching Soon" />
+            <img src="assets/branding-images/logo.svg" alt="Your portfolio logo" />
           </figure>
           <h1 class="holding-page-title">Portfolio Launching Soon</h1>
         </a>
       </div>
+
       <div class="holding-page-footer">
         <p class="holding-page-copyright">
-          &copy; 2020-2025. Hand crafted with
+          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
           <span class="heart">❤</span>
           by James Neufeld.
         </p>
+        <script>
+          document.getElementById("copyright-years").textContent += new Date().getFullYear();
+        </script>
       </div>
     </div>
+    <script src="./js/interactive-blobs.js"></script>
   </body>
 </html>
