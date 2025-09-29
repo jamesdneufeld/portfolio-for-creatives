@@ -191,6 +191,7 @@ For videos, it's best to host them on third-party services like Vimeo or YouTube
 - **v1.0 (Feb 2023)** — Codebase restructuring, new features, documentation foundation
 - **v2.0 (Nov 2024)** — Lightbox, new page layouts, and components
 - **v2.1 (Apr 2025)** — CSS variables restructured, improved documentation
+- **v2.2 (Sep 2025)** — Masonry layout for illustrators, new holding page, and improved filler text
 
 ## 🧬 Project Origin
 
@@ -216,6 +217,7 @@ Unlisted YouTube video tutorials are available for registered students. They are
 
 ## 💬 Need Help?
 
+- 📚 Read James' growing library of articles: [Introduction to HTML & CSS Foundational Skills](https://www.notion.so/jamesneufeld/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6)
 - 🧑‍🏫 Ask James for a one-on-one Zoom session (students only)
 - 🎥 Ask James about the Summer Coding Mentorship
 - ✨ Have fun and make it _yours_!
