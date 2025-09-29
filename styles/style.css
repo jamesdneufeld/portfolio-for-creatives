@@ -1233,20 +1233,16 @@ a.nav-link-primary:hover {
                                                        
 */
 
-/* Holding page styles */
+/* ----------------------------------------------------------------
+   Holding Page Styles
+   ----------------------------------------------------------------
+   Includes layout, typography, and visual effects for the demo
+   landing page (index.html).
 
-.holding-page-wrapper {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh; */
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)), var(--image-noise-texture); */
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
+   Related files:
+     • CSS: styles/interactive-blobs.css
+     • JS:  js/interactive-blobs.js
+---------------------------------------------------------------- */
 
 .holding-page-animation {
   width: 10rem;
