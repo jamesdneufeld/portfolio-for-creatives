@@ -82,6 +82,9 @@
 /* File for adding a scroll-to-top button or effect */
 @import url("scroll-to-top.css");
 
+/* File for adding accordion functionality to expand/collapse content sections */
+@import url("accordian.css");
+
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
@@ -562,6 +565,7 @@ sup {
 .work-grid-project-title {
   font-size: 2.875rem;
   color: var(--color-text-work-grid-title);
+  text-wrap: balance;
 }
 
 /* 🏷️ Project category label — displays the type or role of the project */

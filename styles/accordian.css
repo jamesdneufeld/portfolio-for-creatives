@@ -1,0 +1,51 @@
+.accordion-container {
+  max-width: 37.5rem;
+  margin: 1.25rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-item {
+  list-style: none;
+  margin-bottom: 0.625rem;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  background: #f1f1f1;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--body-typeface);
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background: #ddd;
+  transform: scale(1.02);
+}
+
+.accordion-button.active {
+  background: #2196f3;
+  color: #fff;
+  transform: scale(1.01);
+}
+
+.accordion-panel {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.25rem;
+  margin: 0;
+  background: #fff;
+  list-style: none;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.accordion-panel.active {
+  max-height: 50rem;
+  opacity: 1;
+  padding: 1.25rem;
+}
