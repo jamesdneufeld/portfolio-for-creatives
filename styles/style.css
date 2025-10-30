@@ -1497,7 +1497,7 @@ to keep your styles reusable and consistent.
   /* Project Full Width Styles */
 
   .project-wrapper-full-width {
-    padding: var(--padding-small) var(--padding-jumbo);
+    padding: var(--padding-small);
   }
 
   /* Sidebar on Large Devices */
