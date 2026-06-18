@@ -872,7 +872,9 @@ a.nav-link-primary:hover {
   flex-direction: column;
   padding: var(--padding-small);
   background-color: var(--color-overlay-primary); /* Background color of the overlay */
-  transition: opacity var(--duration-normal), visibility var(--duration-normal);
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
@@ -1145,7 +1147,8 @@ a.nav-link-primary:hover {
   margin-bottom: 1rem; /* Space below the description */
 }
 
-/* Column styles for two-column and four-column layouts (mobile-first) */
+/* Column styles for one-column, two-column and four-column layouts (mobile-first) */
+.col-1,
 .col-2,
 .col-4 {
   width: 100%;
