@@ -756,7 +756,7 @@ a.nav-link-primary:hover {
 
 .full-width-section {
   width: 100%;
-  min-height: 80vh; /* Takes up most of the screen height */
+  min-height: auto; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
