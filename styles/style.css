@@ -33,10 +33,10 @@
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
 /* Bahianita Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
 
 /* Saria Font (clean and modern for body text) */
-@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@100;200;300;400;500;600;700;800;900&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Inter Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -105,9 +105,9 @@
 
 :root {
   /* Typography */
-  --font-family: "Jaro", sans-serif;
-  --font-family-heading: "Jaro", sans-serif;
-  --font-family-project-title: "Jaro", sans-serif;
+  --font-family: "Bahianita", sans-serif;
+  --font-family-heading: "Bahianita", sans-serif;
+  --font-family-project-title: "Bahianita", sans-serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
