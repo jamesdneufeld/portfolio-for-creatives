@@ -108,8 +108,10 @@
   --font-family: "Jaro", sans-serif;
   --font-family-heading: "Jaro", sans-serif;
   --font-family-project-title: "Jaro", sans-serif;
+  --font-family-body: "Saira", sans-serif;
+  --Font-family-subheading: "Inter", sans-serif;
   /* Core Colours */
-  --color-text-primary: #222;
+  --color-text-primary: #222; 
   --color-text-secondary: #333;
   --color-accent-primary: #5200ff;
   --color-accent-secondary: #ff057c;
