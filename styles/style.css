@@ -811,7 +811,7 @@ a.button:hover {
 }
 .section-item {
   padding: var(--padding-small);
-  margin: 1rem;
+  margin: 0;
 }
 
 /* 
@@ -1638,6 +1638,11 @@ to keep your styles reusable and consistent.
 
   .work-details {
     width: 75%;
+  }
+
+  /* Section Item Desktop Margin */
+  .section-item {
+    margin: 1rem;
   }
 }
 
