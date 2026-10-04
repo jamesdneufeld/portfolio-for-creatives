@@ -17,19 +17,36 @@
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h1 class="full-width-text">Page Layouts &amp; Components</h1>
-        <h2 class="full-width-text">
-          This page is a visual reference. Start by
+        <p class="full-width-text">
+          This page is a visual reference for Portfolio for Creatives 2.3. Start by
           <a href="#explore" class="nav-link-secondary">exploring the different work page variations and project page layouts</a>
           at the bottom of this page.
-        </h2>
+        </p>
       </div>
     </section>
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
-        <h2 class="full-width-text">Find a page that is close to what you want, use it as your starting point, and customize it with your own content, fonts, and colours. Once you have a page you like, you can copy individual components from this page to add or modify sections.</h2>
-        <p>
+        <h2 class="full-width-text">Choose a Starting Point</h2>
+        <p class="full-width-text">Find a page that is close to what you want, use it as your starting point, and customize it with your own content, fonts, and colours. Once you have a page you like, you can copy individual components from this page to add or modify sections.</p>
+        <p class="full-width-text">
           Want to understand more about reusable patterns in HTML and CSS? Read
-          <a href="https://jamesneufeld.notion.site/From-Bespoke-to-Buildable-The-Designer-s-Mindshift-for-Reusable-CSS-2fcffef6256f803b9205cf557872c849?pvs=74" target="_blank">From Bespoke to Buildable: The Designer’s Mindshift for Reusable CSS.</a>
+          <a href="https://jamesneufeld.notion.site/From-Bespoke-to-Buildable-The-Designer-s-Mindshift-for-Reusable-CSS-2fcffef6256f803b9205cf557872c849?pvs=74" target="_blank">From Bespoke to Buildable: The Designer’s Mindshift for Reusable CSS</a>
+          by James Neufeld.
+        </p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Portfolios Are Designed Systems</h2>
+        <p class="full-width-text">Components can be added anywhere on any page. Think in reusable components: once you create a section you like, you can reuse it elsewhere instead of rebuilding it from scratch.</p>
+        <p class="full-width-text">
+          <a href="https://www.figma.com/blog/2025-shifting-roles-report/" target="_blank" rel="noopener noreferrer">Figma’s 2025 Shifting Roles report</a>
+          shows that the boundaries between design and development are becoming less distinct. As designers participate more directly in development, and developers more directly in design, understanding the medium becomes increasingly valuable. Knowing how HTML and CSS work gives you a better sense of how your designs will actually behave. The more you understand the system, the better you can decide when and how to use the tools available to you.
+        </p>
+        <p class="full-width-text">Your portfolio is also a designed system, not just a finished composition. Reusable components make your site easier to build, maintain, update, and adapt as your work changes. A hand-coded portfolio gives you a durable foundation and a genuinely free option that you can continue to develop long after you graduate.</p>
+        <p class="full-width-text">
+          <a href="https://jamesneufeld.notion.site/From-Composition-to-System-The-Hidden-Mindshift-Every-Design-Student-Must-Make-389ffef6256f80f99784e36c0d4c5997" target="_blank">Read more about this shift</a>
+          by James Neufeld.
         </p>
       </div>
     </section>
@@ -122,18 +139,21 @@
         </figure>
       </div>
     </div>
-
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h2 class="full-width-text">Full-Width Text Block</h2>
-        <p class="full-width-text">Use this for key statements or case study introductions. Just change the text—the responsive layout is handled for you. Easily modify this component to suit your needs. Components can be added anywhere on any page.</p>
+        <p class="full-width-text">
+          Use this for key statements or case study introductions. On larger screens, the text is limited to 70% width to keep line lengths comfortable and give the content more breathing room. The section height is set to 80vh, with the text area at 60vh. Both the width and height values can be changed in
+          <code>style.css</code>
+          , and the layout expands to 100% width on smaller screens.
+        </p>
       </div>
     </section>
     <section class="full-width-section">
       <div class="section-container">
         <div class="section-item col-2">
           <h2>Two-Column Section: Text + Image</h2>
-          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile. Components can be added anywhere on any page.</p>
+          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile.</p>
           <p>This example shows text in the first column and an image in the second column.</p>
         </div>
         <div class="section-item col-2">
@@ -147,7 +167,7 @@
       <div class="section-container">
         <div class="section-item col-2">
           <h2>Two-Column Section: Text + Text</h2>
-          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile. Components can be added anywhere on any page.</p>
+          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile.</p>
           <p>This example shows text in both columns.</p>
         </div>
         <div class="section-item col-2">
@@ -369,7 +389,7 @@
 
         <p><strong>Components &amp; Resources:</strong></p>
         <ul class="footer-works-list">
-          <li class="footer-item"><a href="components.html">Components &amp; Instructions</a></li>
+          <li class="footer-item"><a href="components.html">Components &amp; Resources</a></li>
         </ul>
 
         <p><strong>Other Pages:</strong></p>
@@ -415,11 +435,11 @@
     </ul>
 
     <div id="myID" class="bottomMenu hide">
-      <a href="#">Back to top</a>
+      <a href="#top">Back to top</a>
     </div>
 
     <script>
-      myID = document.getElementById("myID");
+      const myID = document.getElementById("myID");
 
       var myScrollFunc = function () {
         var y = window.scrollY;

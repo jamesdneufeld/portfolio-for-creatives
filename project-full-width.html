@@ -64,7 +64,11 @@
         <section class="full-width-section">
           <div class="full-width-headline-wrapper">
             <h2 class="full-width-text">Full-Width Text Block</h2>
-            <p class="full-width-text">Use this for key statements or case study introductions. Just change the text—the responsive layout is handled for you. Easily modify this component to suit your needs. Components can be added anywhere on any page.</p>
+            <p class="full-width-text">
+              Use this for key statements or case study introductions. On larger screens, the text is limited to 70% width to keep line lengths comfortable and give the content more breathing room. The section height is set to 80vh, with the text area at 60vh. Both the width and height values can be changed in
+              <code>style.css</code>
+              , and the layout expands to 100% width on smaller screens.
+            </p>
           </div>
         </section>
         <figure class="project-image">
@@ -134,7 +138,7 @@
     <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
 
     <script>
-      myID = document.getElementById("myID");
+      const myID = document.getElementById("myID");
 
       var myScrollFunc = function () {
         var y = window.scrollY;
