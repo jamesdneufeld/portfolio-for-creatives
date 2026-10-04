@@ -41,7 +41,7 @@
       <div class="full-width-headline-wrapper">
         <h1 class="full-width-text">Page Layouts &amp; Components</h1>
         <h2 class="full-width-text">
-          This page is a visual reference for Portfolio for Creatives 2.3. Start by
+          A visual reference page for Portfolio for Creatives 2.3. Start by
           <a href="#explore" class="nav-link-secondary">exploring the different work page variations and project page layouts</a>
           at the bottom of this page.
         </h2>
@@ -53,7 +53,7 @@
         <p class="full-width-text">Find a page that is close to what you want, use it as your starting point, and customize it with your own content, fonts, and colours. Once you have a page you like, you can copy individual components from this page to add or modify sections.</p>
         <p class="full-width-text">
           Want to understand more about reusable patterns in HTML and CSS? Read
-          <a href="https://jamesneufeld.notion.site/From-Bespoke-to-Buildable-The-Designer-s-Mindshift-for-Reusable-CSS-2fcffef6256f803b9205cf557872c849?pvs=74" target="_blank">From Bespoke to Buildable: The Designer’s Mindshift for Reusable CSS</a>
+          <a href="https://jamesneufeld.notion.site/From-Bespoke-to-Buildable-The-Designer-s-Mindshift-for-Reusable-CSS-2fcffef6256f803b9205cf557872c849?pvs=74" target="_blank" rel="noopener noreferrer">From Bespoke to Buildable: The Designer’s Mindshift for Reusable CSS</a>
           by James Neufeld.
         </p>
       </div>
@@ -68,7 +68,7 @@
         </p>
         <p class="full-width-text">Your portfolio is also a designed system, not just a finished composition. Reusable components make your site easier to build, maintain, update, and adapt as your work changes. A hand-coded portfolio gives you a durable foundation and a genuinely free option that you can continue to develop long after you graduate.</p>
         <p class="full-width-text">
-          <a href="https://jamesneufeld.notion.site/From-Composition-to-System-The-Hidden-Mindshift-Every-Design-Student-Must-Make-389ffef6256f80f99784e36c0d4c5997" target="_blank">Read more about this shift</a>
+          <a href="https://jamesneufeld.notion.site/From-Composition-to-System-The-Hidden-Mindshift-Every-Design-Student-Must-Make-389ffef6256f80f99784e36c0d4c5997" target="_blank" rel="noopener noreferrer">Read more about this shift</a>
           by James Neufeld.
         </p>
       </div>
@@ -128,10 +128,20 @@
     <div class="hero-headline-wrapper flex-row">
       <div class="width-two-thirds">
         <h2 class="hero-headline">
-          Two-Column Hero
           <span class="highlight-gradient">Random Image on Hover</span>
         </h2>
-        <p>A two-column hero with text first and an image that changes randomly when you hover over it.</p>
+        <p>
+          An image that randomly changes when you hover over it. Inspired by IDEA grad
+          <a href="https://noahkawamura.com/" target="_blank" rel="noopener noreferrer">Noah Kawamura</a>
+          , who incorporated this interaction on his grad portfolio. Other students have since adapted it in different ways, including
+          <a href="https://valkreativedesign.com/" target="_blank" rel="noopener noreferrer">Valentina Kruglikovskaya</a>
+          , who used it to show multiple versions of her logo. A simple way to make images, projects, or other work more playful and interactive.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
       </div>
       <div class="width-third">
         <figure id="image-wrapper">
@@ -146,6 +156,41 @@
           Use this for key statements or case study introductions. On larger screens, the text is limited to 70% width to keep line lengths comfortable and give the content more breathing room. The section height is set to 80vh, with the text area at 60vh. Both the width and height values can be changed in
           <code>style.css</code>
           , and the layout expands to 100% width on smaller screens.
+        </p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Phrase Rotator</h2>
+        <p class="phrase highlight-gradient">
+          Emma is
+          <span id="phraseChange"></span>
+        </p>
+        <p class="full-width-text">
+          A small JavaScript effect inspired by
+          <a href="https://emmasato.com/" target="_blank" rel="noopener noreferrer">Emma Sato</a>
+          , whose portfolio used a rotating line of phrases in the footer to hide little pieces of personality and story throughout her site. One of her phrases, “preaching to the choir,” led to a video of her singing as a child. Nice work, Emma! Each phrase can link to a different website, image, video, or other URL, turning an ordinary part of a portfolio into something visitors can discover. The best portfolio interactions don't have to announce themselves. A tiny piece of JavaScript, a strange link, an unexpected animation, or a hidden page can reward visitors who take the time to explore.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Random Text on Refresh</h2>
+        <p class="random-text highlight-gradient" id="randomText">This text changes each time you refresh the page.</p>
+        <p class="full-width-text">
+          A tiny JavaScript effect inspired by
+          <a href="https://www.elizabethlin.ca/" target="_blank" rel="noopener noreferrer">Elizabeth Lin</a>
+          , whose portfolio served up a random pun every time you refreshed the page. There’s nothing particularly complicated happening here, which is part of the fun. A small surprise like this can give a portfolio some personality and reward visitors who take the time to look around.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
         </p>
       </div>
     </section>
@@ -283,12 +328,12 @@
         <ul class="footer-list">
           <li class="footer-item">
             📚
-            <a href="https://jamesneufeld.notion.site/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6?pvs=74" target="_blank">Learn HTML & CSS basics</a>
+            <a href="https://jamesneufeld.notion.site/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6?pvs=74" target="_blank" rel="noopener noreferrer">Learn HTML & CSS basics</a>
             - James' foundational skills guide
           </li>
           <li class="footer-item">
             ✨ Branding - Logo,
-            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+            <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>
             , colours.
           </li>
           <li class="footer-item">👤 About page - Add photo and bio.</li>
@@ -303,12 +348,12 @@
           <li class="footer-item">🎞️ Animated GIFs - Showcase your work.</li>
           <li class="footer-item">
             🎨 Animated SVGs -
-            <a href="https://www.svgator.com/" target="_blank">Create dynamic vector art</a>
+            <a href="https://www.svgator.com/" target="_blank" rel="noopener noreferrer">Create dynamic vector art</a>
             .
           </li>
           <li class="footer-item">
             🌈 Animated gradients -
-            <a href="https://mycolor.space/gradient" target="_blank">Smooth color transitions</a>
+            <a href="https://mycolor.space/gradient" target="_blank" rel="noopener noreferrer">Smooth color transitions</a>
             .
           </li>
         </ul>
@@ -453,5 +498,7 @@
       window.addEventListener("scroll", myScrollFunc);
     </script>
     <script type="module" src="./js/random-image-hover.js"></script>
+    <script type="module" src="./js/phrase-rotator.js"></script>
+    <script type="module" src="./js/random-text.js"></script>
   </body>
 </html>
