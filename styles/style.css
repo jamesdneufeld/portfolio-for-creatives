@@ -545,8 +545,7 @@ sup {
 }
 
 /* 🧱 Full-width headings — useful in layouts that span edge-to-edge */
-.h1-full-width,
-.h2-full-width {
+.full-width-text {
   width: 100%;
   padding: var(--padding-small);
 }
@@ -1423,8 +1422,7 @@ to keep your styles reusable and consistent.
     font-size: 1.625rem;
   }
 
-  .h1-full-width,
-  .h2-full-width {
+  .full-width-text {
     width: 70%;
     padding: var(--padding-small);
   }
