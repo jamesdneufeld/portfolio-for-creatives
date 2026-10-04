@@ -3,7 +3,7 @@
  * PORTFOLIO FOR CREATIVES – MAIN STYLESHEET
  * =============================================
  * Author: James Neufeld
- * Version: 2.1 | Last Updated: April 13, 2025
+ * Version: 2.3 | Last Updated: October 3, 2026
  * License: GNU General Public License v3.0 (GPL-3.0)
  * https://www.gnu.org/licenses/gpl-3.0.en.html
  * 
@@ -656,7 +656,23 @@ a.nav-link-secondary:hover {
   color: var(--color-nav-arrow-hover);
 }
 
-/* 🖋️ Optional stroke effect for a bold, outlined arrow look */
+/* Optional button styles */
+
+a.button {
+  display: block;
+  padding: var(--padding-small);
+  margin-top: var(--padding-small);
+  color: var(--color-bg);
+  background: var(--color-accent-primary);
+  text-decoration: none;
+}
+
+a.button:hover {
+  color: var(--color-bg);
+  background: var(--color-link-hover);
+}
+
+/* Optional stroke effect for a bold, outlined arrow look */
 
 .stroke:link,
 .stroke:visited {

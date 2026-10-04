@@ -1,10 +1,8 @@
 # portfolio-for-creatives
 
-## ✅ Overview
+## A Free Portfolio Template for Creatives
 
-A Simple & Modern Portfolio Template for Creatives
-
-🎨 A clean, modern portfolio template for creatives of all kinds—graphic designers, illustrators, photographers, and more! 🚀 Whether you're an experienced designer or just starting, this template provides a solid foundation to showcase your work in style.
+A flexible, hand-coded portfolio template for graphic designers, illustrators, photographers, interaction designers, and other creatives. Start with a page layout, replace the placeholder content with your own work, and customize the design using HTML and CSS.
 
 ## 🛠️ Setup Instructions
 
@@ -19,13 +17,13 @@ Before you dive in, make sure you have these tools ready to customize and bring 
 
 3. **Install Visual Studio Code**  
    👉 [Download from code.visualstudio.com](https://code.visualstudio.com/)  
-   The perfect code editor to start editing your portfolio like a pro.
+   Use Visual Studio Code to edit the HTML, CSS, and JavaScript files in your portfolio.
 
 ### 🚀 Cloning, Editing & Going Live with Netlify
 
-Here’s how you can bring your portfolio online in no time:
+Here’s how you can bring your portfolio online:
 
-1. **Clone this repository using GitHub Desktop**  
+1. **Clone the template using GitHub Desktop**  
    👉 URL: `https://github.com/jamesdneufeld/portfolio-for-creatives`
 
 2. **Open the project in Visual Studio Code**  
@@ -33,10 +31,10 @@ Here’s how you can bring your portfolio online in no time:
    `"Portfolio Launching Soon"`  
    Replace it with something like:  
    `"Welcome to My Site"` or `"Hi, I'm [Your Name]!"`  
-   👉 **Don't forget to save the file** so GitHub Desktop detects your changes and allows you to push it.
+   👉 **Don't forget to save the file** so GitHub Desktop detects your change.
 
-3. **Push your changes with GitHub Desktop**  
-   GitHub Desktop will prompt you to create a fork of the repository for personal use—go ahead and accept this option, as it lets you make changes without affecting the original project.
+3. **Commit your change with GitHub Desktop**  
+   After you commit your change and try to push it, GitHub Desktop will tell you that you don't have permission to push to the original repository. Choose the option to fork the repository for your own use. This creates your own copy of the template, where you can make changes and push them to GitHub.
 
 4. **Sign up at Netlify**  
    👉 [netlify.com](https://www.netlify.com/)  
@@ -58,9 +56,9 @@ Get your portfolio up and running in seconds:
 
 🛠️ Want to make it your own? See the beginner-friendly edits below.
 
-## 💡 Easy Beginner Edits: No Coding Skills Needed
+## 💡 Easy Beginner Edits
 
-These are great first steps to customize your portfolio visually without writing any real code.
+These are great first steps for customizing your portfolio and getting comfortable editing HTML and CSS.
 
 1. **Change the hero text in `work.html`**  
    Open `work.html` and look near the top. Replace the big heading with your own intro.  
@@ -100,24 +98,42 @@ After making these changes, visit your live site to see the changes in action!
 
 ### 🗂️ Included Page Templates
 
-| Page Name                 | Description                                    |
+| Page Name | Description |
 | ------------------------- | ---------------------------------------------- |
-| `index.html`              | Holding page (optional intro/splash)           |
-| `work.html`               | Classic work grid layout                       |
-| `work-sidebar.html`       | Work grid with sticky sidebar navigation       |
-| `work-titles-below.html`  | Project titles below thumbnails                |
-| `work-clean.html`         | Clean version with no overlays                 |
-| `work-grayscale.html`     | Grayscale image filter variation               |
-| `work-ghost.html`         | Ghost icon hover effect                        |
-| `project-1.html`          | Standard single project layout                 |
-| `project-lightbox.html`   | Project page with image lightbox functionality |
-| `project-full-width.html` | Full-width project layout                      |
-| `about.html`              | Two-column responsive About page               |
-| `components.html`         | Reusable UI components for quick editing       |
-| `404.html`                | Custom 404 error page                          |
+| `index.html` | Holding page (optional intro/splash) |
+| `work.html` | Classic work grid layout |
+| `work-sidebar.html` | Work grid with sticky sidebar navigation |
+| `work-titles-below.html` | Project titles below thumbnails |
+| `work-sidebar-titles-below.html` | Sticky sidebar with project titles below thumbnails |
+| `work-clean.html` | Clean version with no overlays |
+| `work-grayscale.html` | Grayscale image filter variation |
+| `work-ghost.html` | Ghost icon hover effect |
+| `play.html` | Masonry layout with lightbox |
+| `play-random-rotation.html` | Random image rotation layout |
+| `project-1.html` | Standard single project layout |
+| `project-lightbox.html` | Project page with image lightbox functionality |
+| `project-full-width.html` | Full-width project layout |
+| `about.html` | Two-column responsive About page |
+| `components.html` | Visual reference for page layouts and reusable components |
+| `404.html` | Custom 404 error page |
+
+### 🔗 Shared Header & Footer
+
+The `includes` folder contains reusable header and footer HTML files that can be loaded across your pages with JavaScript.
+
+- `includes/header-1.html`
+- `includes/header-2.html`
+- `includes/header-3.html`
+- `includes/footer-1.html`
+- `includes/footer-2.html`
+
+Edit a shared header or footer once, and the change can appear across all pages that use it.
 
 ### ✨ Features at a Glance
 
+- 🧩 Page Layouts & Components – Explore reusable sections and page layouts in `components.html`
+- 🔗 Shared Includes – Reuse headers and footers across multiple pages
+- 🎲 JavaScript Examples – Add simple interactive effects such as random image changes
 - 🖼️ Hero Section – Big intro space to showcase your personal brand
 - 🧱 Work Pages – Multiple layout options with responsive CSS Grid
 - 📦 Lightbox-Ready Galleries – Showcase your work interactively
@@ -136,9 +152,10 @@ After making these changes, visit your live site to see the changes in action!
 
 ### 🧪 Optional Add-Ons
 
-- ✏️ sketchbook.html: Perfect for showcasing sketches, early concepts, or behind-the-scenes creative processes.
-- 🎮 play.html: A fun section to showcase other projects, photography, etc.
-- 📄 resume.html: A professional CV or resume to highlight your work experience and skills.
+- ✏️ `sketchbook.html`: Perfect for showcasing sketches, early concepts, or behind-the-scenes creative processes.
+- 🎮 `play.html`: A fun section to showcase other projects, photography, etc.
+- 🔄 `play-random-rotation.html`: A variation with randomly rotated images.
+- 📄 `resume.html`: A professional CV or resume to highlight your work experience and skills.
 
 ## 🧙‍♂️ Advanced Customization
 
@@ -192,10 +209,11 @@ For videos, it's best to host them on third-party services like Vimeo or YouTube
 - **v2.0 (Nov 2024)** — Lightbox, new page layouts, and components
 - **v2.1 (Apr 2025)** — CSS variables restructured, improved documentation
 - **v2.2 (Sep 2025)** — Masonry layout for illustrators, new holding page, and improved filler text
+- **v2.3 (Oct 2026)** — New page templates, reusable components, shared header/footer includes, JavaScript examples, and expanded documentation
 
 ## 🧬 Project Origin
 
-This template began in **2019** as a free student alternative to expensive portfolio builders. By 2021, it had been widely adopted by my design students and was published on GitHub.
+This template began in **2019** as a free student alternative to expensive portfolio builders. By 2021, it had been adopted by design students and was published on GitHub. Since then, students have forked the repository more than 175 times.
 
 ## Credits
 
