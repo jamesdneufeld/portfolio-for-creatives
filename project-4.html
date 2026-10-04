@@ -1,1 +1,91 @@
-<!--To create a page for project 4, copy one of the previous project pages-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Free Creative Portfolio Template: October 2026 Version | Project Page</title>
+    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="project-4">
+    <!-- Shared header -->
+    <div id="header-placeholder"></div>
+
+    <div class="project-wrapper">
+      <aside class="project-aside">
+        <div class="project-info">
+          <h1 class="project-title">Project No. 4</h1>
+          <p>This page is intentionally left blank and should be replaced with your next project. Each project gets its own HTML file.</p>
+        </div>
+        <ul class="project-navigation">
+          <li class="arrow">
+            <a href="project-3.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
+          </li>
+          <li class="arrow">
+            <a href="project-1.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
+          </li>
+        </ul>
+      </aside>
+      <main class="project-details">
+        <div class="project-description-container">
+          <div class="project-title col-2">
+            <p>
+              To create another project page, use
+              <em>Save As</em>
+              to copy the project page layout you want to use and save it as
+              <em>project-4.html</em>
+              , replacing this file completely. Do the same for
+              <em>project-5.html</em>
+              ,
+              <em>project-6.html</em>
+              , and so on.
+            </p>
+          </div>
+          <div class="project-description col-2"></div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Shared footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared header and footer -->
+    <script>
+      fetch("includes/header-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("includes/footer-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          document.getElementById("copyright-years").textContent += new Date().getFullYear();
+        });
+    </script>
+
+    <div id="myID" class="bottomMenu hide"><a href="project-3.html">Previous Project</a></div>
+
+    <script type="text/javascript">
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </body>
+</html>

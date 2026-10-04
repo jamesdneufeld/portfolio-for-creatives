@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Free Creative Portfolio Template: October 2025 Version | Work Page</title>
-    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
+    <title>Free Creative Portfolio Template: October 2026 Version | Page Layouts &amp; Components</title>
+    <meta name="description" content="Explore page layouts, project templates, reusable components and customization options for the free creative portfolio template." />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
@@ -13,7 +13,26 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-  <body class="components-page">
+  <body class="components-page" id="top">
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h1 class="h1-full-width">Page Layouts &amp; Components</h1>
+        <h2 class="h2-full-width">
+          This page is a visual reference. Start by
+          <a href="#explore" class="nav-link-secondary">exploring the different work page variations and project page layouts</a>
+          at the bottom of this page.
+        </h2>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="h2-full-width">Find a page that is close to what you want, use it as your starting point, and customize it with your own content, fonts, and colours. Once you have a page you like, you can copy individual components from this page to add or modify sections.</h2>
+        <p>
+          Want to understand more about reusable patterns in HTML and CSS? Read
+          <a href="https://jamesneufeld.notion.site/From-Bespoke-to-Buildable-The-Designer-s-Mindshift-for-Reusable-CSS-2fcffef6256f803b9205cf557872c849?pvs=74" target="_blank">From Bespoke to Buildable: The Designer’s Mindshift for Reusable CSS.</a>
+        </p>
+      </div>
+    </section>
     <header class="hero-header">
       <ul class="nav-branding">
         <!-- Logo (standalone LI) -->
@@ -37,28 +56,118 @@
         </li>
       </ul>
     </header>
-    <section class="full-width-section">
-      <div class="full-width-headline-wrapper">
-        <h1 class="h1-full-width">Ready-to-Use Components</h1>
-        <h2 class="h2-full-width">Build your portfolio with copy-and-paste components. Stop wrestling with CSS layouts. Launch a stunning site faster and keep the focus on your design work.</h2>
-      </div>
-    </section>
-
+    <header class="hero-header">
+      <ul class="nav-branding">
+        <li class="nav-branding-item">
+          <ul class="nav-branding-group">
+            <li class="nav-branding-item">
+              <a href="work.html" class="nav-link-primary">Work</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="play.html" class="nav-link-primary">Play</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="about.html" class="nav-link-primary">About</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Logo (standalone LI) -->
+        <li class="nav-branding-logo">
+          <a href="index.html">
+            <img src="assets/branding-images/logo.svg" alt="Your portfolio logo" />
+          </a>
+        </li>
+      </ul>
+    </header>
     <div class="hero-headline-wrapper flex-row">
       <div class="width-two-thirds">
-        <h1 class="hero-headline">Your two-column <span class="highlight-gradient">hero</span></h1>
-        <h2>“I need a hero. I’m holding out for a hero ’til the end of the night!”</h2>
+        <h2 class="hero-headline">
+          Two-Column Hero
+          <span class="highlight-gradient">Text First</span>
+        </h2>
+        <p>A two-column hero layout that stacks on mobile with space for an introduction and an image.</p>
       </div>
       <div class="width-third">
         <figure class="about-image">
-          <img src="assets/about/self-portrait.svg" width="1500" height="1500" alt="Your Photo" />
+          <img src="assets/about/self-portrait.svg" width="1500" height="1500" alt="Describe your photo" />
         </figure>
       </div>
     </div>
+    <div class="hero-headline-wrapper flex-row">
+      <div class="width-third">
+        <figure class="about-image">
+          <img src="assets/about/self-portrait.svg" width="1500" height="1500" alt="Describe your photo" />
+        </figure>
+      </div>
+      <div class="width-two-thirds">
+        <h2 class="hero-headline">
+          Two-Column Hero
+          <span class="highlight-gradient">Image First</span>
+        </h2>
+        <p>A two-column hero layout that stacks on mobile with space for an introduction and an image.</p>
+      </div>
+    </div>
+
+    <div class="hero-headline-wrapper flex-row">
+      <div class="width-two-thirds">
+        <h2 class="hero-headline">
+          Two-Column Hero
+          <span class="highlight-gradient">Random Image on Hover</span>
+        </h2>
+        <p>A two-column hero with text first and an image that changes randomly when you hover over it.</p>
+      </div>
+      <div class="width-third">
+        <figure id="image-wrapper">
+          <img id="image" src="./assets/hero-random/cacti-succulents-01.jpg" alt="Cacti and succulents" />
+        </figure>
+      </div>
+    </div>
+
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
-        <h1 class="h1-full-width">Full-Width Text Block</h1>
-        <h2 class="h2-full-width">Use this for key statements or case study introductions. Just change the text—the responsive layout is handled for you. Easily modify this component to suit your needs. Components can be added anywhere on any page.</h2>
+        <h2 class="h2-full-width">Full-Width Text Block</h2>
+        <p>Use this for key statements or case study introductions. Just change the text—the responsive layout is handled for you. Easily modify this component to suit your needs. Components can be added anywhere on any page.</p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="section-container">
+        <div class="section-item col-2">
+          <h2>Two-Column Section: Text + Image</h2>
+          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile. Components can be added anywhere on any page.</p>
+          <p>This example shows text in the first column and an image in the second column.</p>
+        </div>
+        <div class="section-item col-2">
+          <figure>
+            <img src="assets/temp/animated-svg-background-css.svg" width="1500" height="1500" alt="Describe your image" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="section-container">
+        <div class="section-item col-2">
+          <h2>Two-Column Section: Text + Text</h2>
+          <p>Use section blocks to create columns containing text, images, or other content that stack on mobile. Components can be added anywhere on any page.</p>
+          <p>This example shows text in both columns.</p>
+        </div>
+        <div class="section-item col-2">
+          <h2>Another Text Block</h2>
+          <p>Add your second block of text here.</p>
+        </div>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="section-container">
+        <div class="section-item col-2">
+          <figure>
+            <img src="assets/temp/animated-svg-background-css.svg" width="1500" height="1500" alt="Describe your image" />
+          </figure>
+        </div>
+        <div class="section-item col-2">
+          <figure>
+            <img src="assets/temp/animated-svg-background-css.svg" width="1500" height="1500" alt="Describe your image" />
+          </figure>
+        </div>
       </div>
     </section>
     <div class="project-description-container">
@@ -118,28 +227,16 @@
         <p>SVGator</p>
       </div>
     </div>
-
-    <section class="full-width-section">
-      <div class="section-container">
-        <div class="section-item col-2">
-          <h1>Want columns?</h1>
-          <h2>Try the new section container component with section items. Section items can contain text or images. Components can be added anywhere on any page.</h2>
-        </div>
-        <div class="section-item col-2">
-          <figure>
-            <img src="assets/temp/animated-svg-background-css.svg" width="1500" height="1500" alt="Your Photo" />
-          </figure>
-        </div>
-      </div>
-    </section>
     <div class="project-description-container padding-large">
       <div class="project-title col-2">
         <h2>Project Description Block</h2>
-        <h3>Use this two-column layout to separate project context from detailed case study text.</h3>
+        <p>Use this two-column layout to separate project context from detailed case study text.</p>
+        <p>This example shows project context in the first column and case study text in the second column.</p>
       </div>
-      <div class="project-description col-2"><p>Components can be added anywhere on any page.</p></div>
+      <div class="project-description col-2">
+        <p>Add your case study text here.</p>
+      </div>
     </div>
-
     <div class="project-description-container">
       <ul class="project-navigation">
         <li class="arrow-left">
@@ -150,30 +247,7 @@
         </li>
       </ul>
     </div>
-    <header class="hero-header">
-      <ul class="nav-branding">
-        <li class="nav-branding-item">
-          <ul class="nav-branding-group">
-            <li class="nav-branding-item">
-              <a href="work.html" class="nav-link-primary">Work</a>
-            </li>
-            <li class="nav-branding-item">
-              <a href="play.html" class="nav-link-primary">Play</a>
-            </li>
-            <li class="nav-branding-item">
-              <a href="about.html" class="nav-link-primary">About</a>
-            </li>
-          </ul>
-        </li>
-        <!-- Logo (standalone LI) -->
-        <li class="nav-branding-logo">
-          <a href="index.html">
-            <img src="assets/branding-images/logo.svg" alt="Your portfolio logo" />
-          </a>
-        </li>
-      </ul>
-    </header>
-    <ul class="footer-global">
+    <ul class="footer-global" id="explore">
       <li class="footer-tagline">
         <h2>Customize Your Portfolio</h2>
         <p><strong>Template features:</strong></p>
@@ -187,8 +261,16 @@
 
         <p><strong>Get started:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">📚 <a href="https://www.notion.so/jamesneufeld/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6" target="_blank">Learn HTML & CSS basics</a> - James' foundational skills guide</li>
-          <li class="footer-item">✨ Branding - Logo, <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>, colours.</li>
+          <li class="footer-item">
+            📚
+            <a href="https://www.notion.so/jamesneufeld/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6" target="_blank">Learn HTML & CSS basics</a>
+            - James' foundational skills guide
+          </li>
+          <li class="footer-item">
+            ✨ Branding - Logo,
+            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+            , colours.
+          </li>
           <li class="footer-item">👤 About page - Add photo and bio.</li>
           <li class="footer-item">📸 Work page - Add project images with overlays.</li>
           <li class="footer-item">📝 Project pages - Write titles and descriptions.</li>
@@ -199,8 +281,16 @@
         <p><strong>Extra polish:</strong></p>
         <ul class="footer-list">
           <li class="footer-item">🎞️ Animated GIFs - Showcase your work.</li>
-          <li class="footer-item">🎨 Animated SVGs - <a href="https://www.svgator.com/" target="_blank">Create dynamic vector art</a>.</li>
-          <li class="footer-item">🌈 Animated gradients - <a href="https://mycolor.space/gradient" target="_blank">Smooth color transitions</a>.</li>
+          <li class="footer-item">
+            🎨 Animated SVGs -
+            <a href="https://www.svgator.com/" target="_blank">Create dynamic vector art</a>
+            .
+          </li>
+          <li class="footer-item">
+            🌈 Animated gradients -
+            <a href="https://mycolor.space/gradient" target="_blank">Smooth color transitions</a>
+            .
+          </li>
         </ul>
         <p><strong>For advanced users:</strong></p>
         <ul class="footer-list">
@@ -210,56 +300,95 @@
         </ul>
         <p><strong>Consider adding:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">🎮 <a href="play.html">Play page</a> - showcase other work.</li>
-          <li class="footer-item">✏️ <a href="sketchbook.html">Sketchbook</a> - process work.</li>
-          <li class="footer-item">📄 <a href="resume.html">Resume/CV</a> - professional background.</li>
+          <li class="footer-item">
+            🎮
+            <a href="play.html">Play page</a>
+            - showcase other work.
+          </li>
+          <li class="footer-item">
+            ✏️
+            <a href="sketchbook.html">Sketchbook</a>
+            - process work.
+          </li>
+          <li class="footer-item">
+            📄
+            <a href="resume.html">Resume/CV</a>
+            - professional background.
+          </li>
         </ul>
         <p><strong>Don't forget:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">❌ <a href="404.html">Custom 404 page</a> - Personalized error page.</li>
-          <li class="footer-item">🗺️ <a href="sitemap.xml">sitemap.xml</a> - Update for Google Search Console.</li>
+          <li class="footer-item">
+            ❌
+            <a href="404.html">Custom 404 page</a>
+            - Personalized error page.
+          </li>
+          <li class="footer-item">
+            🗺️
+            <a href="sitemap.xml">sitemap.xml</a>
+            - Update for Google Search Console.
+          </li>
           <li class="footer-item">🔍 SEO - Optimize page titles, descriptions and images.</li>
         </ul>
       </li>
       <li class="footer-highlights">
-        <h2>Awards &amp; Recognition</h2>
-        <ul class="footer-awards-list">
-          <li class="footer-item"><a href="#">Dean’s List – Year or Term</a></li>
-          <li class="footer-item"><a href="#">Your Award – Name of Student Award and Year</a></li>
-          <li class="footer-item"><a href="#">Honourable Mention – Project or Competition Name</a></li>
-          <li class="footer-item"><a href="#">Other Recognition or Accolade</a></li>
-        </ul>
-
-        <h2>Selected Works</h2>
+        <h2>Page Templates &amp; Resources</h2>
 
         <p><strong>Work Pages:</strong></p>
         <ul class="footer-works-list">
-          <li class="footer-item"><a href="work.html">Classic</a> – Rounded Corners <span class="badge-new blink">Now Included!</span></li>
-          <li class="footer-item"><a href="illustration.html">Illustrator’s Work Page</a> <span class="badge-new blink">New Template!</span></li>
-          <li class="footer-item"><a href="work-titles-below.html">Project Titles Below</a> <span class="badge-new blink">New Template!</span></li>
-          <li class="footer-item"><a href="work-sidebar.html">Sticky Sidebar with Classic Grid</a> <span class="badge-new blink">New Template!</span></li>
-          <li class="footer-item"><a href="work-sidebar-masonry.html">Sticky Sidebar with Masonry and Accordion</a> <span class="badge-new blink">New Template!</span></li>
-          <li class="footer-item"><a href="work-clean.html">Classic – Clean (No Effects)</a></li>
-          <li class="footer-item"><a href="work-padded.html">Classic – Spacious</a> <span class="badge-new blink">New Template!</span></li>
+          <li class="footer-item">
+            <a href="work.html">Classic Layout</a>
+            <span class="badge-new blink">Popular</span>
+          </li>
+          <li class="footer-item"><a href="illustration.html">Illustrator Work Page</a></li>
+          <li class="footer-item">
+            <a href="work-titles-below.html">Project Titles Below</a>
+            <span class="badge-new blink">Popular</span>
+          </li>
+          <li class="footer-item"><a href="work-sidebar.html">Sticky Sidebar with Classic Grid</a></li>
+          <li class="footer-item">
+            <a href="work-sidebar-titles-below.html">Sticky Sidebar with Project Titles Below</a>
+            <span class="badge-new blink">New</span>
+          </li>
+          <li class="footer-item"><a href="work-sidebar-masonry.html">Sticky Sidebar with Masonry and Accordion</a></li>
+          <li class="footer-item"><a href="work-clean.html">Classic – No Effects</a></li>
+          <li class="footer-item"><a href="work-padded.html">Classic – Spacious</a></li>
           <li class="footer-item"><a href="work-grayscale.html">Classic – Grayscale Filter</a></li>
           <li class="footer-item"><a href="work-ghost.html">Classic – with Ghost Icon</a></li>
         </ul>
 
         <p><strong>Project Pages:</strong></p>
         <ul class="footer-works-list">
-          <li class="footer-item"><a href="project-1.html">Standard Project</a> <span class="badge-new blink">New and improved!</span></li>
-          <li class="footer-item"><a href="project-lightbox.html">Project with Lightbox</a> <span class="badge-new blink">New feature!</span></li>
-          <li class="footer-item"><a href="project-full-width.html">Full Width Project</a> <span class="badge-new blink">New Template!</span></li>
+          <li class="footer-item"><a href="project-1.html">Project with Sticky Sidebar</a></li>
+          <li class="footer-item"><a href="project-lightbox.html">Project with Sticky Sidebar &amp; Lightbox</a></li>
+          <li class="footer-item">
+            <a href="project-full-width.html">Full Width Project</a>
+            <span class="badge-new blink">Minimal</span>
+          </li>
+        </ul>
+
+        <p><strong>Components &amp; Resources:</strong></p>
+        <ul class="footer-works-list">
+          <li class="footer-item"><a href="components.html">Components &amp; Instructions</a></li>
         </ul>
 
         <p><strong>Other Pages:</strong></p>
         <ul class="footer-works-list">
-          <li class="footer-item"><a href="about.html">About Page</a> <span class="badge-new blink">New Two-Column Layout!</span></li>
-          <li class="footer-item"><a href="play.html">Play Page</a> <span class="badge-new blink">New Masonry+Lightbox Layout!</span></li>
-          <li class="footer-item"><a href="sketchbook.html">Sketchbook Page</a> <span class="badge-new blink">New Masonry+Lightbox Layout!</span></li>
-          <li class="footer-item"><a href="components.html">Components</a> <span class="badge-new blink">New!</span> <em>(reusable elements)</em></li>
-          <li class="footer-item"><a href="index.html">Holding Page</a> <em>(optional)</em></li>
-          <li class="footer-item"><a href="404.html">404 Page</a> <em>(customize to match your brand)</em></li>
+          <li class="footer-item"><a href="about.html">About Page</a></li>
+          <li class="footer-item"><a href="play.html">Play Page – Masonry &amp; Lightbox</a></li>
+          <li class="footer-item">
+            <a href="play-random-rotation.html">Play Page – Random Rotation</a>
+            <span class="badge-new blink">New</span>
+          </li>
+          <li class="footer-item"><a href="sketchbook.html">Sketchbook Page – Masonry &amp; Lightbox</a></li>
+          <li class="footer-item">
+            <a href="index.html">Holding Page</a>
+            <em>(optional)</em>
+          </li>
+          <li class="footer-item">
+            <a href="404.html">404 Page</a>
+            <em>(customize to match your brand)</em>
+          </li>
         </ul>
       </li>
       <li class="footer-contact-social">
@@ -273,7 +402,9 @@
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
         <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
+          &copy;
+          <span id="copyright-years">2020-</span>
+          . Hand crafted with
           <span class="heart">❤</span>
           by James Neufeld.
         </p>
@@ -301,5 +432,6 @@
 
       window.addEventListener("scroll", myScrollFunc);
     </script>
+    <script type="module" src="./js/random-image-hover.js"></script>
   </body>
 </html>
