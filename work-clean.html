@@ -15,15 +15,8 @@
 
   <body class="work-page" id="top">
     <section class="hero">
-      <header class="hero-header">
-        <ul class="nav-branding">
-          <li><a href="work.html" class="custom-navigation">Work</a></li>
-          <li class="nav-branding-logo">
-            <a href="index.html"><img src="assets/branding-images/logo.svg" alt="Describe the image and its purpose" /></a>
-          </li>
-          <li><a href="about.html" class="custom-navigation">About</a></li>
-        </ul>
-      </header>
+      <!-- Shared header -->
+      <div id="header-placeholder"></div>
       <div class="hero-headline-wrapper">
         <h1 class="hero-headline">Hello, I'm a clean version of the work page without any of the effects or overlays. A great place to start to keep things minimal and let your work shine!</h1>
       </div>
@@ -84,48 +77,24 @@
       </section>
     </main>
 
-    <ul class="footer-global">
-      <li class="footer-tagline">
-        <h2>Let’s Connect!</h2>
-        <p>
-          Find a work page layout and project page layout that are close to what you want and use them as a starting point, customize them with your fonts and colours, and then delete the page layouts you don’t want to use.
-          <a href="components.html">Explore Page Layouts &amp; Components</a>
-          .
-        </p>
-      </li>
-      <li class="footer-highlights">
-        <h2>Awards & Recognition</h2>
-        <ul class="footer-awards-list">
-          <li class="footer-item"><a href="#">Dean’s List – Year or Term</a></li>
-          <li class="footer-item"><a href="#">Award – Name and Year</a></li>
-          <li class="footer-item"><a href="#">Honourable Mention – Project or Competition</a></li>
-          <li class="footer-item"><a href="#">Other Recognition or Accolade</a></li>
-        </ul>
-      </li>
+    <!-- Shared footer -->
+    <div id="footer-placeholder"></div>
 
-      <li class="footer-contact-social">
-        <h2>Contact & Social</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-          <li class="footer-item"><a href="#">Behance</a></li>
-        </ul>
-      </li>
+    <!-- Shared header and footer -->
+    <script>
+      fetch("includes/header-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
 
-      <li class="footer-full-width">
-        <p><a href="#top">Smooth scroll to the top</a></p>
-        <p class="footer-fineprint">
-          &copy;
-          <span id="copyright-years">2020-</span>
-          . Hand crafted with
-          <span class="heart">❤</span>
-          by James Neufeld.
-        </p>
-        <script>
+      fetch("includes/footer-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
           document.getElementById("copyright-years").textContent += new Date().getFullYear();
-        </script>
-      </li>
-    </ul>
+        });
+    </script>
 
     <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
 
