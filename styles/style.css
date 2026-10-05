@@ -122,6 +122,14 @@
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
+  /* Project Card Colours */
+  /* Change these colours to customize the background of each project card. */
+  --color-project-card-1: #fe36ea;
+  --color-project-card-2: #e4f57c;
+  --color-project-card-3: #92d0b6;
+  --color-project-card-4: #a8cc15;
+  --color-project-card-5: #ffcd1e;
+  --color-project-card-6: #6197d7;
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
@@ -457,7 +465,7 @@ svg {
 h1 {
   font-size: 2.2rem;
   font-family: var(--font-family-heading);
-  line-height: 1.2;
+  line-height: 1;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
@@ -915,6 +923,30 @@ a.button:hover {
 .work-page-grid-item:hover .overlay {
   visibility: visible; /* Make overlay visible on hover */
   opacity: 1; /* Set opacity on hover */
+}
+
+.project-card-1 {
+  background-color: var(--color-project-card-1);
+}
+
+.project-card-2 {
+  background-color: var(--color-project-card-2);
+}
+
+.project-card-3 {
+  background-color: var(--color-project-card-3);
+}
+
+.project-card-4 {
+  background-color: var(--color-project-card-4);
+}
+
+.project-card-5 {
+  background-color: var(--color-project-card-5);
+}
+
+.project-card-6 {
+  background-color: var(--color-project-card-6);
 }
 
 /* Optional container for future overlay customization */
@@ -1410,7 +1442,7 @@ to keep your styles reusable and consistent.
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 4.125rem;
   }
 
   h2 {
