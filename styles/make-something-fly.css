@@ -1,3 +1,14 @@
+/* ------------------------------------------------------------------- */
+/* Flying Elements                                                     */
+/* Add the .flier class to a container to make its children drift      */
+/* across the screen. The delay is 120s (2 minutes) — adjust or        */
+/* remove it to match your intent.                                     */
+/* The .ghost class creates a flying element triggered by a click.     */
+/* Use sparingly and with intent: motion pulls the eye away from your  */
+/* work. Keep it only if the animation IS the work.                    */
+/* Safely delete this file if you are not using this effect.           */
+/* ------------------------------------------------------------------- */
+
 .flier {
   pointer-events: none;
 }
@@ -15,9 +26,16 @@
   width: 5rem;
 }
 
-/* Keyframe values control where the element will begin
-    and end its trajectory across the screen. Each rule
-    represents a path the element follows across the screen. */
+/* Button used to trigger the ghost */
+
+.toggleGhost {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* Hidden until clicked, then flies across the screen */
 
 .ghost {
   animation: fly 60s linear infinite;
@@ -26,10 +44,23 @@
   position: fixed;
   z-index: 999;
   pointer-events: none;
-  font-size: 6rem;
   display: none;
   width: 10rem;
 }
+
+.ghost.is-playing {
+  display: block;
+}
+
+.ghost img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
 
 @keyframes fly {
   0% {
@@ -51,7 +82,7 @@
 
   50% {
     transform: translate(100vw, 50vh) rotateZ(0deg);
-    opacity: 0.75;
+    opacity: 0.9;
   }
 
   62.5% {

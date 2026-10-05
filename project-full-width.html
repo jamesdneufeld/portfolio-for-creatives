@@ -117,6 +117,12 @@
         </div>
       </main>
     </div>
+
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-2.html">Next Project</a>
+    </div>
+
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
 
@@ -135,21 +141,7 @@
           document.getElementById("copyright-years").textContent += new Date().getFullYear();
         });
     </script>
-    <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
 
-    <script>
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

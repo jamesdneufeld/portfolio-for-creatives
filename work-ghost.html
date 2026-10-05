@@ -18,8 +18,12 @@
       <!-- Shared header -->
       <div id="header-placeholder"></div>
       <div class="hero-headline-wrapper">
-        <h1 class="hero-headline">The Classic Work Page with an easter egg! Click the heart to trigger the flier.</h1>
-        <div class="toggleGhost hero-icon" id="btnGhost" value="Hide Ghost" onclick="ShowHideDiv(this)">💙</div>
+        <h1 class="hero-headline">
+          The Classic Work page with a
+          <span class="highlight-primary">clickable Easter egg!</span>
+          Click the heart to make the smiley fly. Customize it with your own branding.
+        </h1>
+        <button type="button" class="toggleGhost hero-icon" id="ghostButton" aria-label="Play ghost">💙</button>
       </div>
       <footer class="hero-footer">
         <ul class="hero-footer-navigation">
@@ -38,7 +42,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number One</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №1</h1>
                 <h4 class="work-grid-project-category">Branding &amp; Illustration</h4>
               </div>
             </a>
@@ -49,7 +53,7 @@
             </figure>
             <a href="project-2.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number Two</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №2</h1>
                 <h4 class="work-grid-project-category">Interactive</h4>
               </div>
             </a>
@@ -60,7 +64,7 @@
             </figure>
             <a href="project-3.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number Three</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №3</h1>
                 <h4 class="work-grid-project-category">Packaging &amp; Art Direction</h4>
               </div>
             </a>
@@ -71,7 +75,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number Four</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №4</h1>
                 <h4 class="work-grid-project-category">Fine Art</h4>
               </div>
             </a>
@@ -82,7 +86,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number Five</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №5</h1>
                 <h4 class="work-grid-project-category">Illustration</h4>
               </div>
             </a>
@@ -93,7 +97,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large">
-                <h1 class="work-grid-project-title">Project Number Six</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №6</h1>
                 <h4 class="work-grid-project-category">Add Your Categories</h4>
               </div>
             </a>
@@ -101,6 +105,16 @@
         </ul>
       </section>
     </main>
+
+    <!-- Click-to-play ghost -->
+    <div id="ghostanimation" class="ghost">
+      <img src="assets/branding-images/smiley-face.svg" alt="" />
+    </div>
+
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="#">Back to top</a>
+    </div>
 
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
@@ -121,35 +135,7 @@
         });
     </script>
 
-    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
-
-    <div id="ghostanimation" class="ghost"><img src="assets/branding-images/smiley-face.svg" alt="Describe your image" /></div>
-
-    <script type="text/javascript">
-      function ShowHideDiv(btnGhost) {
-        var GhostStyle = document.getElementById("ghostanimation");
-        if (btnGhost.value == "Hide Ghost") {
-          GhostStyle.style.display = "none";
-          btnGhost.value = "Play Ghost";
-        } else {
-          GhostStyle.style.display = "block";
-          btnGhost.value = "Hide Ghost";
-        }
-      }
-    </script>
-    <script type="text/javascript">
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
+    <script src="./js/ghost.js" defer></script>
   </body>
 </html>

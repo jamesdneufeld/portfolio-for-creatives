@@ -66,21 +66,11 @@
         });
     </script>
 
-    <div id="myID" class="bottomMenu hide"><a href="project-1.html">Previous Project</a></div>
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-1.html">Next Project</a>
+    </div>
 
-    <script type="text/javascript">
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

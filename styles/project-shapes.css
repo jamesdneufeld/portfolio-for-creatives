@@ -1,0 +1,232 @@
+/* ------------------------------------------------------------------- */
+/* Project Shapes                                                      */
+/* Custom SVG shapes for the SVG-Shaped Project Grid.                  */
+/* Inspired by IDEA graduate Jason Low.                                */
+/*                                                                     */
+/* Safely delete this file and its @import in style.css if you are     */
+/* not using this project grid.                                        */
+/* ------------------------------------------------------------------- */
+
+/* Customize your project images, colours, and shapes here */
+
+:root {
+  /* Project images */
+  --project-image-1: url("../assets/hero-random/cacti-succulents-01.jpg");
+  --project-image-2: url("../assets/hero-random/cacti-succulents-02.jpg");
+  --project-image-3: url("../assets/hero-random/cacti-succulents-03.jpg");
+  --project-image-4: url("../assets/hero-random/cacti-succulents-04.jpg");
+  --project-image-5: url("../assets/hero-random/cacti-succulents-05.jpg");
+  --project-image-6: url("../assets/hero-random/cacti-succulents-06.jpg");
+  --project-image-7: url("../assets/hero-random/cacti-succulents-07.jpg");
+  --project-image-8: url("../assets/hero-random/cacti-succulents-08.jpg");
+
+  /* Project overlay colours */
+  --project-color-1: #fe36ea;
+  --project-color-2: #e4f57c;
+  --project-color-3: #92d0b6;
+  --project-color-4: #a8cc15;
+  --project-color-5: #ffcd1e;
+  --project-color-6: #6197d7;
+  --project-color-7: #4a28d2;
+  --project-color-8: #fa1d1d;
+
+  /* Project shapes */
+  --project-shape-1: url(#thick-hourglass);
+  --project-shape-2: url(#pacman-ghost);
+  --project-shape-3: url(#upside-down-arch);
+  --project-shape-4: url(#arrow-shape);
+  --project-shape-5: url(#left-scalloped-square);
+  --project-shape-6: url(#rounded-square);
+  --project-shape-7: url(#star-1);
+  --project-shape-8: url(#star-2);
+}
+
+/* Project shapes portfolio */
+
+.portfolio.project-shapes-portfolio {
+  padding: var(--padding-large);
+}
+
+/* Project grid */
+
+.project-shapes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Project preview */
+
+.project-preview-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+/* Project shape containers */
+
+.clipped-1,
+.clipped-2,
+.clipped-3,
+.clipped-4,
+.clipped-5,
+.clipped-6,
+.clipped-7,
+.clipped-8 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Project images and shapes */
+
+.overlay-wrapper-1 {
+  background-image: var(--project-image-1);
+  clip-path: var(--project-shape-1);
+}
+
+.overlay-wrapper-2 {
+  background-image: var(--project-image-2);
+  clip-path: var(--project-shape-2);
+}
+
+.overlay-wrapper-3 {
+  background-image: var(--project-image-3);
+  clip-path: var(--project-shape-3);
+}
+
+.overlay-wrapper-4 {
+  background-image: var(--project-image-4);
+  clip-path: var(--project-shape-4);
+}
+
+.overlay-wrapper-5 {
+  background-image: var(--project-image-5);
+  clip-path: var(--project-shape-5);
+}
+
+.overlay-wrapper-6 {
+  background-image: var(--project-image-6);
+  clip-path: var(--project-shape-6);
+}
+
+.overlay-wrapper-7 {
+  background-image: var(--project-image-7);
+  clip-path: var(--project-shape-7);
+}
+
+.overlay-wrapper-8 {
+  background-image: var(--project-image-8);
+  clip-path: var(--project-shape-8);
+}
+
+/* Project image settings */
+
+.overlay-wrapper-1,
+.overlay-wrapper-2,
+.overlay-wrapper-3,
+.overlay-wrapper-4,
+.overlay-wrapper-5,
+.overlay-wrapper-6,
+.overlay-wrapper-7,
+.overlay-wrapper-8 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Project overlay colours */
+
+.clipped-1 .solid {
+  background-color: var(--project-color-1);
+}
+
+.clipped-2 .solid {
+  background-color: var(--project-color-2);
+}
+
+.clipped-3 .solid {
+  background-color: var(--project-color-3);
+}
+
+.clipped-4 .solid {
+  background-color: var(--project-color-4);
+}
+
+.clipped-5 .solid {
+  background-color: var(--project-color-5);
+}
+
+.clipped-6 .solid {
+  background-color: var(--project-color-6);
+}
+
+.clipped-7 .solid {
+  background-color: var(--project-color-7);
+}
+
+.clipped-8 .solid {
+  background-color: var(--project-color-8);
+}
+
+/* Project overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.75s;
+}
+
+/* Project overlay hover */
+
+.clipped-1:hover .solid,
+.clipped-2:hover .solid,
+.clipped-3:hover .solid,
+.clipped-4:hover .solid,
+.clipped-5:hover .solid,
+.clipped-6:hover .solid,
+.clipped-7:hover .solid,
+.clipped-8:hover .solid {
+  opacity: 0.9;
+}
+
+/* SVG shapes */
+
+.svg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Project names */
+
+.project-name-preview {
+  text-align: center;
+  font-size: 2.7rem;
+  color: black;
+}
+
+/* ------------------------------------------------------------------- */
+/* Media Queries                                                       */
+/* ------------------------------------------------------------------- */
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  .project-shapes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

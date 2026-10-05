@@ -17,6 +17,7 @@
   <body class="project-1">
     <!-- Shared header -->
     <div id="header-placeholder"></div>
+
     <div class="project-wrapper">
       <aside class="project-aside border">
         <div class="project-info">
@@ -66,6 +67,12 @@
         </a>
       </main>
     </div>
+
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-2.html">Next Project</a>
+    </div>
+
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
 
@@ -84,21 +91,8 @@
           document.getElementById("copyright-years").textContent += new Date().getFullYear();
         });
     </script>
-    <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
+
+    <script src="./js/bottom-menu.js" defer></script>
     <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
-    <script>
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
   </body>
 </html>

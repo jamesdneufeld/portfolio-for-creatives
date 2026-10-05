@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Free Creative Portfolio Template: October 2026 Version | Work Page</title>
+    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="work-page" id="top">
+    <section class="hero gradient-animation">
+      <!-- Shared header -->
+      <div id="header-placeholder"></div>
+
+      <div class="hero-headline-wrapper">
+        <h1 class="hero-headline">
+          <span class="highlight-primary stroke-shadow">SVG Shape Grid</span>
+          is a playful variation on the Classic Work page, with custom shapes masking each project image.
+        </h1>
+      </div>
+      <footer class="hero-footer">
+        <ul class="hero-footer-navigation">
+          <li>
+            <!-- Update with your real Instagram link -->
+            <a href="#" class="nav-link-primary">Instagram</a>
+          </li>
+          <li>
+            <!-- Update with your real email address -->
+            <a href="mailto:james@magnetude.com" class="nav-link-primary">Email</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <main class="main-work-section">
+      <section class="portfolio project-shapes-portfolio">
+        <!-- ------------------------------------------------------------------- -->
+        <!-- SVG Shape Definitions                                               -->
+        <!-- These SVG paths are used as CSS clip-paths to mask the project      -->
+        <!-- images. When using clipPathUnits="objectBoundingBox", path          -->
+        <!-- coordinates need to be normalized to a 0–1 coordinate system.       -->
+        <!--                                                                     -->
+        <!-- Use the Relative Clip-Path Converter to convert your own SVG paths: -->
+        <!-- https://yoksel.github.io/relative-clip-path/                       -->
+        <!-- ------------------------------------------------------------------- -->
+
+        <svg width="0" height="0" class="svg-definitions" aria-hidden="true">
+          <!-- Project 1: Thick hourglass -->
+          <clipPath id="thick-hourglass" clipPathUnits="objectBoundingBox">
+            <path d="M0.016,0.286 C-0.043,0.149,0.066,0,0.225,0 h0.55 C0.933,0,1,0.147,0.985,0.284 L0.926,0.425 c-0.02,0.048,-0.02,0.101,0,0.15 l0.058,0.141 c0.056,0.137,-0.052,0.284,-0.21,0.284 H0.225 c-0.159,0,-0.268,-0.149,-0.209,-0.286 l0.058,-0.137 c0.021,-0.049,0.021,-0.105,0,-0.155 L0.016,0.286"></path>
+          </clipPath>
+
+          <!-- Project 2: Pac-Man ghost -->
+          <clipPath id="pacman-ghost" clipPathUnits="objectBoundingBox">
+            <path
+              transform="scale(0.004502, 0.004139)"
+              d="M222.1,94.6c0-52.2-49.7-94.6-111-94.6S0.1,42.3,0.1,94.6L0,222.6c0,10.5,10,19,22.2,19s22.2-8.5,22.2-19
+    c0,10.5,10,19,22.2,19s22.2-8.5,22.2-19c0,10.5,10,19,22.2,19s22.2-8.5,22.2-19c0,10.5,9.9,19,22.1,19c12.2,0,22.1-8.5,22.1-19
+    c0,10.5,10,19,22.2,19s22.2-8.5,22.2-19v-25.9L222.1,94.6L222.1,94.6z"></path>
+          </clipPath>
+
+          <!-- Project 3: Upside-down arch -->
+          <clipPath id="upside-down-arch" clipPathUnits="objectBoundingBox">
+            <path d="M0.5,1 C0.224,1,0,0.811,0,0.577 V0 h1 v0.577 C1,0.811,0.776,1,0.5,1"></path>
+          </clipPath>
+
+          <!-- Project 4: Arrow shape -->
+          <clipPath id="arrow-shape" clipPathUnits="objectBoundingBox">
+            <path d="M0.126,0.107 C0.149,0.042,0.205,0,0.266,0 h0.584 c0.127,0,0.196,0.165,0.116,0.274 L0.879,0.394 c-0.045,0.062,-0.045,0.151,0,0.213 l0.087,0.119 c0.08,0.11,0.011,0.274,-0.116,0.274 H0.266 c-0.062,0,-0.117,-0.043,-0.14,-0.107 L0.011,0.561 a0.185,0.185,0,0,1,0,-0.122"></path>
+          </clipPath>
+
+          <!-- Project 5: Left-scalloped square -->
+          <clipPath id="left-scalloped-square" clipPathUnits="objectBoundingBox">
+            <path d="M1,1 V0.5 V0 L0.078,0 C0.035,0,0,0.045,0,0.1 s0.035,0.1,0.078,0.1 C0.035,0.2,0,0.245,0,0.3 c0,0.055,0.035,0.1,0.078,0.1 C0.035,0.4,0,0.446,0,0.501 c0,0.055,0.035,0.1,0.078,0.1 c-0.043,0,-0.078,0.045,-0.078,0.1 s0.035,0.1,0.078,0.1 c-0.043,0,-0.078,0.045,-0.078,0.1 S0.035,1,0.078,1 h0.107 L1,1 L1,1"></path>
+          </clipPath>
+
+          <!-- Project 6: Rounded square -->
+          <clipPath id="rounded-square" clipPathUnits="objectBoundingBox">
+            <path d="M0.221,0 h0.559 c0.122,0,0.221,0.099,0.221,0.221 v0.559 c0,0.122,-0.099,0.221,-0.221,0.221 H0.221 c-0.122,0,-0.221,-0.099,-0.221,-0.221 V0.221 C0,0.099,0.099,0,0.221,0"></path>
+          </clipPath>
+
+          <!-- Project 7: Star 1 -->
+          <clipPath id="star-1" clipPathUnits="objectBoundingBox">
+            <path
+              transform="scale(0.001945525, 0.001851852)"
+              d="M251.348 4.85951C253.242 -0.454971 260.758 -0.454999 262.652 4.85948L302.145 115.679C303.466 119.386 307.937 120.839 311.185 118.616L408.273 52.1747C412.929 48.9885 419.01 53.4062 417.418 58.8189L384.23 171.687C383.12 175.462 385.884 179.266 389.818 179.377L507.417 182.692C513.057 182.851 515.379 189.999 510.91 193.442L417.718 265.247C414.601 267.649 414.601 272.351 417.718 274.753L510.91 346.558C515.379 350.001 513.057 357.149 507.417 357.308L389.818 360.623C385.884 360.734 383.12 364.538 384.23 368.313L417.418 481.181C419.01 486.594 412.929 491.012 408.273 487.825L311.185 421.384C307.937 419.161 303.466 420.614 302.145 424.321L262.652 535.141C260.758 540.455 253.242 540.455 251.348 535.141L211.855 424.321C210.534 420.614 206.063 419.161 202.815 421.384L105.727 487.825C101.071 491.012 94.9903 486.594 96.5819 481.181L129.77 368.313C130.88 364.538 128.116 360.734 124.182 360.623L6.58287 357.308C0.943246 357.149 -1.37926 350.001 3.08986 346.558L96.2816 274.753C99.3988 272.351 99.3988 267.649 96.2816 265.247L3.08985 193.442C-1.37927 189.999 0.943264 182.851 6.58289 182.692L124.182 179.377C128.116 179.266 130.88 175.462 129.77 171.687L96.5819 58.8189C94.9903 53.4062 101.071 48.9885 105.727 52.1748L202.815 118.616C206.063 120.839 210.534 119.386 211.855 115.679L251.348 4.85951Z"></path>
+          </clipPath>
+
+          <!-- Project 8: Star 2 -->
+          <clipPath id="star-2" clipPathUnits="objectBoundingBox">
+            <path transform="scale(0.004, 0.004)" d="M122.6,12.51c0.8-2.25,3.99-2.25,4.8,0l16.75,47.02c0.56,1.57,2.46,2.19,3.84,1.25l41.19-28.19c1.98-1.35,4.56,0.52,3.88,2.82l-14.08,47.88c-0.47,1.6,0.7,3.22,2.37,3.26l49.89,1.41c2.39,0.07,3.38,3.1,1.48,4.56l-39.54,30.46c-1.32,1.02-1.32,3.01,0,4.03l39.54,30.46c1.9,1.46,0.91,4.49-1.48,4.56l-49.89,1.41c-1.67,0.05-2.84,1.66-2.37,3.26l14.08,47.88c0.68,2.3-1.9,4.17-3.88,2.82l-41.19-28.19c-1.38-0.94-3.27-0.33-3.84,1.25l-16.75,47.02c-0.8,2.25-3.99,2.25-4.8,0l-16.75-47.02c-0.56-1.57-2.46-2.19-3.84-1.25l-41.19,28.19c-1.98,1.35-4.56-0.52-3.88-2.82l14.08-47.88c0.47-1.6-0.7-3.22-2.37-3.26l-49.89-1.41c-2.39-0.07-3.38-3.1-1.48-4.56l39.54-30.46c1.32-1.02,1.32-3.01,0-4.03L17.28,92.52c-1.9-1.46-0.91-4.49,1.48-4.56l49.89-1.41c1.67-0.05,2.84-1.66,2.37-3.26L56.94,35.41c-0.68-2.3,1.9-4.17,3.88-2.82l41.19,28.19c1.38,0.94,3.27,0.33,3.84-1.25L122.6,12.51z"></path>
+          </clipPath>
+        </svg>
+
+        <ul class="project-shapes-grid">
+          <li class="work-page-grid-item">
+            <a href="project-1.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-1 overlay-wrapper-1">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(1) Hourglass</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-2.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-2 overlay-wrapper-2">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(2) Ghost</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-3.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-3 overlay-wrapper-3">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(3) Arch</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-4.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-4 overlay-wrapper-4">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(4) Arrow</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-1.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-5 overlay-wrapper-5">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(5) Scallop</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-2.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-6 overlay-wrapper-6">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(6) Round</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-3.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-7 overlay-wrapper-7">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(7) Star 1</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item">
+            <a href="project-4.html">
+              <div class="project-preview-wrapper">
+                <div class="clipped-8 overlay-wrapper-8">
+                  <div class="overlay solid">
+                    <h2 class="project-name-preview">(8) Star 2</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="full-width-section">
+        <div class="full-width-headline-wrapper">
+          <h1 class="full-width-text">Make It Your Own</h1>
+          <h2 class="full-width-text">
+            The shapes are created with SVG paths and used as CSS
+            <code>clip-paths</code>
+            to mask each project image. You can replace the shapes with your own SVG paths, but they need to be normalized to the
+            <code>0–1</code>
+            <code>objectBoundingBox</code>
+            coordinate system. Project images, overlay colours, and shapes can all be customized in
+            <code>project-shapes.css</code>
+            .
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="#">Back to top</a>
+    </div>
+
+    <!-- Shared footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared header and footer -->
+    <script>
+      fetch("includes/header-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("includes/footer-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          document.getElementById("copyright-years").textContent += new Date().getFullYear();
+        });
+    </script>
+
+    <script src="./js/bottom-menu.js" defer></script>
+  </body>
+</html>

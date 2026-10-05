@@ -19,9 +19,9 @@
       <div id="header-placeholder"></div>
       <div class="hero-headline-wrapper">
         <h1 class="hero-headline">
-          A minimal version of the work page with a
+          A minimal Work page with a
           <span class="highlight-primary">grayscale filter</span>
-          on project images.
+          on project images and no project title overlays.
         </h1>
       </div>
       <footer class="hero-footer">
@@ -81,6 +81,11 @@
       </section>
     </main>
 
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="#">Back to top</a>
+    </div>
+
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
 
@@ -100,21 +105,6 @@
         });
     </script>
 
-    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
-
-    <script type="text/javascript">
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

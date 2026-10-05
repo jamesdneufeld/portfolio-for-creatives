@@ -43,7 +43,7 @@
             <li class="accordion-item">
               <button class="accordion-button" data-panel="panel2">Play</button>
               <ul id="panel2" class="accordion-panel">
-                <li class="sidebar-nav-item"><a href="play.html">Play</a></li>
+                <li class="sidebar-nav-item"><a href="play-sketchbook.html">Play</a></li>
               </ul>
             </li>
             <li class="accordion-item">
@@ -203,22 +203,12 @@
         </script>
       </div>
     </div>
-    <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-2.html">Next Project</a>
+    </div>
 
-    <script>
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
     <script src="./js/accordion.js"></script>
   </body>
 </html>

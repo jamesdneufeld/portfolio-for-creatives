@@ -79,11 +79,17 @@
 /* File with extra experimental styles (e.g., fun animations or effects) */
 @import url("experiments.css");
 
-/* File for adding a scroll-to-top button or effect */
-@import url("scroll-to-top.css");
+/* File for adding the scroll-triggered bottom menu */
+@import url("bottom-menu.css");
 
 /* File for adding accordion functionality to expand/collapse content sections */
-@import url("accordian.css");
+@import url("accordion.css");
+
+/* File for adding scroll reveal  functionality */
+@import url("scroll-reveal.css");
+
+/* Adds custom SVG shapes to the project grid. */
+@import url("project-shapes.css");
 
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
@@ -158,6 +164,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
+  --color-selection: #fdfdfd;
   --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
@@ -236,7 +243,8 @@ body {
 /* ------------------------------- */
 
 ::selection {
-  background: var(--color-bg-selection); /* Uses your custom color for highlighted text */
+  background: var(--color-bg-selection); /* Custom color for highlighted text background */
+  color: var(--color-selection); /* Custom color for highlighted text */
 }
 
 /* ---------------------------------------- */
@@ -499,6 +507,7 @@ p {
   font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 1rem;
+  text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
 }
 
 strong {
@@ -530,7 +539,7 @@ sup {
 
 /* Large project title — appears on individual project pages */
 .project-title {
-  font-size: 3.625rem;
+  font-size: 2.525rem;
   font-family: var(--font-family-project-title);
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
@@ -744,6 +753,7 @@ a.button:hover {
   text-align: center; /* Keeps text centered */
 }
 
+/* Sizes the emoji hero icon that triggers the flying ghost (see styles/make-something-fly.css) */
 .hero-icon {
   font-size: 4rem;
 }
@@ -1335,26 +1345,7 @@ a.button:hover {
 ██████  ██      ███████   ████   
 ██      ██      ██   ██    ██    
 ██      ███████ ██   ██    ██    
-*/
 
-/* Play Page Styles
-––––––––––––––––––––––––––––––––––––––––––––––––––
-Custom styles specific to the "Play" page layout and content.
-
-✅ Masonry layout is defined separately in masonry.css  
-✅ Lightbox functionality is handled via Lightbox2 (in /lightbox2 folder)  
-✅ Rotate and other utility classes are already included in the base styles (this file)
-
-Use this section to style elements that are *unique to the Play page*.
-For common layout or effects, continue using the base utility classes
-to keep your styles reusable and consistent.
-*/
-
-.play-page {
-  /* Add page-specific layout or container styles here */
-}
-
-/*
 
 ███████ ██   ██ ███████ ████████  ██████ ██   ██ ██████   ██████   ██████  ██   ██ 
 ██      ██  ██  ██         ██    ██      ██   ██ ██   ██ ██    ██ ██    ██ ██  ██  
@@ -1364,11 +1355,19 @@ to keep your styles reusable and consistent.
 
 */
 
-/* Sketchbook Page Styles */
+/* Play Page & Sketchbook Page Styles
+––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.sketchbook-page {
-  display: grid;
-  place-items: center;
+✅ Masonry layout is defined separately in masonry.css  
+✅ Lightbox functionality is handled via Lightbox2 (in /lightbox2 folder)  
+✅ Rotate and other utility classes are already included in the base styles (this file)
+
+Use this section to style elements that are *unique to the Play or Sketchbook page*.
+For common layout or effects, continue using the base utility classes
+to keep your styles reusable and consistent.
+*/
+
+.play-sketchbook-page {
 }
 
 /*
@@ -1415,11 +1414,11 @@ to keep your styles reusable and consistent.
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
 
   h3 {
-    font-size: 1.625rem;
+    font-size: 1.225rem;
   }
 
   .full-width-text {

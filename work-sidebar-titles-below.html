@@ -43,7 +43,7 @@
               </a>
               <a href="project-1.html">
                 <div class="project-details-overlay">
-                  <h1 class="work-grid-project-title">Project Number One</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №1</h1>
                   <h4 class="work-grid-project-category">Branding &amp; Illustration</h4>
                 </div>
               </a>
@@ -56,7 +56,7 @@
               </a>
               <a href="project-2.html">
                 <div class="project-details-overlay rounded-large">
-                  <h1 class="work-grid-project-title">Project Number Two</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №2</h1>
                   <h4 class="work-grid-project-category">Interactive</h4>
                 </div>
               </a>
@@ -69,7 +69,7 @@
               </a>
               <a href="project-3.html">
                 <div class="project-details-overlay rounded-large">
-                  <h1 class="work-grid-project-title">Project Number Three</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №3</h1>
                   <h4 class="work-grid-project-category">Packaging &amp; Art Direction</h4>
                 </div>
               </a>
@@ -82,7 +82,7 @@
               </a>
               <a href="project-1.html">
                 <div class="project-details-overlay rounded-large">
-                  <h1 class="work-grid-project-title">Project Number Four</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №4</h1>
                   <h4 class="work-grid-project-category">Fine Art</h4>
                 </div>
               </a>
@@ -95,7 +95,7 @@
               </a>
               <a href="project-1.html">
                 <div class="project-details-overlay rounded-large">
-                  <h1 class="work-grid-project-title">Project Number Five</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №5</h1>
                   <h4 class="work-grid-project-category">Illustration</h4>
                 </div>
               </a>
@@ -108,7 +108,7 @@
               </a>
               <a href="project-1.html">
                 <div class="project-details-overlay rounded-large">
-                  <h1 class="work-grid-project-title">Project Number Six</h1>
+                  <h1 class="work-grid-project-title">Untitled — Project №6</h1>
                   <h4 class="work-grid-project-category">Add Your Categories</h4>
                 </div>
               </a>
@@ -132,21 +132,12 @@
         </div>
       </main>
     </div>
-    <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
 
-    <script>
-      const myID = document.getElementById("myID");
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-2.html">Next Project</a>
+    </div>
 
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

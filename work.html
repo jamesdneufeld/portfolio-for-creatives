@@ -48,7 +48,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number One</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №1</h1>
                 <h4 class="work-grid-project-category">Branding &amp; Illustration</h4>
               </div>
             </a>
@@ -59,7 +59,7 @@
             </figure>
             <a href="project-2.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number Two</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №2</h1>
                 <h4 class="work-grid-project-category">Interactive</h4>
               </div>
             </a>
@@ -70,7 +70,7 @@
             </figure>
             <a href="project-3.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number Three</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №3</h1>
                 <h4 class="work-grid-project-category">Packaging &amp; Art Direction</h4>
               </div>
             </a>
@@ -81,7 +81,7 @@
             </figure>
             <a href="project-4.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number Four</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №4</h1>
                 <h4 class="work-grid-project-category">Fine Art</h4>
               </div>
             </a>
@@ -92,7 +92,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number Five</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №5</h1>
                 <h4 class="work-grid-project-category">Illustration</h4>
               </div>
             </a>
@@ -103,7 +103,7 @@
             </figure>
             <a href="project-1.html">
               <div class="project-details-overlay overlay rounded-large centered-text">
-                <h1 class="work-grid-project-title">Project Number Six</h1>
+                <h1 class="work-grid-project-title">Untitled — Project №6</h1>
                 <h4 class="work-grid-project-category">Add Your Categories</h4>
               </div>
             </a>
@@ -112,33 +112,18 @@
       </section>
     </main>
 
-    <!-- Shared footer -->
-    <div id="footer-placeholder"></div>
+    <!-- Flying brand element: replace or delete. See styles/make-something-fly.css to customize how and when it flies. Use sparingly — or move it to an easter egg page. Safely delete this image if you're not using it. -->
+    <div class="flier">
+      <img src="assets/branding-images/smiley-face.svg" alt="" />
+    </div>
 
-    <div id="myID" class="bottomMenu hide">
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
       <a href="#">Back to top</a>
     </div>
 
-    <!-- Flying brand element: customize, replace, or delete -->
-    <div class="flier">
-      <img src="assets/branding-images/smiley-face.svg" alt="Describe your image" />
-    </div>
-
-    <!-- Bottom navigation menu -->
-    <script>
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <!-- Shared footer -->
+    <div id="footer-placeholder"></div>
 
     <!-- Shared header and footer -->
     <script>
@@ -155,5 +140,7 @@
           document.getElementById("copyright-years").textContent += new Date().getFullYear();
         });
     </script>
+
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

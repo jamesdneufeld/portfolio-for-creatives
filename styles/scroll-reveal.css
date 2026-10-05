@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------------- */
+/* Scroll Reveal                                                       */
+/* Add the .reveal class to elements that should fade and slide up     */
+/* as they enter the viewport.                                         */
+/* Needs scroll-reveal.js — without it, nothing animates.              */
+/* Safely delete this file if you are not using this effect.           */
+/* ------------------------------------------------------------------- */
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

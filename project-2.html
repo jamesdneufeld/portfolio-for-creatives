@@ -20,7 +20,7 @@
     <div class="project-wrapper">
       <aside class="project-aside">
         <div class="project-info">
-          <h1 class="project-title">Project No. 2</h1>
+          <h1 class="project-title">Untitled — Project №2</h1>
           <p class="project-description">Start replacing the placeholder content with your own text and images. Add your title, write a short description, and replace the images with your own work. You don't have to finish the page all at once. Start by making it yours.</p>
           <p class="project-description">Shrink your screen to see how the sticky sidebar stacks on mobile.</p>
           <p class="project-description">
@@ -96,6 +96,11 @@
       </main>
     </div>
 
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-3.html">Next Project</a>
+    </div>
+
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
 
@@ -115,21 +120,6 @@
         });
     </script>
 
-    <div id="myID" class="bottomMenu hide"><a href="project-1.html">Previous Project</a></div>
-
-    <script type="text/javascript">
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

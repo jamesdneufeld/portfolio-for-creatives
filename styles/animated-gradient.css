@@ -1,5 +1,12 @@
+/* ------------------------------------------------------------------- */
+/* Animated Gradient Background                                        */
+/* Add the .gradient-animation class to a section for a slow-moving    */
+/* gradient background.                                                */
+/* Safely delete this file if you are not using this effect.           */
+/* ------------------------------------------------------------------- */
+
 :root {
-  --gradient: linear-gradient(45deg, #ffe9a6, #ffd27d, #ffb56b, #9edcf2, #b9e5f5);
+  --gradient: linear-gradient(45deg, #ffe9a6, #ffd27d, #ffb56b, #a9dff5, #8fc9e8, #b8dced, #e0eff3);
 }
 .gradient-animation {
   background-size: 600%;

@@ -1,3 +1,9 @@
+/* ------------------------------------------------------------------- */
+/* Holding Page                                                        */
+/* Temporary "launching soon" page. Replace it with your real          */
+/* portfolio, then delete this file.                                   */
+/* ------------------------------------------------------------------- */
+
 /* More dynamic color system */
 :root {
   --hue-1: 330;
@@ -20,7 +26,10 @@
   filter: blur(40px);
   opacity: 0.9;
   mix-blend-mode: screen;
-  animation: float 12s ease-in-out infinite, morph 8s ease-in-out infinite alternate, colorShift 20s ease-in-out infinite;
+  animation:
+    float 12s ease-in-out infinite,
+    morph 8s ease-in-out infinite alternate,
+    colorShift 20s ease-in-out infinite;
   /* Add mouse movement on top of existing animations */
   transform: translate(var(--mouse-x, 0), var(--mouse-y, 0)) translate(0, 0) scale(1) rotate(0deg); /* This will be overridden by animation */
 }

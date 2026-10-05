@@ -98,24 +98,24 @@ After making these changes, visit your live site to see the changes in action!
 
 ### 🗂️ Included Page Templates
 
-| Page Name | Description |
-| ------------------------- | ---------------------------------------------- |
-| `index.html` | Holding page (optional intro/splash) |
-| `work.html` | Classic work grid layout |
-| `work-sidebar.html` | Work grid with sticky sidebar navigation |
-| `work-titles-below.html` | Project titles below thumbnails |
-| `work-sidebar-titles-below.html` | Sticky sidebar with project titles below thumbnails |
-| `work-clean.html` | Clean version with no overlays |
-| `work-grayscale.html` | Grayscale image filter variation |
-| `work-ghost.html` | Ghost icon hover effect |
-| `play.html` | Masonry layout with lightbox |
-| `play-random-rotation.html` | Random image rotation layout |
-| `project-1.html` | Standard single project layout |
-| `project-lightbox.html` | Project page with image lightbox functionality |
-| `project-full-width.html` | Full-width project layout |
-| `about.html` | Two-column responsive About page |
-| `components.html` | Visual reference for page layouts and reusable components |
-| `404.html` | Custom 404 error page |
+| Page Name                        | Description                                               |
+| -------------------------------- | --------------------------------------------------------- |
+| `index.html`                     | Holding page (optional intro/splash)                      |
+| `work.html`                      | Classic work grid layout                                  |
+| `work-sidebar.html`              | Work grid with sticky sidebar navigation                  |
+| `work-titles-below.html`         | Project titles below thumbnails                           |
+| `work-sidebar-titles-below.html` | Sticky sidebar with project titles below thumbnails       |
+| `work-clean.html`                | Clean version with no overlays                            |
+| `work-grayscale.html`            | Grayscale image filter variation                          |
+| `work-ghost.html`                | Ghost icon hover effect                                   |
+| `play-sketchbook.html`           | Masonry layout with lightbox                              |
+| `play-random-rotation.html`      | Random image rotation layout                              |
+| `project-1.html`                 | Standard single project layout                            |
+| `project-lightbox.html`          | Project page with image lightbox functionality            |
+| `project-full-width.html`        | Full-width project layout                                 |
+| `about.html`                     | Two-column responsive About page                          |
+| `components.html`                | Visual reference for page layouts and reusable components |
+| `404.html`                       | Custom 404 error page                                     |
 
 ### 🔗 Shared Header & Footer
 
@@ -153,7 +153,7 @@ Edit a shared header or footer once, and the change can appear across all pages 
 ### 🧪 Optional Add-Ons
 
 - ✏️ `sketchbook.html`: Perfect for showcasing sketches, early concepts, or behind-the-scenes creative processes.
-- 🎮 `play.html`: A fun section to showcase other projects, photography, etc.
+- 🎮 `play-sketchbook.html`: A fun section to showcase other projects, photography, etc.
 - 🔄 `play-random-rotation.html`: A variation with randomly rotated images.
 - 📄 `resume.html`: A professional CV or resume to highlight your work experience and skills.
 

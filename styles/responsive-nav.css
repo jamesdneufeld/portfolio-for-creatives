@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------------- */
+/* Responsive Navigation (modernization in progress)                   */
+/* A worked example of updating legacy CSS, kept as a reference for    */
+/* advanced students. Not used on any page.                            */
+/* Safely delete this file if you don't want it.                       */
+/* ------------------------------------------------------------------- */
+
 /*! responsive-nav.js 1.0.39 by @arielsalminen */
 
 .nav-collapse ul {
@@ -78,7 +85,11 @@
 @font-face {
   font-family: "responsivenav";
   src: url("icons/responsivenav.eot");
-  src: url("icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("icons/responsivenav.ttf") format("truetype"), url("icons/responsivenav.woff") format("woff"), url("icons/responsivenav.svg#responsivenav") format("svg");
+  src:
+    url("icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("icons/responsivenav.ttf") format("truetype"),
+    url("icons/responsivenav.woff") format("woff"),
+    url("icons/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal;
 }

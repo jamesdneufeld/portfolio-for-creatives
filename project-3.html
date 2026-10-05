@@ -20,7 +20,7 @@
     <div class="project-wrapper">
       <aside class="project-aside">
         <div class="project-info">
-          <h1 class="project-title">Project No. 3</h1>
+          <h1 class="project-title">Untitled — Project №3</h1>
 
           <p class="project-description">Highlight your role, the challenges you solved, and your design process here.</p>
 
@@ -40,7 +40,7 @@
             <a href="project-2.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
           </li>
           <li class="arrow">
-            <a href="project-1.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
+            <a href="project-4.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
           </li>
         </ul>
       </aside>
@@ -100,6 +100,11 @@
       </main>
     </div>
 
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-4.html">Next Project</a>
+    </div>
+
     <!-- Shared footer -->
     <div id="footer-placeholder"></div>
 
@@ -119,21 +124,6 @@
         });
     </script>
 
-    <div id="myID" class="bottomMenu hide"><a href="project-1.html">Previous Project</a></div>
-
-    <script type="text/javascript">
-      const myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
+    <script src="./js/bottom-menu.js" defer></script>
   </body>
 </html>

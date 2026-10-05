@@ -1,3 +1,9 @@
+/* ------------------------------------------------------------------- */
+/* Blink                                                               */
+/* Add the .blink class to any element to make it blink on and off.    */
+/* Safely delete this file if you are not using this effect.           */
+/* ------------------------------------------------------------------- */
+
 .blink {
   animation: 1s infinite blink;
   display: inline-block;
