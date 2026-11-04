@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Free Creative Portfolio Template: October 2026 Version | Index Trail</title>
+    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="index-page" id="top">
+    <section class="hero has-image-trail">
+      <!-- Shared header -->
+      <div id="header-placeholder"></div>
+
+      <div class="hero-headline-wrapper">
+        <h1 class="hero-headline-clean">Image trail effect</h1>
+      </div>
+      <footer class="hero-footer">
+        <ul class="hero-footer-navigation">
+          <li class="nav-branding-item">
+            <!-- Update with your real Instagram link -->
+            <a href="#" class="nav-link-primary" target="_blank">Instagram</a>
+          </li>
+          <li class="nav-branding-item">
+            <!-- Update with your real email address -->
+            <a href="mailto:james@magnetude.com" class="nav-link-primary">Email</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <!-- Shared header and footer -->
+    <script>
+      fetch("includes/header-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="js/image-trail.js"></script>
+  </body>
+</html>

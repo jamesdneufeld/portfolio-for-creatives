@@ -1,0 +1,185 @@
+/* ------------------------------------------------------------------- */
+/* Flying Paths                                                        */
+/*                                                                     */
+/* Keyframe values control an element's movement across the screen    */
+/* and how it rotates along the way. Each @keyframes rule describes   */
+/* one animation path.                                                */
+/*                                                                     */
+/* Choose an animation path in flying-elements.css by changing the     */
+/* animation name. Five variations are included to get you started:    */
+/*                                                                     */
+/* fly-erratic   - Playful and unpredictable. Changes direction often. */
+/* fly-sweeping  - Broad, flowing movements. Wide sweeping arcs.       */
+/* fly-zigzag    - Energetic and angular. Sharp directional changes.   */
+/* fly-drifting  - Gentle and relaxed. Gradual changes in direction.   */
+/* fly-orbit     - Circular and deliberate. Rotates through 360°.      */
+/*                                                                     */
+/* Percentages in translate() refer to the element's own dimensions.   */
+/* vw and vh refer to the viewport. Both are useful for positioning    */
+/* elements on and off the screen.                                     */
+/*                                                                     */
+/* Experiment with the keyframes and create your own flight paths.     */
+/* Change positions, directions and rotations to explore              */
+/* different ways of moving across the screen.                         */
+/*                                                                     */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* 1. Erratic: Playful and unpredictable */
+
+@keyframes fly-erratic {
+  0% {
+    transform: translate(-500%, 110vh) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(120vw, -120%) rotate(20deg);
+  }
+  25% {
+    transform: translate(-200%, 50vh) rotate(-20deg);
+  }
+  37.5% {
+    transform: translate(-200%, -120%) rotate(-40deg);
+  }
+  50% {
+    transform: translate(100vw, 50vh) rotate(0deg);
+  }
+  62.5% {
+    transform: translate(20vw, 100vh) rotate(20deg);
+  }
+  75% {
+    transform: translate(200%, 100vh) rotate(20deg);
+  }
+  87.5% {
+    transform: translate(50vw, -200%) rotate(20deg);
+  }
+  100% {
+    transform: translate(-200%, 110vh) rotate(0deg);
+  }
+}
+
+/* 2. Sweeping: Broad, flowing movements */
+
+@keyframes fly-sweeping {
+  0% {
+    transform: translate(-200%, 110vh) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(20vw, 70vh) rotate(15deg);
+  }
+  25% {
+    transform: translate(110vw, 20vh) rotate(30deg);
+  }
+  37.5% {
+    transform: translate(70vw, -200%) rotate(15deg);
+  }
+  50% {
+    transform: translate(20vw, 20vh) rotate(-15deg);
+  }
+  62.5% {
+    transform: translate(-200%, 70vh) rotate(-30deg);
+  }
+  75% {
+    transform: translate(30vw, 110vh) rotate(-15deg);
+  }
+  87.5% {
+    transform: translate(110vw, 60vh) rotate(15deg);
+  }
+  100% {
+    transform: translate(-200%, 110vh) rotate(0deg);
+  }
+}
+
+/* 3. Zigzag: Sharp directional changes */
+
+@keyframes fly-zigzag {
+  0% {
+    transform: translate(-200%, 10vh) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(110vw, 80vh) rotate(25deg);
+  }
+  25% {
+    transform: translate(20vw, -200%) rotate(-25deg);
+  }
+  37.5% {
+    transform: translate(-200%, 60vh) rotate(25deg);
+  }
+  50% {
+    transform: translate(110vw, 10vh) rotate(-25deg);
+  }
+  62.5% {
+    transform: translate(50vw, 110vh) rotate(25deg);
+  }
+  75% {
+    transform: translate(20vw, -200%) rotate(-25deg);
+  }
+  87.5% {
+    transform: translate(110vw, 80vh) rotate(25deg);
+  }
+  100% {
+    transform: translate(-200%, 10vh) rotate(0deg);
+  }
+}
+
+/* 4. Drifting: Gentle and relaxed */
+
+@keyframes fly-drifting {
+  0% {
+    transform: translate(-200%, 30vh) rotate(-5deg);
+  }
+  12.5% {
+    transform: translate(20vw, 10vh) rotate(5deg);
+  }
+  25% {
+    transform: translate(110vw, 40vh) rotate(10deg);
+  }
+  37.5% {
+    transform: translate(70vw, 110vh) rotate(0deg);
+  }
+  50% {
+    transform: translate(30vw, 60vh) rotate(-10deg);
+  }
+  62.5% {
+    transform: translate(-200%, 20vh) rotate(5deg);
+  }
+  75% {
+    transform: translate(50vw, -200%) rotate(10deg);
+  }
+  87.5% {
+    transform: translate(110vw, 70vh) rotate(-5deg);
+  }
+  100% {
+    transform: translate(-200%, 30vh) rotate(-5deg);
+  }
+}
+
+/* 5. Orbit: Circular-style movement */
+
+@keyframes fly-orbit {
+  0% {
+    transform: translate(50vw, -200%) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(110vw, 20vh) rotate(45deg);
+  }
+  25% {
+    transform: translate(50vw, 110vh) rotate(90deg);
+  }
+  37.5% {
+    transform: translate(-200%, 50vh) rotate(135deg);
+  }
+  50% {
+    transform: translate(50vw, -200%) rotate(180deg);
+  }
+  62.5% {
+    transform: translate(110vw, 70vh) rotate(225deg);
+  }
+  75% {
+    transform: translate(50vw, 110vh) rotate(270deg);
+  }
+  87.5% {
+    transform: translate(-200%, 20vh) rotate(315deg);
+  }
+  100% {
+    transform: translate(50vw, -200%) rotate(360deg);
+  }
+}

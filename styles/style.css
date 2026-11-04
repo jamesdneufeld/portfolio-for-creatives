@@ -59,7 +59,8 @@
 /* TODO: Delete any stylesheets you don't plan to use on your site. */
 
 /* File for animation effects that make elements move (e.g., flying) */
-@import url("make-something-fly.css");
+@import url("flying-elements.css");
+@import url("flying-paths.css");
 
 /* File for animation effects that make elements blink */
 @import url("make-something-blink.css");
@@ -91,6 +92,12 @@
 /* Adds custom SVG shapes to the project grid. */
 @import url("project-shapes.css");
 
+/* File for adding parallax functionality */
+@import url("project-parallax.css");
+
+/* Adds an interactive image trail effect to a selected element. */
+@import url("image-trail.css");
+
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
@@ -121,17 +128,18 @@
   --color-accent-secondary: #ff057c;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
+  --color-hero-clean: #ffffff;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
-  /* Project Card Colours */
-  /* Change these colours to customize the background of each project card. */
+  /* Project Card Colours for work-titles-below.html */
   --color-project-card-1: #fe36ea;
-  --color-project-card-2: #e4f57c;
-  --color-project-card-3: #92d0b6;
-  --color-project-card-4: #a8cc15;
-  --color-project-card-5: #ffcd1e;
-  --color-project-card-6: #6197d7;
+  --color-project-card-2: #92d0b6;
+  --color-project-card-3: #a8cc15;
+  --color-project-card-4: #ffcd1e;
+  --color-project-card-5: #6197d7;
+  --color-project-card-6: #fa1d1d;
   /* Backgrounds */
   --color-bg: #fdfdfd;
+  --color-bg-index: #d7d1c7;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
@@ -223,7 +231,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/branding-images/custom-cursor.svg"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -297,8 +305,9 @@ svg {
   margin-bottom: 1rem; /* Adds space below – helps with layout breathing room */
 }
 
-.width-third,
-.width-two-thirds {
+.one-half,
+.one-third,
+.two-thirds {
   width: 100%;
 }
 
@@ -337,29 +346,24 @@ svg {
 }
 
 /* ----------------------------- */
-/* 📦 Padding Utilities (Mobile First) */
+/* Padding Utilities (Mobile First) */
 /* ----------------------------- */
 
 .padding-tiny {
   padding: var(--padding-tiny);
 }
-
 .padding-small {
   padding: var(--padding-small);
 }
-
 .padding-medium {
   padding: var(--padding-small); /* smaller, mobile-safe default */
 }
-
 .padding-large {
   padding: var(--padding-small); /* smaller, mobile-safe default */
 }
-
 .padding-jumbo {
   padding: var(--padding-small); /* smaller, mobile-safe default */
 }
-
 .padding-ultra {
   padding: var(--padding-small); /* smaller, mobile-safe default */
 }
@@ -567,6 +571,10 @@ sup {
   padding: var(--padding-small);
 }
 
+.no-padding {
+  padding: 0;
+}
+
 /* ✨ Highlighted text — great for emphasis */
 .highlight-primary {
   color: var(--color-accent-secondary);
@@ -704,6 +712,32 @@ a.button:hover {
 
 /* 
 
+ ██████ ██    ██ ██████  ███████  ██████  ██████  ███████ 
+██      ██    ██ ██   ██ ██      ██    ██ ██   ██ ██      
+██      ██    ██ ██████  ███████ ██    ██ ██████  ███████ 
+██      ██    ██ ██   ██      ██ ██    ██ ██   ██      ██ 
+ ██████  ██████  ██   ██ ███████  ██████  ██   ██ ███████ 
+                                                          
+*/
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-cell {
+  cursor: cell;
+}
+
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+/* 
+
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
 ███████ █████   ██████  ██    ██ 
@@ -736,6 +770,18 @@ a.button:hover {
   align-items: center;
 }
 
+.nav-branding-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-small);
+  align-items: center;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
 .nav-branding-group {
   display: flex;
   flex-direction: row;
@@ -761,7 +807,7 @@ a.button:hover {
   text-align: center; /* Keeps text centered */
 }
 
-/* Sizes the emoji hero icon that triggers the flying ghost (see styles/make-something-fly.css) */
+/* Sizes the emoji hero icon that triggers the flying ghost (see styles/flying-elements.css) */
 .hero-icon {
   font-size: 4rem;
 }
@@ -807,6 +853,16 @@ a.button:hover {
   margin-bottom: 1rem;
 }
 
+.full-width-section-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--color-bg-full-width); /* Background color for full-width sections */
+  margin-bottom: 1rem;
+}
+
 .full-width-headline-wrapper {
   width: 100%;
   min-height: 60vh; /* Ensures the headline takes up a good portion of the screen */
@@ -816,6 +872,16 @@ a.button:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps the text centered */
+}
+
+.full-width-headline-wrapper-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-small);
+  text-align: center;
 }
 
 .section-container {
@@ -1342,6 +1408,40 @@ a.button:hover {
   margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
 }
 
+/* 
+
+██ ███    ██ ██████  ███████ ██   ██ 
+██ ████   ██ ██   ██ ██       ██ ██  
+██ ██ ██  ██ ██   ██ █████     ███   
+██ ██  ██ ██ ██   ██ ██       ██ ██  
+██ ██   ████ ██████  ███████ ██   ██ 
+                                     
+ */
+
+/* ----------------------------------------------------------------
+   Index Page Styles
+   
+   Includes a hero with an optional background image (index-clean.html).
+
+---------------------------------------------------------------- */
+
+.index-page {
+  background: var(--color-bg-index);
+}
+
+.hero-headline-clean {
+  font-size: 6rem;
+  color: var(--color-hero-clean);
+  text-transform: uppercase;
+}
+
+.background-1 {
+  background: url(../assets/temp/background-1.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -1431,10 +1531,13 @@ to keep your styles reusable and consistent.
     flex-direction: row; /* Changes to row layout on larger screens */
   }
 
-  .width-third {
+  .one-third {
     width: 33.333%;
   }
-  .width-two-thirds {
+  .one-half {
+    width: 50%;
+  }
+  .two-thirds {
     width: 66.666%;
   }
   .holding-page-title {
@@ -1459,8 +1562,18 @@ to keep your styles reusable and consistent.
   }
 
   /* ----------------------------- */
-  /* 📦 Padding Utilities (Desktop) */
+  /* Padding Utilities (Desktop) */
   /* ----------------------------- */
+
+  .padding-tiny {
+    padding: var(--padding-tiny);
+  }
+  .padding-small {
+    padding: var(--padding-small);
+  }
+  .padding-medium {
+    padding: var(--padding-medium);
+  }
   .padding-large {
     padding: var(--padding-large);
   }
@@ -1660,7 +1773,6 @@ to keep your styles reusable and consistent.
   .work-sidebar {
     width: 25%;
     height: 80vh;
-    position: -webkit-sticky;
     position: sticky;
     top: 1rem;
   }
@@ -1674,6 +1786,10 @@ to keep your styles reusable and consistent.
   /* Section Item Desktop Margin */
   .section-item {
     margin: 1rem;
+  }
+
+  .no-padding {
+    padding: 0;
   }
 }
 

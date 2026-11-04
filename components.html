@@ -40,14 +40,11 @@
         </li>
       </ul>
     </header>
+
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h1 class="full-width-text">Page Layouts &amp; Components</h1>
-        <h2 class="full-width-text">
-          A visual reference page for Portfolio for Creatives 2.3. Start by
-          <a href="#explore" class="nav-link-secondary">exploring the different work page variations and project page layouts</a>
-          at the bottom of this page.
-        </h2>
+        <h2 class="full-width-text">A visual reference for Portfolio for Creatives 2.3. Explore reusable components, compare page layouts, and find a starting point for customizing your portfolio. Start with the examples below, or jump to the bottom to browse the Work page and project page templates.</h2>
       </div>
     </section>
     <section class="full-width-section">
@@ -64,20 +61,49 @@
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h2 class="full-width-text">Portfolios Are Designed Systems</h2>
-        <p class="full-width-text">Components can be added anywhere on any page. Think in reusable components: once you create a section you like, you can reuse it elsewhere instead of rebuilding it from scratch.</p>
+        <p class="full-width-text">Components can be added to any page. Once you create a section you like, you can reuse it elsewhere instead of rebuilding it from scratch.</p>
         <p class="full-width-text">
           <a href="https://www.figma.com/blog/2025-shifting-roles-report/" target="_blank" rel="noopener noreferrer">Figma’s 2025 Shifting Roles report</a>
-          shows that the boundaries between design and development are becoming less distinct. As designers participate more directly in development, and developers more directly in design, understanding the medium becomes increasingly valuable. Knowing how HTML and CSS work gives you a better sense of how your designs will actually behave. The more you understand the system, the better you can decide when and how to use the tools available to you.
+          explores how the boundaries between design and development are becoming less distinct. Understanding HTML and CSS helps designers see how their work behaves beyond the original composition, giving them more control over how it is built and adapted.
         </p>
-        <p class="full-width-text">Your portfolio is also a designed system, not just a finished composition. Reusable components make your site easier to build, maintain, update, and adapt as your work changes. A hand-coded portfolio gives you a durable foundation and a genuinely free option that you can continue to develop long after you graduate.</p>
+        <p class="full-width-text">Your portfolio is a designed system, not just a finished composition. Reusable components make your site easier to build, maintain, update, and adapt as your work changes. A hand-coded portfolio gives you a durable foundation and a free option you can continue developing long after you graduate.</p>
         <p class="full-width-text">
           <a href="https://jamesneufeld.notion.site/From-Composition-to-System-The-Hidden-Mindshift-Every-Design-Student-Must-Make-389ffef6256f80f99784e36c0d4c5997" target="_blank" rel="noopener noreferrer">Read more about this shift</a>
           by James Neufeld.
         </p>
       </div>
     </section>
+    <section class="full-width-section-content">
+      <div class="full-width-headline-wrapper-content">
+        <h2 class="full-width-text no-padding">Navigation Header Layouts</h2>
+        <p class="full-width-text no-padding">Experiment with logo placement and simple navigation styles.</p>
+      </div>
+    </section>
     <header class="hero-header">
       <ul class="nav-branding">
+        <!-- Logo (standalone LI) -->
+        <li class="nav-branding-logo">
+          <a href="index.html">
+            <img src="assets/branding-images/logo.svg" alt="Your portfolio logo" />
+          </a>
+        </li>
+        <li class="nav-branding-item">
+          <ul class="nav-branding-group">
+            <li class="nav-branding-item">
+              <a href="work.html" class="nav-link-primary">Work</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="play-sketchbook.html" class="nav-link-primary">Play</a>
+            </li>
+            <li class="nav-branding-item">
+              <a href="about.html" class="nav-link-primary">About</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <header class="hero-header">
+      <ul class="nav-branding column-reverse">
         <li class="nav-branding-item">
           <ul class="nav-branding-group">
             <li class="nav-branding-item">
@@ -99,119 +125,104 @@
         </li>
       </ul>
     </header>
+    <header class="hero-header">
+      <ul class="nav-branding-inline">
+        <li class="padding-small"><a href="work.html" class="custom-navigation">Work</a></li>
+        <li class="nav-branding-logo">
+          <a href="index.html"><img src="assets/branding-images/logo.svg" alt="Your portfolio logo" /></a>
+        </li>
+        <li class="padding-small"><a href="about.html" class="custom-navigation">About</a></li>
+      </ul>
+    </header>
+    <section class="full-width-section-content">
+      <div class="full-width-headline-wrapper-content">
+        <h2 class="full-width-text no-padding">Reusable Page Components</h2>
+        <p class="full-width-text no-padding">Combine full-width text blocks, columns, images, and project descriptions to create layouts that suit your work. Copy a component into your page, then customize its HTML, CSS, and content to fit your design.</p>
+      </div>
+    </section>
     <div class="hero-headline-wrapper flex-row">
-      <div class="width-two-thirds">
+      <div class="two-thirds">
         <h2 class="hero-headline">
           Two-Column Hero
           <span class="highlight-gradient">Text First</span>
         </h2>
         <p>A two-column hero layout that stacks on mobile with space for an introduction and an image.</p>
       </div>
-      <div class="width-third">
+      <div class="one-third">
         <figure class="about-image">
-          <img src="assets/about/self-portrait.svg" width="1500" height="1500" alt="Describe your photo" />
+          <img src="assets/svg-shapes/mask-20.svg" width="1500" height="1500" alt="Describe your photo" />
         </figure>
       </div>
     </div>
     <div class="hero-headline-wrapper flex-row">
-      <div class="width-third">
+      <div class="one-third">
         <figure class="about-image">
-          <img src="assets/about/self-portrait.svg" width="1500" height="1500" alt="Describe your photo" />
+          <img src="assets/svg-shapes/mask-20.svg" width="1500" height="1500" alt="Describe your photo" />
         </figure>
       </div>
-      <div class="width-two-thirds">
+      <div class="two-thirds">
         <h2 class="hero-headline">
           Two-Column Hero
           <span class="highlight-gradient">Image First</span>
         </h2>
-        <p>A two-column hero layout that stacks on mobile with space for an introduction and an image.</p>
+        <p>The image appears first and occupies one-third of the row, leaving two-thirds for the headline and introduction.</p>
+      </div>
+    </div>
+    <div class="hero-headline-wrapper flex-row">
+      <div class="one-half">
+        <figure class="about-image">
+          <img src="assets/svg-shapes/mask-20.svg" width="1500" height="1500" alt="Describe your photo" />
+        </figure>
+      </div>
+      <div class="one-half">
+        <h2 class="hero-headline">
+          Two-Column Hero
+          <span class="highlight-gradient">Equal Columns</span>
+        </h2>
+        <p>The image and text each occupy half of the row, creating a balanced two-column layout.</p>
       </div>
     </div>
 
-    <div class="hero-headline-wrapper flex-row">
-      <div class="width-two-thirds">
-        <h2 class="hero-headline">
-          <span class="highlight-gradient">Random Image on Hover</span>
-        </h2>
-        <p>
-          An image that randomly changes when you hover over it. Inspired by IDEA grad
-          <a href="https://noahkawamura.com/" target="_blank" rel="noopener noreferrer">Noah Kawamura</a>
-          , who incorporated this interaction on his grad portfolio. Other students have since adapted it in different ways, including
-          <a href="https://valkreativedesign.com/" target="_blank" rel="noopener noreferrer">Valentina Kruglikovskaya</a>
-          , who used it to show multiple versions of her logo. A simple way to make images, projects, or other work more playful, interactive and reward visitors who take the time to explore.
-          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
-            Read
-            <em>Your Portfolio is a Secret Garden</em>
-            .
-          </a>
-        </p>
-      </div>
-      <div class="width-third">
-        <figure id="image-wrapper">
-          <img id="image" src="./assets/hero-random/cacti-succulents-01.jpg" alt="Cacti and succulents" />
-        </figure>
-      </div>
-    </div>
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h2 class="full-width-text">Full-Width Text Block</h2>
         <p class="full-width-text">
-          Use this for key statements or case study introductions. On larger screens, the text is limited to 70% width to keep line lengths comfortable and give the content more breathing room. The section height is set to 80vh, with the text area at 60vh. Both the width and height values can be changed in
+          Use this for key statements or case study introductions. On larger screens, the text is limited to 70% width to keep line lengths comfortable and give the content more breathing room. The section minimum height is set to 80vh, with the text area at 60vh. Both the width and height values can be changed in
           <code>style.css</code>
           , and the layout expands to 100% width on smaller screens.
         </p>
       </div>
     </section>
-    <section class="full-width-section">
-      <div class="full-width-headline-wrapper">
-        <h2 class="full-width-text">Phrase Rotator</h2>
-        <p class="phrase highlight-gradient">
-          Emma is
-          <span id="phraseChange"></span>
-        </p>
-        <p class="full-width-text">
-          A small JavaScript effect inspired by
-          <a href="https://emmasato.com/" target="_blank" rel="noopener noreferrer">Emma Sato</a>
-          , whose portfolio used a rotating line of phrases in the footer to hide little pieces of personality and story throughout her site. One of her phrases, “preaching to the choir,” led to a video of her singing as a child. Nice work, Emma! Each phrase can link to a different website, image, video, or other URL, turning an ordinary part of a portfolio into something visitors can discover. The best portfolio interactions don't have to announce themselves. A tiny piece of JavaScript, a strange link, an unexpected animation, or a hidden page can reward visitors who take the time to explore.
-          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
-            Read
-            <em>Your Portfolio is a Secret Garden</em>
-            .
-          </a>
+    <section class="full-width-section-content">
+      <div class="full-width-headline-wrapper-content">
+        <h2 class="full-width-text no-padding">Content-Height Text Block</h2>
+        <p class="full-width-text no-padding">
+          Use this for key statements or case study introductions when you want the section to fit its content rather than fill most of the screen. The section has
+          <strong>no minimum height,</strong>
+          so its height is determined by the text and any padding applied in
+          <code>style.css</code>
+          . The text width is limited to 70% on larger screens and expands to 100% on smaller screens.
         </p>
       </div>
     </section>
-    <section class="full-width-section">
-      <div class="full-width-headline-wrapper">
-        <h2 class="full-width-text">Random Text on Refresh</h2>
-        <p class="random-text highlight-gradient" id="randomText">This text changes each time you refresh the page.</p>
-        <p class="full-width-text">
-          A tiny JavaScript effect inspired by
-          <a href="https://www.elizabethlin.ca/" target="_blank" rel="noopener noreferrer">Elizabeth Lin</a>
-          , whose portfolio served up a random pun every time you refreshed the page. There’s nothing particularly complicated happening here, which is part of the fun. A small surprise like this can give a portfolio some personality and reward visitors who take the time to look around, and make a site feel fresh rather than static or stale.
-          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
-            Read
-            <em>Your Portfolio is a Secret Garden</em>
-            .
-          </a>
-        </p>
+    <section class="full-width-section-content">
+      <div class="full-width-headline-wrapper-content">
+        <h2 class="full-width-text no-padding">Three-Column Content</h2>
+        <p class="full-width-text no-padding">Organize related information into three columns that stack on smaller screens.</p>
       </div>
     </section>
-    <section class="full-width-section">
-      <div class="full-width-headline-wrapper">
-        <h2 class="full-width-text">Scroll Reveal</h2>
-        <h3 class="reveal highlight-gradient">A heading can reveal itself.</h3>
-        <p class="reveal highlight-gradient">So can a paragraph, image, project card, or almost anything else.</p>
-        <p class="full-width-text">
-          A simple scroll-based reveal effect that fades and moves elements into place as they enter the viewport. JavaScript watches for elements entering the viewport and adds a class, while CSS controls the animation. Add the
-          <code>reveal</code>
-          class to headings, images, project cards, or other elements you want to animate. The effect also respects visitors who prefer reduced motion.
-          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
-            Read
-            <em>Your Portfolio is a Secret Garden</em>
-            .
-          </a>
-        </p>
+    <section class="full-width-section-content flex-row padding-medium">
+      <div class="one-third padding-medium">
+        <h3>The Concept</h3>
+        <p>A distinctive brand direction built around the client's values, audience, and vision for the future.</p>
+      </div>
+      <div class="one-third padding-medium">
+        <h3>Visual Identity</h3>
+        <p>A cohesive visual language combining typography, colour, and graphic elements into a recognizable identity.</p>
+      </div>
+      <div class="one-third padding-medium">
+        <h3>Applications</h3>
+        <p>The identity brought to life across packaging, print materials, and digital touchpoints.</p>
       </div>
     </section>
 
@@ -320,9 +331,91 @@
         <p>This example shows project context in the first column and case study text in the second column.</p>
       </div>
       <div class="project-description col-2">
-        <p>Add your case study text here.</p>
+        <p>Add your case study text here or leave this area blank.</p>
       </div>
     </div>
+    <section class="full-width-section-content">
+      <div class="full-width-headline-wrapper-content">
+        <h2 class="full-width-text no-padding">Optional JavaScript Effects</h2>
+        <p class="full-width-text no-padding">Add playful interactions and small surprises to make your portfolio more engaging and memorable.</p>
+      </div>
+    </section>
+    <div class="hero-headline-wrapper flex-row">
+      <div class="two-thirds">
+        <h2 class="hero-headline">
+          <span class="highlight-gradient">Random Image on Hover</span>
+        </h2>
+        <p>
+          An image that randomly changes when you hover over it. Inspired by IDEA grad
+          <a href="https://noahkawamura.com/" target="_blank" rel="noopener noreferrer">Noah Kawamura</a>
+          , who incorporated this interaction on his grad portfolio. Other students have since adapted it in different ways, including
+          <a href="https://valkreativedesign.com/" target="_blank" rel="noopener noreferrer">Valentina Kruglikovskaya</a>
+          , who used it to show multiple versions of her logo. A simple way to make images, projects, or other work more playful and interactive, rewarding visitors who take the time to explore.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
+      </div>
+      <div class="one-third">
+        <figure id="image-wrapper">
+          <img id="image" src="./assets/hero-random/cacti-succulents-01.jpg" alt="Cacti and succulents" />
+        </figure>
+      </div>
+    </div>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Phrase Rotator</h2>
+        <p class="phrase highlight-gradient">
+          Emma is
+          <span id="phraseChange"></span>
+        </p>
+        <p class="full-width-text">
+          A small JavaScript effect inspired by
+          <a href="https://emmasato.com/" target="_blank" rel="noopener noreferrer">Emma Sato</a>
+          , whose portfolio used a rotating line of phrases in the footer to hide little pieces of personality and story throughout her site. One of her phrases, “preaching to the choir,” led to a video of her singing as a child. Nice work, Emma! Each phrase can link to a different website, image, video, or other URL, turning an ordinary part of a portfolio into something visitors can discover. The best portfolio interactions don't have to announce themselves. A tiny piece of JavaScript, a strange link, an unexpected animation, or a hidden page can reward visitors who take the time to explore.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Random Text on Refresh</h2>
+        <p class="random-text highlight-gradient" id="randomText">This text changes each time you refresh the page.</p>
+        <p class="full-width-text">
+          A tiny JavaScript effect inspired by
+          <a href="https://www.elizabethlin.ca/" target="_blank" rel="noopener noreferrer">Elizabeth Lin</a>
+          , whose portfolio served up a random pun every time you refreshed the page. There’s nothing particularly complicated happening here, which is part of the fun. A small surprise like this can give a portfolio some personality and reward visitors who take the time to look around, and make a site feel fresh rather than static or stale.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
+      </div>
+    </section>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h2 class="full-width-text">Scroll Reveal</h2>
+        <h3 class="reveal highlight-gradient">A heading can reveal itself.</h3>
+        <p class="reveal highlight-gradient">So can a paragraph, image, project card, or almost anything else.</p>
+        <p class="full-width-text">
+          A simple scroll-based reveal effect that fades and moves elements into place as they enter the viewport. JavaScript watches for elements entering the viewport and adds a class, while CSS controls the animation. Add the
+          <code>reveal</code>
+          class to headings, images, project cards, or other elements you want to animate. The effect also respects visitors who prefer reduced motion.
+          <a href="https://jamesneufeld.notion.site/Your-Portfolio-is-a-Secret-Garden-283ffef6256f8077b9aeca9b939df2da" target="_blank" rel="noopener noreferrer">
+            Read
+            <em>Your Portfolio is a Secret Garden</em>
+            .
+          </a>
+        </p>
+      </div>
+    </section>
     <section class="full-width-section">
       <div class="full-width-headline-wrapper">
         <h2 class="full-width-text">Want more JavaScript effects?</h2>
@@ -354,66 +447,57 @@
         <h2>Customize Your Portfolio</h2>
         <p><strong>Template features:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">🖼️ Hero section - Big impactful intro for your brand.</li>
-          <li class="footer-item">🧱 Work section - Start by choosing a layout version.</li>
-          <li class="footer-item">📦 Lightbox Ready - Just add your photos.</li>
-          <li class="footer-item">🛠️ Customizable project pages - Tailor to each piece.</li>
-          <li class="footer-item">⎘ Header/footer - Edit once, copy to all pages.</li>
+          <li class="footer-item">Hero section - Big impactful intro for your brand.</li>
+          <li class="footer-item">Work section - Start by choosing a page template.</li>
+          <li class="footer-item">Lightbox Ready - Just add your photos.</li>
+          <li class="footer-item">Customizable project pages - Tailor to each piece.</li>
+          <li class="footer-item">Header/footer - Edit once, JavaScript updates all pages.</li>
         </ul>
 
         <p><strong>Get started:</strong></p>
         <ul class="footer-list">
           <li class="footer-item">
-            📚
             <a href="https://jamesneufeld.notion.site/Introduction-to-HTML-CSS-Foundational-Skills-1b8ffef6256f80ca9e20fd0b42656bd6?pvs=74" target="_blank" rel="noopener noreferrer">Learn HTML & CSS basics</a>
             - James' foundational skills guide
           </li>
           <li class="footer-item">
-            ✨ Branding - Logo,
+            Branding - Logo,
             <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>
             , colours.
           </li>
-          <li class="footer-item">👤 About page - Add photo and bio.</li>
-          <li class="footer-item">📸 Work page - Add project images with overlays.</li>
-          <li class="footer-item">📝 Project pages - Write titles and descriptions.</li>
-          <li class="footer-item">🔗 Navigation - Add Previous/Next links.</li>
-          <li class="footer-item">↗️ Links - Style hover states.</li>
-          <li class="footer-item">🖱️ Cursor - Starter code for custom cursor.</li>
+          <li class="footer-item">About page - Add photo and bio.</li>
+          <li class="footer-item">Work page - Add project images with overlays.</li>
+          <li class="footer-item">Project pages - Write titles and descriptions.</li>
+          <li class="footer-item">Navigation - Add Previous/Next links.</li>
+          <li class="footer-item">Links - Style hover states.</li>
+          <li class="footer-item">Cursor - Starter code for custom cursor.</li>
         </ul>
         <p><strong>Extra polish:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">🎞️ Animated GIFs - Showcase your work.</li>
+          <li class="footer-item">Animated GIFs - Showcase your work.</li>
           <li class="footer-item">
-            🎨 Animated SVGs -
+            Animated SVGs -
             <a href="https://www.svgator.com/" target="_blank" rel="noopener noreferrer">Create dynamic vector art</a>
             .
           </li>
           <li class="footer-item">
-            🌈 Animated gradients -
+            Animated gradients -
             <a href="https://mycolor.space/gradient" target="_blank" rel="noopener noreferrer">Smooth color transitions</a>
             .
           </li>
         </ul>
         <p><strong>For advanced users:</strong></p>
         <ul class="footer-list">
-          <li class="footer-item">🐇 Easter eggs: Hide surprises in your portfolio!</li>
-          <li class="footer-item">💫 Advanced nav (☰ not included).</li>
-          <li class="footer-item">🎭 Effects - Typewriter (JS), parallax (CSS), custom JS.</li>
+          <li class="footer-item">Easter eggs: Hide surprises in your portfolio!</li>
+          <li class="footer-item">Advanced nav (☰ not included).</li>
+          <li class="footer-item">Explore custom CSS and JavaScript effects and interactions.</li>
         </ul>
         <p><strong>Consider adding:</strong></p>
         <ul class="footer-list">
           <li class="footer-item">
-            🎮
-            <a href="play-sketchbook.html">Play page</a>
-            - showcase other work.
+            <a href="play-sketchbook.html">Play page or Sketchbook page for process work</a>
           </li>
           <li class="footer-item">
-            ✏️
-            <a href="sketchbook.html">Sketchbook</a>
-            - process work.
-          </li>
-          <li class="footer-item">
-            📄
             <a href="resume.html">Resume/CV</a>
             - professional background.
           </li>
@@ -421,21 +505,31 @@
         <p><strong>Don't forget:</strong></p>
         <ul class="footer-list">
           <li class="footer-item">
-            ❌
             <a href="404.html">Custom 404 page</a>
             - Personalized error page.
           </li>
           <li class="footer-item">
-            🗺️
             <a href="sitemap.xml">sitemap.xml</a>
             - Update for Google Search Console.
           </li>
-          <li class="footer-item">🔍 SEO - Optimize page titles, descriptions and images.</li>
+          <li class="footer-item">SEO and Accessibility - Optimize page titles, meta descriptions and images. Add alt text.</li>
         </ul>
       </li>
       <li class="footer-highlights">
         <h2>Main Page Templates</h2>
 
+        <p><strong>Home/Landing Page Templates:</strong></p>
+        <p>Want a minimal home page? You can also use these as hero sections on any other page.</p>
+        <ul class="footer-works-list">
+          <li class="footer-item">
+            <a href="index-clean.html">Home with background image</a>
+            <span class="badge-new blink">New</span>
+          </li>
+          <li class="footer-item">
+            <a href="index-trail.html">Home with image trail effect</a>
+            <span class="badge-new blink">New</span>
+          </li>
+        </ul>
         <p><strong>Work Page Templates:</strong></p>
         <p>Choose a starting layout for your main portfolio Work page.</p>
         <ul class="footer-works-list">
@@ -523,6 +617,11 @@
         </script>
       </li>
     </ul>
+
+    <!-- Flying brand element: replace or delete. See styles/flying-elements.css to customize how and when it flies. Use sparingly — or move it to an easter egg page. Safely delete this image if you're not using it. -->
+    <div class="flier">
+      <img src="assets/branding-images/smiley-face.svg" alt="" />
+    </div>
 
     <!-- Bottom menu -->
     <div id="bottomMenu" class="bottomMenu hide">

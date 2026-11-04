@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------------- */
+/* Flying Elements                                                     */
+/*                                                                     */
+/* Experimental effect. Most portfolios don't need it, but the ones    */
+/* that do should mean it. Use it when the animation contributes to    */
+/* the personality, atmosphere or experience of your portfolio, not    */
+/* when it's motion for its own sake.                                  */
+/*                                                                     */
+/* Add the .flier class to a container to make its children drift      */
+/* across the screen. Each orbit takes 120s and the first begins after */
+/* 180s (3 minutes) — adjust either to match your intent. The delay is */
+/* deliberate: it rewards visitors who linger rather than competing    */
+/* for attention.                                                      */
+/*                                                                     */
+/* The .ghost class creates a flying element triggered by a click.     */
+/* Use it sparingly. Motion pulls the eye away from your work, so      */
+/* the element should earn that attention — an easter egg for the      */
+/* curious, not a distraction for everyone.                            */
+/*                                                                     */
+/* If you're unsure whether it fits, ask: does removing it take        */
+/* something away from the personality, atmosphere, or experience of   */
+/* your portfolio, or does it just remove motion? That's the test from */
+/* "When Cool Becomes a Trope," in the Intro to HTML & CSS series.     */
+/*                                                                     */
+/* Safely delete this file if you aren't using this effect.            */
+/* ------------------------------------------------------------------- */
+
+.flier {
+  pointer-events: none;
+}
+
+.flier > * {
+  /* Adjust animation duration to change the element's speed. */
+  animation: fly-erratic 120s linear infinite;
+  /* Animation delay controls when it first appears */
+  animation-delay: 180s;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-320%) translateY(-320%) rotateZ(0);
+  position: fixed;
+  z-index: 999999;
+  width: 5rem;
+}
+
+/* Button used to trigger the ghost */
+
+.toggleGhost {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* Hidden until clicked, then flies across the screen */
+
+.ghost {
+  animation: fly 60s linear infinite;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+  width: 10rem;
+}
+
+.ghost.is-playing {
+  display: block;
+}
+
+.ghost img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flier > *,
+  .ghost {
+    animation: none;
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------------- */
+/* Parallax Illustration Project Page                                  */
+/* Layered images create a parallax effect as the page scrolls.        */
+/* ------------------------------------------------------------------- */
+
+/* Parallax Hero ------------------------------------------------------ */
+
+.parallax-hero {
+  position: relative;
+  height: 100vh; /* fallback for older browsers */
+  height: 100dvh; /* dynamic viewport — actually matches the visible area */
+  overflow: hidden;
+}
+
+.hero-parallax-group {
+  position: absolute;
+  inset: 0;
+}
+
+/* Parallax Layers ---------------------------------------------------- */
+
+/* Buffer (in vh) must be >= speed × 100. If you change a speed in
+   parallax-hero.js, update that layer's top/height here to match:
+     top    = -(speed × 100)vh
+     height = (100 + speed × 200)vh */
+
+.parallax-layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: fill;
+  will-change: transform;
+}
+
+.parallax-layer-bg {
+  top: -60vh;
+  height: 220vh;
+  z-index: 1;
+}
+.parallax-layer-far {
+  top: -44vh;
+  height: 188vh;
+  z-index: 2;
+}
+.parallax-layer-mid {
+  top: -30vh;
+  height: 160vh;
+  z-index: 3;
+}
+.parallax-layer-close {
+  top: -14vh;
+  height: 128vh;
+  z-index: 4;
+}
+.parallax-layer-front {
+  top: 0;
+  height: 100vh;
+  z-index: 5;
+}

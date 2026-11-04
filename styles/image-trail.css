@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------------- */
+/* Image Trail                                                         */
+/* Creates an interactive trail of images that follows the cursor.    */
+/* On mobile devices, images appear at random within the container.    */
+/* Used on index-trail.html.                                           */
+/* Safely delete this file if you are not using this effect.           */
+/* ------------------------------------------------------------------- */
+
+.has-image-trail {
+  position: relative;
+  overflow: hidden;
+}
+
+/* NAVIGATION ABOVE TRAIL */
+
+.hero-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* TRAIL IMAGES */
+
+.trail-img {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  object-fit: contain;
+}
