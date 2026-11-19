@@ -970,25 +970,40 @@ a.nav-link-primary:hover {
 /* -------------------------------------------------------------------------- */
 
 /* Grid container for the About section */
-.about-grid {
-  display: grid; /* Set to grid layout */
-  grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
-  grid-gap: 3rem; /* Space between grid items */
-  background: var(--color-bg-about); /* Background color for the section */
-  padding: var(--padding-small); /* Padding around the grid */
-  flex: 1; /* Flex-grow to take up available space */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on smaller screens */
+  gap: 3rem;
+  background: var(--color-bg-about);
+  padding: var(--padding-small);
+  flex: 1;
 }
 
-/* Image section in the About page grid */
-.about-grid-image {
-  grid-column: 1 / 2; /* Image spans the first column */
-  grid-row: 1 / 2; /* Image spans the first row */
+/* Two columns on wider screens */
+@media (min-width: 768px) {
+  .about-container {
+    grid-template-columns: minmax(280px, 400px) 1fr; /* Left column for photo+caption, right column for About Me */
+    align-items: start;
+  }
 }
 
-/* Text section in the About page grid */
-.about-grid-text {
-  grid-column: 1 / 2; /* Text spans the first column */
-  grid-row: 2 / 3; /* Text spans the second row */
+.image-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  margin-top: 0.75rem;
+}
+
+.text-column {
+  /* Sits automatically in the second (right) column on desktop */
 }
 
 /* 
@@ -1008,11 +1023,13 @@ a.nav-link-primary:hover {
 
 .footer-global {
   display: grid;
-  grid-template-columns: 1fr; /* Single column layout */
-  grid-gap: 3rem; /* Consistent spacing between sections */
-  min-height: auto; /* Allows footer to expand based on content, no fixed height */
-  background: var(--color-bg-footer); /* Using CSS variable for theming */
-  padding: var(--padding-small); /* Internal spacing */
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  min-height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background: #5acaf5; /* Or var(--color-bg-footer) if defined as a -- variable */
+  padding: 2rem var(--padding-small);
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
@@ -1115,8 +1132,15 @@ a.nav-link-primary:hover {
 /* A simpler alternative to the CSS Grid footer - ideal for beginners          */
 /* -------------------------------------------------------------------------- */
 
-.footer-global-wrapper {
-  padding: var(--padding-small);
+.footer-global {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  min-height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background: #5acaf5; /* Or var(--color-bg-footer) if defined as a -- variable */
+  padding: 2rem var(--padding-small);
 }
 
 /* 
