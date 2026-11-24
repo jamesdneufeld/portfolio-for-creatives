@@ -91,7 +91,65 @@
 
       <!-- Middle  -->
 
-      <div></div>
+      <div>
+        <div class="main">
+          <div class="portfolio-gallery">
+            <!-- begin putting your images here-->
+            <img
+              src="./assets/portfolio-img/knolled-nuts.png"
+              alt="description of image"
+              style="cursor: pointer"
+              onclick="openModal(this.src)"
+            />
+
+            <!-- end of where you put images-->
+          </div>
+          <a href="#top">Back to Top</a>
+        </div>
+
+        <div
+          id="modal"
+          style="
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+          "
+          onclick="closeModal()"
+        >
+          <img
+            id="modalImg"
+            style="
+              width: 90%;
+              height: 90%;
+              object-fit: contain;
+              margin: auto;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              pointer-events: none;
+            "
+          />
+          <span
+            onclick="closeModal(event)"
+            style="
+              position: absolute;
+              top: 20px;
+              right: 30px;
+              color: white;
+              font-size: 35px;
+              cursor: pointer;
+              font-weight: normal;
+            "
+            >x</span
+          >
+        </div>
+      </div>
 
       <!--Global Footer ORIGIN -->
 

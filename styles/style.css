@@ -1243,6 +1243,12 @@ a.nav-link-primary-inactive {
 /* including the project image, description, sidebar, and navigation arrows.         */
 /* ---------------------------------------------------------------------------------- */
 
+.portfolio-gallery {
+  padding-top: 1em;
+  columns: auto 3;
+  text-align: center;
+}
+
 /* Wrapper for the main project section and sidebar */
 .project-wrapper,
 .work-sidebar-wrapper {
