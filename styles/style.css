@@ -119,8 +119,8 @@
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #ffef89;
-  --color-bg-about: #ffef89;
+  --color-bg: #ffbb00;
+  --color-bg-about: #ffbb00;
   --color-bg-footer: #5acaf5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
