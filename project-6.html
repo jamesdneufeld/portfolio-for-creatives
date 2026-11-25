@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Stars of the Seasons</title>
@@ -18,6 +18,7 @@
       type="image/png"
       href="assets/branding-images/favicon.png"
     />
+
     <meta property="og:image" content="screenshot.jpg" />
     <link
       rel="stylesheet"
@@ -114,17 +115,32 @@
       <li class="footer-contact-social">
         <h2>Contact & Social</h2>
         <ul class="footer-socials-list">
-          <li class="footer-item"><a href="(@riley_y_o_u_n_g) • Instagram photos and videosinstagram.com">Insta</a></li>
-          <li class="footer-item"><a href="https://ca.linkedin.com/in/riley-young-017282253">LinkedIn</a></li>
-          <li class="footer-item"><a href="https://www.behance.net/rileyyoung5">Behance</a></li>
+          <li class="footer-item">
+            <a href="https://www.instagram.com/riley_y_o_u_n_g">Insta</a>
+          </li>
+          <li class="footer-item">
+            <a href="https://ca.linkedin.com/in/riley-young-017282253"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="https://www.behance.net/rileyyoung5">Behance</a>
+          </li>
         </ul>
       </li>
 
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
         <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Made by Riley Young's Own Two Hands.
+          &copy; <span id="copyright-years">2020-</span>. Made by Riley Young's
+          Own Two Hands.
         </p>
+        <script>
+          document.getElementById("copyright-years").textContent +=
+            new Date().getFullYear();
+        </script>
+      </li>
+    </ul>
 
     <div id="myID" class="bottomMenu hide">
       <a href="project-1.html">Previous Project</a>

@@ -119,35 +119,35 @@
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #ffbb00;
-  --color-bg-about: #ffbb00;
+  --color-bg: #fdfcf0;
+  --color-bg-about: #fdfcf0;
   --color-bg-footer: #5acaf5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #000000;
   --h2-color: #000000;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h3-color: #000000;
+  --h4-color: #000000;
+  --h5-color: #000000;
+  --h6-color: #000000;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #000000;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #5200ff;
+  --color-link: #000000;
   --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link-visited: #000000;
   /* Navigation */
-  --color-nav-link: #5200ff;
+  --color-nav-link: #000000;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
-  --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
-  --color-nav-arrow-stroke-hover: #000;
+  --color-nav-arrow: #000000;
+  --color-nav-arrow-hover: #000000;
+  --color-nav-arrow-stroke: #000000;
+  --color-nav-arrow-stroke-hover: #000000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
@@ -163,7 +163,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #000000;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -213,7 +213,8 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/Icon Logo.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor:
+    url("../assets/temp/Icon Logo.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -912,7 +913,9 @@ a.nav-link-primary:hover {
   background-color: var(
     --color-overlay-primary
   ); /* Background color of the overlay */
-  transition: opacity var(--duration-normal), visibility var(--duration-normal);
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
