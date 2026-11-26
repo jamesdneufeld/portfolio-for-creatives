@@ -957,6 +957,7 @@ a.button:hover {
   width: 100%;
   height: auto;
   position: relative; /* Needed to position the overlay */
+  display: block; /* For Safari */
 }
 /* Masonry Overlay Text */
 .overlay-container:hover .overlay {
@@ -979,7 +980,6 @@ a.button:hover {
   width: 100%;
   height: 100%;
   opacity: 0; /* Initially invisible */
-  transition: var(--duration-slow) ease;
   display: flex;
   justify-content: center;
   align-items: center;
