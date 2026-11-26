@@ -25,7 +25,7 @@
 */
 
 /* ------------------------------- */
-/* 🌐 Google Fonts - Customize Your Site's Typography */
+/* Google Fonts - Customize Your Site's Typography */
 /* You can add your own fonts here, but be mindful of performance */
 /* ------------------------------- */
 
@@ -52,7 +52,7 @@
 */
 
 /* ------------------------------- */
-/* 🔗 Imported Stylesheets */
+/* Imported Stylesheets */
 /* These are external CSS files that add extra effects to your site. */
 /* ------------------------------- */
 
@@ -110,7 +110,7 @@
 */
 
 /* ------------------------------- */
-/* 🎨 Theme Design Variables */
+/* Theme Design Variables */
 /* Use CSS variables to quickly change your site's color scheme and typography */
 /* ------------------------------- */
 
@@ -226,7 +226,7 @@
 */
 
 /* ------------------------------- */
-/* 📱 Responsive Design for Small Devices (Portrait Phones) */
+/* Responsive Design for Small Devices (Portrait Phones) */
 /* No media query needed for small devices like phones under 576px. This is the default in Bootstrap. */
 /* ------------------------------- */
 
@@ -257,7 +257,7 @@ body {
 }
 
 /* ------------------------------- */
-/* 🖍️ Text Highlight Styles */
+/* Text Highlight Styles           */
 /* This changes the background color when you highlight text (like when you click and drag to select it) */
 /* ------------------------------- */
 
@@ -266,10 +266,10 @@ body {
   color: var(--color-selection); /* Custom color for highlighted text */
 }
 
-/* ---------------------------------------- */
-/* 🖼️ Responsive Image Styles */
+/* -------------------------------------------------------------------- */
+/* Responsive Image Styles                                              */
 /* These styles make your images and icons look good on any screen size */
-/* ---------------------------------------- */
+/* -------------------------------------------------------------------- */
 
 /* Make all images and SVGs scale nicely */
 img,
@@ -282,13 +282,13 @@ svg {
 }
 
 /* ---------------------------------------- */
-/* 🎨 Utility Classes for Styling Elements  */
+/* Utility Classes for Styling Elements     */
 /* Use these helper classes to quickly apply 
    common styles across your portfolio site */
 /* ---------------------------------------- */
 
 /* ------------------------ */
-/* 📐 Layout & Spacing Tools */
+/* Layout & Spacing Tools   */
 /* ------------------------ */
 
 /* Horizontally centers a block element (must have a defined width) */
@@ -308,8 +308,10 @@ svg {
   margin-bottom: 1rem; /* Adds space below – helps with layout breathing room */
 }
 
-.one-half,
+.one-fifth,
+.one-quarter,
 .one-third,
+.one-half,
 .two-thirds {
   width: 100%;
 }
@@ -321,7 +323,7 @@ svg {
 }
 
 /* ---------------------- */
-/* ✍️  Typography Helpers */
+/* Typography Helpers     */
 /* ---------------------- */
 
 /* Optimal line length for readability (~60 characters) */
@@ -335,7 +337,7 @@ svg {
 }
 
 /* ------------------------------ */
-/* 🌀 Animation & Interaction Tools */
+/* Animation & Interaction Tools  */
 /* ------------------------------ */
 
 /* Smooth transition when applying transformations – improves hover experience */
@@ -348,9 +350,9 @@ svg {
   transform: rotate(4deg);
 }
 
-/* ----------------------------- */
+/* -------------------------------- */
 /* Padding Utilities (Mobile First) */
-/* ----------------------------- */
+/* -------------------------------- */
 
 .padding-tiny {
   padding: var(--padding-tiny);
@@ -371,9 +373,10 @@ svg {
   padding: var(--padding-small); /* smaller, mobile-safe default */
 }
 
-/* ----------------------------- */
-/* 🧩 Flex Gap Utilities (Mobile First) */
-/* ----------------------------- */
+/* --------------------------------- */
+/* Flex Gap Utilities (Mobile First) */
+/* --------------------------------- */
+
 .gap-tiny {
   gap: var(--gap-tiny);
 }
@@ -394,7 +397,7 @@ svg {
 }
 
 /* ------------------------------ */
-/* 🧱 Border Radius Shortcuts */
+/* Border Radius Shortcuts        */
 /* ------------------------------ */
 
 /* Small interactive elements (buttons, inputs) */
@@ -418,7 +421,7 @@ svg {
 }
 
 /* ---------------------------------------- */
-/* 🎥 Responsive Embedded Video Styles      */
+/* Responsive Embedded Video Styles         */
 /* These styles keep your videos looking sharp and correctly sized on any device */
 /* ---------------------------------------- */
 
@@ -442,7 +445,7 @@ svg {
 }
 
 /* ---------------------------------------- */
-/* 🧭 Responsive Navigation (Advanced)   */
+/* Responsive Navigation (Advanced)         */
 /* This section is if you want to build a mobile-friendly nav bar here */
 /* ---------------------------------------- */
 
@@ -454,10 +457,10 @@ svg {
   padding: var(--padding-small);
 }
 
-/* ------------------------------------------------------------------ */
-/* 🔤 Global & Mobile Typography                                      */
+/* ------------------------------------------------------------------- */
+/* Global & Mobile Typography                                          */
 /* Heading styles that scale nicely for mobile-first, responsive sites */
-/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------- */
 
 /* 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -467,7 +470,7 @@ svg {
    ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██    
 */
 
-/* Heading Styles (h1 - h6) */
+/* Heading Styles (h1 - h6) (Mobile) */
 
 h1 {
   font-size: 2.2rem;
@@ -514,7 +517,7 @@ h6 {
 }
 
 /* ------------------------------------------------------------------ */
-/* 📝 Paragraph and Text Styles                                       */
+/* Paragraph and Text Styles                                          */
 /* Base text styles for body copy, bold, italic, and fine print       */
 /* ------------------------------------------------------------------ */
 
@@ -540,7 +543,7 @@ sup {
 }
 
 /* ------------------------------------------------------------------ */
-/* 🎨 Custom Class Styles for Headlines, Projects, and Highlights     */
+/* Custom Class Styles for Headlines, Projects, and Highlights        */
 /* Use these utility classes to style key text elements across pages  */
 /* ------------------------------------------------------------------ */
 
@@ -568,7 +571,7 @@ sup {
   margin-bottom: 1rem;
 }
 
-/* 🧱 Full-width headings — useful in layouts that span edge-to-edge */
+/* Full-width headings — useful in layouts that span edge-to-edge */
 .full-width-text {
   width: 100%;
   padding: var(--padding-small);
@@ -578,7 +581,7 @@ sup {
   padding: 0;
 }
 
-/* ✨ Highlighted text — great for emphasis */
+/* Highlighted text — great for emphasis */
 .highlight-primary {
   color: var(--color-accent-secondary);
 }
@@ -590,14 +593,14 @@ sup {
   font-weight: bold;
 }
 
-/* 📂 Project grid title — used in grid view (like a portfolio gallery) */
+/* Project grid title — used in grid view (like a portfolio gallery) */
 .work-grid-project-title {
   font-size: 2.875rem;
   color: var(--color-text-work-grid-title);
   text-wrap: balance;
 }
 
-/* 🏷️ Project category label — displays the type or role of the project */
+/* Project category label — displays the type or role of the project */
 .work-grid-project-category {
   color: var(--color-text-project-category);
 }
@@ -613,7 +616,7 @@ sup {
 */
 
 /* -------------------------------------------------------------------------- */
-/* 🔗 Hyperlink Styles — LVHFA                                                */
+/* Hyperlink Styles — LVHFA                                                */
 /* LVHFA = Link, Visited, Hover, Focus, Active                                */
 /* These are the five main states a hyperlink can be in                       */
 /* -------------------------------------------------------------------------- */
@@ -646,7 +649,7 @@ a:active {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 🧭 Hyperlink Class Styles                                                  */
+/* Hyperlink Class Styles                                                     */
 /* These are custom styles for specific types of navigation links             */
 /* -------------------------------------------------------------------------- */
 
@@ -665,9 +668,9 @@ a.nav-link-secondary:hover {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 🧭 Previous & Next Project Navigation Arrows                               */
-/* These styles are for the left and right arrows used to move between       */
-/* individual project pages in your portfolio. Includes stroke effect styles.*/
+/* Previous & Next Project Navigation Arrows                                  */
+/* These styles are for the left and right arrows used to move between        */
+/* individual project pages in your portfolio. Includes stroke effect styles. */
 /* -------------------------------------------------------------------------- */
 
 /* Default and visited state for navigation arrows */
@@ -750,9 +753,9 @@ a.button:hover {
 */
 
 /* -------------------------------------------------------------------------- */
-/* 🦸 Hero Section Layout                                                     */
-/* Full-page intro area with logo, headline, icon, and footer nav            */
-/* Great place for first impression and personal branding                    */
+/* Hero Section Layout                                                        */
+/* Full-page intro area with logo, headline, icon, and footer nav             */
+/* Great place for first impression and personal branding                     */
 /* -------------------------------------------------------------------------- */
 
 .hero {
@@ -839,11 +842,11 @@ a.button:hover {
                                                                                           
 */
 
-/* -------------------------------------------------------------------------- */
-/* 🔧 Full-Width Section Components                                             */
+/* --------------------------------------------------------------------------- */
+/* Full-Width Section Components                                               */
 /* These components create flexible, full-screen sections for your portfolio   */
-/* Perfect for highlighting key information and projects                      */
-/* -------------------------------------------------------------------------- */
+/* Perfect for highlighting key information and projects                       */
+/* --------------------------------------------------------------------------- */
 
 .full-width-section {
   width: 100%;
@@ -912,9 +915,9 @@ a.button:hover {
 */
 
 /* -------------------------------------------------------------------------- */
-/* 🔲 Work Page Layout Components                                               */
-/* These styles create the layout for your work portfolio and project pages    */
-/* The goal is to showcase your projects and provide a responsive, clean UI  */
+/* Work Page Layout Components                                                */
+/* These styles create the layout for your work portfolio and project pages   */
+/* The goal is to showcase your projects and provide a responsive, clean UI   */
 /* -------------------------------------------------------------------------- */
 
 /* Work wrapper (takes up available space) */
@@ -1034,11 +1037,11 @@ a.button:hover {
                                                    
 */
 
-/* -------------------------------------------------------------------------- */
-/* 🗂️ Sidebar Navigation Styles                                                 */
+/* --------------------------------------------------------------------------- */
+/* Sidebar Navigation Styles                                                   */
 /* This section contains styles for the sidebar navigation on the portfolio    */
 /* website. The aim is to create a simple and clean sidebar for better access. */
-/* -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
 
 /* Sidebar navigation list styles */
 .sidebar-nav-list {
@@ -1061,9 +1064,9 @@ a.button:hover {
 */
 
 /* -------------------------------------------------------------------------- */
-/* 📚 About Page Grid Styles                                                   */
-/* These styles structure the layout of the "About" page using a grid system.  */
-/* The grid has 3 main sections: an image, text, and footer.                   */
+/* About Page Grid Styles                                                     */
+/* These styles structure the layout of the "About" page using a grid system. */
+/* The grid has 3 main sections: an image, text, and footer.                  */
 /* -------------------------------------------------------------------------- */
 
 /* Grid container for the About section */
@@ -1099,8 +1102,8 @@ a.button:hover {
 */
 
 /* -------------------------------------------------------------------------- */
-/* 📱 MOBILE FOOTER LAYOUT                                                    */
-/* Designed with mobile-first approach using CSS Grid                          */
+/* MOBILE FOOTER LAYOUT                                                       */
+/* Designed with mobile-first approach using CSS Grid                         */
 /* -------------------------------------------------------------------------- */
 
 .footer-global {
@@ -1115,8 +1118,8 @@ a.button:hover {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 🧩 FOOTER SECTION PLACEMENT                                                */
-/* Each component stacks vertically in mobile view                             */
+/* FOOTER SECTION PLACEMENT                                                   */
+/* Each component stacks vertically in mobile view                            */
 /* -------------------------------------------------------------------------- */
 
 .footer-tagline {
@@ -1132,7 +1135,7 @@ a.button:hover {
   grid-row: 3 / 4;
 }
 /* -------------------------------------------------------------------------- */
-/* 🌊 FULL-WIDTH BOTTOM SECTION                                               */
+/* FULL-WIDTH BOTTOM SECTION                                                  */
 /* Typically used for copyright/legal information                             */
 /* -------------------------------------------------------------------------- */
 .footer-full-width {
@@ -1142,9 +1145,10 @@ a.button:hover {
   align-self: end; /* Push to bottom */
 }
 
-/* ------------------------------- */
-/* 📜 Reusable footer list styles */
-/* ------------------------------- */
+/* --------------------------- */
+/* Reusable footer list styles */
+/* --------------------------- */
+
 .footer-list {
   margin-bottom: 2rem;
 }
@@ -1158,9 +1162,9 @@ a.button:hover {
   margin-bottom: 2rem;
 }
 
-/* -------------------------------------------------------------------------- */
-/* 📏 Footer Item Spacing                                                     */
-/* -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* Footer Item Spacing                                                     */
+/* ----------------------------------------------------------------------- */
 
 /* Apply this class to ALL list items (awards, works, social, bullets) */
 .footer-item {
@@ -1168,10 +1172,10 @@ a.button:hover {
   margin-bottom: 0.25rem;
 }
 
-/* ------------------------------- */
-/* ▪️ Bullet List Style */
-/* Square bullets with compact spacing */
-/* ------------------------------- */
+/* ------------------------------------ */
+/* Bullet List Style                    */
+/* Square bullets with compact spacing  */
+/* ------------------------------------ */
 
 .footer-bullet-list {
   list-style-type: square;
@@ -1186,7 +1190,7 @@ a.button:hover {
 }
 
 /* -------------------------------------------------------------------------- */
-/* ✨ Footer Special Elements                                                 */
+/* Footer Special Elements                                                    */
 /* -------------------------------------------------------------------------- */
 
 /* Heart icon for copyright/love notes */
@@ -1208,8 +1212,8 @@ a.button:hover {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 🌐 MINIMAL FOOTER (ALTERNATIVE VERSION)                                    */
-/* A simpler alternative to the CSS Grid footer - ideal for beginners          */
+/* MINIMAL FOOTER (ALTERNATIVE VERSION)                                       */
+/* A simpler alternative to the CSS Grid footer - ideal for beginners         */
 /* -------------------------------------------------------------------------- */
 
 .footer-global-wrapper {
@@ -1282,14 +1286,6 @@ a.button:hover {
   margin-bottom: 1rem; /* Space below the description */
 }
 
-/* Column styles for one-column, two-column and four-column layouts (mobile-first) */
-.col-1,
-.col-2,
-.col-4 {
-  width: 100%;
-  padding: var(--padding-small);
-}
-
 /* Project image styling */
 .project-image {
   width: 100%;
@@ -1330,7 +1326,7 @@ a.button:hover {
 }
 
 /* ------------------------------- */
-/* 📜 Project info list styles */
+/* Project info list styles        */
 /* ------------------------------- */
 
 .project-info-list {
@@ -1493,9 +1489,9 @@ a.button:hover {
 /* Play Page & Sketchbook Page Styles
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-✅ Masonry layout is defined separately in masonry.css  
-✅ Lightbox functionality is handled via Lightbox2 (in /lightbox2 folder)  
-✅ Rotate and other utility classes are already included in the base styles (this file)
+Masonry layout is defined separately in masonry.css  
+Lightbox functionality is handled via Lightbox2 (in /lightbox2 folder)  
+Rotate and other utility classes are already included in the base styles (this file)
 
 Use this section to style elements that are *unique to the Play or Sketchbook page*.
 For common layout or effects, continue using the base utility classes
@@ -1534,6 +1530,12 @@ to keep your styles reusable and consistent.
     flex-direction: row; /* Changes to row layout on larger screens */
   }
 
+  .one-fifth {
+    width: 20%;
+  }
+  .one-quarter {
+    width: 25%;
+  }
   .one-third {
     width: 33.333%;
   }
@@ -1543,6 +1545,7 @@ to keep your styles reusable and consistent.
   .two-thirds {
     width: 66.666%;
   }
+
   .holding-page-title {
     font-size: 2rem;
   }
@@ -1599,7 +1602,7 @@ to keep your styles reusable and consistent.
   }
 
   /* ----------------------------- */
-  /* 🧩 Flex Gap Utilities (Desktop) */
+  /* Flex Gap Utilities (Desktop)  */
   /* ----------------------------- */
 
   .gap-medium {
@@ -1715,14 +1718,6 @@ to keep your styles reusable and consistent.
     flex-direction: row;
   }
 
-  /* Column styles for two-column and four-column layouts (desktop) */
-  .col-2 {
-    width: 50%;
-  }
-  .col-4 {
-    width: 25%;
-  }
-
   .project-navigation {
     justify-content: flex-start;
   }
@@ -1748,7 +1743,7 @@ to keep your styles reusable and consistent.
   }
 
   /* ------------------------------- */
-  /* 🖥️ FOOTER GRID - DESKTOP LAYOUT */
+  /* FOOTER GRID - DESKTOP LAYOUT    */
   /* ------------------------------- */
 
   .footer-global {
@@ -1778,8 +1773,9 @@ to keep your styles reusable and consistent.
   }
 
   /* ------------------------------- */
-  /* 📏 FULL-WIDTH BOTTOM SECTION */
+  /* FULL-WIDTH BOTTOM SECTION       */
   /* ------------------------------- */
+
   .footer-full-width {
     grid-row: 2 / 3;
     grid-column: 1 / 4; /* Spans all three columns */
@@ -1840,10 +1836,13 @@ to keep your styles reusable and consistent.
 ██      ██ ██  ██ ██
 ██      ██ ██   ████
                                               
-That’s a wrap, class! 🧑‍🎓✨
+That’s a wrap, class!
 
 */
 
-/* 🎉 You made it to the end! */
+/* You made it to the end! */
+/* Do not add new CSS below this point. Edit the existing styles above instead. */
+/* Do not add additional media queries or breakpoints. Use the supplied mobile-first breakpoints for tablet, desktop and extra-large screens. */
+/* Read the existing TODO: comments throughout this stylesheet. They identify areas that need your attention and customization. */
 /* This is a great place to celebrate your progress, add Easter eggs, or leave notes for your future self. */
-/* Happy coding, and don’t forget to take breaks, stay hydrated, and share your work proudly. 💻✨🎨 */
+/* Happy coding, and don’t forget to take breaks, stay hydrated, and share your work proudly. */
