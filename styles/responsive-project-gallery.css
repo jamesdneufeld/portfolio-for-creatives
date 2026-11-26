@@ -76,7 +76,7 @@
 
 /* ---------- Desktop gallery ---------- */
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .gallery-stage {
     display: block;
   }
@@ -86,7 +86,6 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
-    background: #000;
   }
 
   .gallery-thumbs {
