@@ -55,7 +55,8 @@
 /* Hidden until clicked, then flies across the screen */
 
 .ghost {
-  animation: fly 60s linear infinite;
+  /* Choose a flight path from the available keyframes. */
+  animation: fly-sweeping 60s linear infinite;
   top: 0;
   left: 0;
   position: fixed;
