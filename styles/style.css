@@ -213,8 +213,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor:
-    url("../assets/temp/Icon Logo.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/temp/Icon-Logo.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -245,6 +244,7 @@ body {
   background: var(
     --color-bg-selection
   ); /* Uses your custom color for highlighted text */
+  color: white;
 }
 
 /* ---------------------------------------- */
@@ -292,12 +292,6 @@ svg {
 .width-third,
 .width-two-thirds {
   width: 100%;
-}
-
-/* Adds a dashed border to help you see the box while you're designing */
-.border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
 /* ---------------------- */
@@ -913,9 +907,7 @@ a.nav-link-primary:hover {
   background-color: var(
     --color-overlay-primary
   ); /* Background color of the overlay */
-  transition:
-    opacity var(--duration-normal),
-    visibility var(--duration-normal);
+  transition: opacity var(--duration-normal), visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
@@ -985,8 +977,7 @@ a.nav-link-primary:hover {
 /* Two columns on wider screens */
 @media (min-width: 768px) {
   .about-container {
-    grid-template-columns: minmax(280px, 400px) 1fr; /* Left column for photo+caption, right column for About Me */
-    align-items: start;
+    grid-template-columns: 1fr 1fr; /* Left column for photo+caption, right column for About Me */
   }
 }
 

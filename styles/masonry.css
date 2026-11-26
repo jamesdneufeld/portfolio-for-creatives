@@ -19,10 +19,10 @@
      - Must be `inline-block` to participate in column flow
      - `vertical-align: top` ensures items align at the top of the column
   */
-.masonry-item {
-  margin-bottom: 2rem;
+
+.masonry-item.is-invisible {
   display: inline-block;
-  vertical-align: top;
+  visibility: hidden;
 }
 
 /* 🖼️ Image hover effects
