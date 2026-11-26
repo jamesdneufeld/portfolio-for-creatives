@@ -115,7 +115,7 @@
   --color-text-secondary: #333;
   --color-accent-primary: #000000;
   --color-accent-secondary: #ff057c;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: rgb(90, 202, 245, 0.6);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -651,6 +651,18 @@ a.nav-link-primary:hover {
   color: var(--color-nav-link-hover);
 }
 
+.button {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #5acaf5;
+  margin-top: 2rem;
+  display: block;
+}
+
+.button:hover {
+  background: black;
+  color: #5acaf5;
+}
 /* -------------------------------------------------------------------------- */
 /* 🧭 Previous & Next Project Navigation Arrows                               */
 /* These styles are for the left and right arrows used to move between       */
@@ -1346,7 +1358,7 @@ a.nav-link-primary:hover {
 /* A great 404 page is a chance to leave a memorable impression when visitors land on a page that doesn't exist. Consider customizing this page to be more engaging, humorous, or on-brand with your site. Check out error.css for the gradient and glitch effect. */
 
 .error-headline-wrapper {
-  width: 85%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1361,6 +1373,9 @@ a.nav-link-primary:hover {
   width: 25rem;
 }
 
+.error-page-illustration {
+  width: 60%;
+}
 /*
 
 ██████  ██       █████  ██    ██ 
