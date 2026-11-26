@@ -176,7 +176,7 @@
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
-  --color-bg-sidebar-project: orangered;
+  --color-bg-sidebar-project: yellowgreen;
   --color-bg-sidebar-work: #f5f5f5;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
@@ -478,7 +478,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.575rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -1547,25 +1547,36 @@ to keep your styles reusable and consistent.
     font-size: 2rem;
   }
 
+  /* ------------------------------------ */
+  /* Heading Styles (h1 - h6) (Desktop)   */
+  /* ------------------------------------ */
+
   h1 {
     font-size: 4.125rem;
   }
 
   h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 
   h3 {
     font-size: 1.225rem;
   }
 
-  .full-width-text {
-    width: 70%;
-    padding: var(--padding-small);
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  h6 {
+    font-size: 0.8;
   }
 
   /* ----------------------------- */
-  /* Padding Utilities (Desktop) */
+  /* Padding Utilities (Desktop)   */
   /* ----------------------------- */
 
   .padding-tiny {
@@ -1602,6 +1613,11 @@ to keep your styles reusable and consistent.
   }
   .gap-ultra {
     gap: var(--gap-ultra);
+  }
+
+  .full-width-text {
+    width: 70%;
+    padding: var(--padding-small);
   }
 
   .nav-branding {
