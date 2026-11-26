@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Free Creative Portfolio Template: October 2026 Version | Responsive Project Gallery</title>
+    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="project-1">
+    <!-- Shared header -->
+    <div id="header-placeholder"></div>
+
+    <div class="project-wrapper">
+      <aside class="project-aside">
+        <div class="project-info">
+          <h1 class="project-title">Responsive Project Gallery</h1>
+          <p class="project-description">This responsive gallery template presents your work in a clean, image-focused layout. Use it to showcase a project through a collection of images, with a featured image and a row of thumbnails that visitors can select to explore your work.</p>
+          <p class="project-description">Replace this placeholder text with a brief introduction to your project. Describe the concept, the creative approach, and the ideas behind your work. Keep it concise and let your images do the talking.</p>
+        </div>
+        <ul class="project-navigation">
+          <li class="arrow">
+            <a href="project-4.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
+          </li>
+          <li class="arrow">
+            <a href="project-2.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
+          </li>
+        </ul>
+      </aside>
+      <main class="project-details">
+        <section class="gallery">
+          <!-- Advances to the next image. Hidden on mobile. -->
+          <div class="gallery-stage">
+            <button class="gallery-stage-button" type="button">
+              <span class="visually-hidden">Show next image</span>
+              <img class="gallery-stage-image" src="assets/temp/first-name-last-name--project-title--category-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+          </div>
+
+          <div class="gallery-thumbs">
+            <button class="gallery-thumb gallery-thumb-featured" type="button">
+              <img class="gallery-thumb-image" src="assets/temp/first-name-last-name--project-title--category-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+
+            <button class="gallery-thumb" type="button">
+              <img class="gallery-thumb-image" src="assets/temp/first-name-last-name--project-title--category-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+
+            <button class="gallery-thumb" type="button">
+              <img class="gallery-thumb-image" src="assets/temp/first-name-last-name--project-title--category-4.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+
+            <button class="gallery-thumb" type="button">
+              <img class="gallery-thumb-image" src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+
+            <button class="gallery-thumb" type="button">
+              <img class="gallery-thumb-image" src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe the image and its purpose" />
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Bottom menu -->
+    <div id="bottomMenu" class="bottomMenu hide">
+      <a href="project-2.html">Next Project</a>
+    </div>
+
+    <!-- Shared footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Shared header and footer -->
+    <script>
+      fetch("includes/header-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("includes/footer-1.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          document.getElementById("copyright-years").textContent += new Date().getFullYear();
+        });
+    </script>
+
+    <script src="./js/bottom-menu.js" defer></script>
+    <script src="./js/responsive-project-gallery.js"></script>
+  </body>
+</html>

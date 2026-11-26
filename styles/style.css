@@ -98,6 +98,9 @@
 /* Adds an interactive image trail effect to a selected element. */
 @import url("image-trail.css");
 
+/* Adds a responsive project gallery. */
+@import url("responsive-project-gallery.css");
+
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
